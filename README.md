@@ -44,6 +44,10 @@
   <li><strong>npm run build:</strong> HTML sıkıştırma ve görselleri kopyalama işlemlerini sırasıyla çalıştırır. Ayrıca <code>npm run scss</code> ve <code>npm run tsc</code> komutlarını da ekleyerek tam bir build süreci oluşturabilirsin.</li>
 </ul>
 
+<h2>Geri Bildirim ve Geliştirme</h2>
+<p>Proje, kullanıcı geri bildirimleri doğrultusunda sürekli olarak geliştirilmeye devam edecektir. Kullanıcıların deneyimleri ve önerileri, uygulamanın daha iyi hale gelmesi için çok değerlidir. Gelecek güncellemelerde daha fazla özellik eklemeyi ve mevcut özellikleri iyileştirmeyi planlıyorum.</p>
+
+
 <h1>Uygulama Görselleri</h1>
 
 	Ana sayfa (Giriş ekranı)
