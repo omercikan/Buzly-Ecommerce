@@ -76,6 +76,8 @@
 	Kullancı Giriş veya Üye olma alanları
 ![account](https://res.cloudinary.com/omercikan/image/upload/v1728759422/9_fuvryo.png)
 
+<strong>Canlı demo link:</stron> https://buzly-ecommerce.netlify.app/
+
 <h2>Lisansa Dair</h2>
     <p>Bu proje <strong>MIT Lisansı</strong> ile lisanslanmıştır. Detaylar için <a href="LICENSE">Lisans dosyasını</a> kontrol edin.</p>
 
