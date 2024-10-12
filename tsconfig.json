@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/js",
+    "rootDir": "./src/ts",
+    "target": "es6",
+    "module": "esnext",
+    "sourceMap": true
+  },
+  "include": ["src/ts/**/*.ts", "src/ts/customer-service.js", "src/ts/glide.js"],
+  "exclude": ["node_modules"] 
+}

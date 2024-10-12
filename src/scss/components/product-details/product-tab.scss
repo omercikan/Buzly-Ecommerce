@@ -1,0 +1,180 @@
+.product-tabs {
+    &__list {
+        border-bottom: 1px solid $stick;
+        
+        li {
+            cursor: pointer;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        
+            &.active {
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__panel {
+        .tab-panel-description {
+            display: none;
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .tab-panel-information {
+            display: none;
+
+            h3 {
+                font-size: 26px;
+            }
+
+            table {
+                width: 100%;
+            }
+        }
+
+        .tab-panel-comments {
+            display: none;
+
+            h3 {
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 30px;
+            }
+
+            .comments {
+                overflow: auto;
+                border: 1px solid $stick;
+                scrollbar-width: thin;
+                border-radius: 4px;
+
+                ol {
+                    margin-top: 1rem;
+                    height: 400px;
+                    padding-left: 0;
+                    
+                    .comments-item {
+                        padding-left: 1rem;
+                        white-space: nowrap;
+
+                        .comment-profile {
+                            position: relative;
+                            align-self: flex-start;
+
+                            img {
+                                user-select: none;
+                                pointer-events: none;
+                            }
+
+                            img:first-child {
+                                position: absolute;
+                                top: -6px;
+                                right: -4px;
+                            }
+                        }
+
+                        .comment-content {
+                            padding-right: 1rem;
+
+                            &__star i {
+                                font-size: 12px;
+                            }
+ 
+                            &__meta {
+                                font-size: 13px;
+
+                                strong {
+                                    font-weight: 700;
+                                } 
+                            }
+
+                            &__description {
+                                background-color: #eeee;
+                                padding: 20px 24px;
+                                font-size: 13px;
+                                border-radius: 16px;
+                                text-wrap: wrap;
+                            }
+
+                            &__thumbs {
+                                margin-top: 20px;
+
+                                span {
+                                    font-size: 13px;
+                                    color: #484848;
+                                }
+
+                                i {
+                                    color: #999;
+                                    cursor: pointer;
+                                    font-size: 22px;
+                                    transition: color .4s ease;
+
+                                    &.active {
+                                        color: #6c84fa;
+                                    }
+
+                                    &:hover {
+                                        color: #6c84fa;
+                                    }
+                                }
+                            }
+
+                            .thumb-img-item.show {
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                                position: fixed;
+                                background-color: rgba(0, 0, 0, .3);
+                                display: grid;
+                                place-items: center;
+                                width: 100%;
+                                height: 100%;
+                                z-index: 500;
+
+                                i {
+                                    position: absolute;
+                                    top: 25px;
+                                    right: 30%;
+                                    font-size: 30px;
+                                    cursor: pointer;
+                                }
+
+                                img {
+                                    width: 98%;
+                                    height: 400px;
+                                }
+                            }
+                        }
+                    }
+
+                    .comments-item:not(:first-child) {
+                        margin-top: 30px;
+                        padding-top: 30px;
+                        border-top: 1px solid $stick;
+                        padding-bottom: 2rem;
+                    }
+                }
+            }
+        }
+
+        .tab-panel-description.active,
+        .tab-panel-information.active,
+        .tab-panel-comments.active {
+            display: block;
+        }
+    }
+}
+
+@media(max-width: 475px) {
+    .comments-item {
+        width: fit-content;
+    }
+}

@@ -1,0 +1,153 @@
+[   
+    {
+        "id": 1,
+        "name": "Erkek Polo Tshirt Siyah",
+        "gender": "Erkek",
+        "category": "Tshirt",
+        "price": {
+            "oldPrice": 499.99,
+            "newPrice": 399.89
+        },
+        "discount": 25,
+        "vote": 4.5,
+        "evaluation": 384,
+        "productDetail": "Şıklık ve konforu bir araya getiren erkek siyah polo t-shirt, hem günlük kullanıma hem de özel günlere uyum sağlayan zamansız bir parçadır. Yumuşak ve nefes alabilen pamuklu kumaşı sayesinde gün boyu rahatlık sunar. Modern kesimi ve klasik yakası ile her yaşa hitap eder, farklı kombinlerle şıklığı tamamlar.",
+        "productFeatures": {
+            "Renk": "Siyah",
+            "Yaka Tipi": "Polo yaka",
+            "Kumaş Türü": "%100 Pamuk",
+            "Kol Tipi": "Kısa kol",
+           "Kesim: Slim": "fit",
+            "Beden Aralığı": "S, M, L, XL, XXL",
+            "Kullanım Alanı": "Günlük, iş hayatı, özel davetler"
+        },
+        "ProductOther": {
+            "abroad": "Satış Yok",
+            "stockCode": "NBASKJ2",
+            "categories": "Tshirt, Erkek",
+            "tickets": "Polo, Siyah, Yaka"
+        },
+        "img": {
+            "mainImage": "img/products/product1/1.webp",
+            "thumbs": [
+                "img/products/product1/1.webp",
+                "img/products/product1/2.webp",
+                "img/products/product1/3.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 2,
+        "name": "Erkek Polo Tshirt Toprak",
+        "gender": "Erkek",
+        "category": "Tshirt",
+        "price": {
+            "oldPrice": 549.99,
+            "newPrice": 389.89
+        },
+        "discount": 23,
+        "vote": 4.6,
+        "evaluation": 884,
+        "productDetail": "Doğal ve zarif bir görünüm sunan erkek toprak rengi polo tişört, hem günlük hem de yarı resmi ortamlarda rahatça tercih edilebilecek bir giyim parçasıdır. Yumuşak dokulu kumaşı ve nefes alabilen yapısıyla gün boyu konfor sağlar. Polo yaka detayları ve modern kesimiyle şık bir görünüm sunarken, toprak rengi doğal tonları sevenler için mükemmel bir seçenek oluşturur.",
+        "productFeatures": {
+            "Renk": "Toprak",
+            "Yaka Tipi": "Polo yaka",
+            "Kumaş Türü": "%100 Pamuk",
+            "Kol Tipi": "Kısa kol",
+           "Kesim": "Slim fit",
+            "Beden Aralığı": "S, M, L, XL, XXL",
+            "Kullanım Alanı": "Günlük, ofis, hafta sonu gezileri"
+        },
+        "ProductOther": {
+            "abroad": "Satış Yok",
+            "stockCode": "NBAKFJ3",
+            "categories": "Tshirt, Erkek",
+            "tickets": "Polo, Toprak, Yaka"
+        },
+        "img": {
+            "mainImage": "img/products/product2/1.webp",
+            "thumbs": [
+                "img/products/product2/1.webp",
+                "img/products/product2/2.webp",
+                "img/products/product2/3.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 3,
+        "name": "Keten Karışımlı Bol Kesim Pantolon",
+        "gender": "Kadın",
+        "category": "Pantolon",
+        "price": {
+            "oldPrice": 349.79,
+            "newPrice": 289.89
+        },
+        "discount": 20,
+        "vote": 4.8,
+        "evaluation": 2423,
+        "productDetail": "Rahatlığı ve şıklığı bir araya getiren keten karışımlı bol kesim pantolon, hafif ve nefes alabilen yapısıyla sıcak havalarda mükemmel bir tercih sunar. Ketenin doğal dokusu ve bol kesimi, vücudu sıkmadan serbest bir hareket alanı sağlar, böylece gün boyu konforlu bir kullanım deneyimi yaşatır. Hem casual hem de şık kombinler için ideal olan bu pantolon, yazlık gardırobunuzun vazgeçilmezi olacak.",
+        "productFeatures": {
+            "Kumaş Türü": "%55 Keten, %45 Pamuk",
+            "Kesim": "Bol kesim",
+           "Bel Tipi": "Orta bel",
+            "Paça Tipi": "Geniş paça",
+            "Cepler": "2 yan cep, 2 arka cep",
+            "Beden Aralığı": "38-52",
+            "Kullanım Alanı": "Günlük, yaz tatilleri, hafta sonu aktiviteleri"
+        },
+        "ProductOther": {
+            "abroad": "Satış Yok",
+            "stockCode": "NJASOW9",
+            "categories": "Pantolon, Kadın",
+            "tickets": "Keten, Bol, Paça"
+        },
+        "img": {
+            "mainImage": "img/products/product3/1.webp",
+            "thumbs": [
+                "img/products/product3/1.webp",
+                "img/products/product3/2.webp",
+                "img/products/product3/3.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 4,
+        "name": "Suni Kürklü Astarlı Süet Suni Deri Mont",
+        "gender": "Kadın",
+        "category": "Mont",
+        "price": {
+            "oldPrice": 989.89,
+            "newPrice": 679.49
+        },
+        "discount": 30,
+        "vote": 4.4,
+        "evaluation": 854,
+        "productDetail": "Şıklığı ve sıcaklığı bir arada sunan suni kürklü astarlı süet suni deri mont, soğuk kış günleri için ideal bir seçimdir. Süet görünümlü dış yüzeyi ve iç kısmındaki yumuşak suni kürk astarıyla hem stil hem de konforu bir araya getirir. Klasik tasarımı, günlük ve şık kombinlerle kolayca uyum sağlar. Hem casual hem de modern bir görünüm için gardırobunuzda bulunması gereken parçalardan biri.",
+        "productFeatures": {
+            "Dış Yüzey": "Süet görünümlü suni deri",
+            "İç Astar": "Yumuşak suni kürk",
+           "Yaka": "Kürklü yaka",
+            "Kapatma": "Fermuarlı ön kapama",
+            "Cepler": "2 yan cep, 1 iç cep",
+            "Beden Aralığı": "S, M, L, XL, XXL",
+            "Kullanım Alanı": "Günlük, soğuk havalar, şehir gezileri"
+        },
+        "ProductOther": {
+            "abroad": "Satış Yok",
+            "stockCode": "CJWOAL9",
+            "categories": "Mont, Kadın",
+            "tickets": "Kürk, Deri, Astar"
+        },
+        "img": {
+            "mainImage": "img/products/product4/1.webp",
+            "thumbs": [
+                "img/products/product4/1.webp",
+                "img/products/product4/2.webp",
+                "img/products/product4/3.webp"
+            ]
+        }
+    }
+]

@@ -1,0 +1,201 @@
+//!Search Modal Start!//
+.search-modal {
+    position: absolute;
+    left: 0;
+    top: 0; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 50;
+    transition: all .3s ease;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .5);
+        position: fixed;
+    }
+
+    &__wrapper {
+        background-color: #fff;
+        position: relative;
+        position: fixed;
+        max-width: 800px;
+        padding: 30px;
+        width: 100%;
+        z-index: 5;
+
+        &__heading {
+
+            h3 {
+                font-size: 30px;
+                font-weight: 600;
+                margin: 0;
+            }
+
+            p {
+                font-size: 14px;
+                color: $paleGray;
+                border-bottom: 1px solid $stick;
+                padding-bottom: 15px !important;
+            }
+        }
+
+        &__form {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -15px;
+                width: 100%;
+                height: 1px;
+                background-color: $stick;
+            }
+            
+            input {
+                width: 100%;
+                padding-right: 60px;
+
+                &:focus {
+                    border-color: $stick;
+                }
+            }
+
+            button {
+                position: absolute;
+                right: 0;
+                top:  0;
+                height: 100%;
+                padding: 15px;
+                display: grid;
+                place-content: center;
+                border: 1px solid $stick;
+            }
+        }
+
+        &__results {
+            margin-top: 30px;
+
+            .result-title {
+                background-color: $paleWhite;
+                border: 1px solid $stick;
+                padding: 15px;
+
+                h3 {
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+            }
+
+            .result-show {
+                border-left: 1px solid $stick;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                max-height: 300px;
+                overflow-y: scroll;
+                scrollbar-width: thin;
+                border-bottom: 1px solid $stick;
+
+                .result-item {
+                    padding: 15px;
+                    display: flex;
+                    column-gap: 15px;
+                    border-right: 1px solid $stick;
+                    border-bottom: 1px solid $stick;
+                    transition: background-color .3s ease;
+
+                    &:hover {
+                        background-color: $paleWhite;
+                    }
+
+                    &:last-child,
+                    &:first-child {
+                        border-bottom: none;
+                    }
+
+                    &:first-child {
+                        border-bottom: none !important;
+                    }
+
+                    &:nth-child(odd) {
+                        border-bottom: 1px solid $stick !important;
+                    }
+
+                    &:last-child {
+                        border-bottom: 1px solid $stick;
+                    }
+
+                    img {
+                        max-width: 65px;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+
+                    &__info {
+
+                        h4 {
+                            text-transform: capitalize;
+                            font-weight: 600;
+                            font-size: 14px;
+                            margin: 0;
+                        }
+
+                        .search-code {
+                            color: $paleGray;
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+
+                        .search-price {
+                            display: block;
+                            color: $blueBg;
+                            font-size: 14px;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .close-modal {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .modal-empty-message {
+            display: none;
+        }
+    }
+}
+
+.search-modal.active {
+    visibility: visible;
+    opacity: 1;
+}
+//!Search Modal End!// 
+
+@media(max-width: 576px) {
+    .search-modal__wrapper {
+        padding: 30px 10px;
+    }
+
+    .result-show {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}

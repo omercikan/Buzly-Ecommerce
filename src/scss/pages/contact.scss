@@ -1,0 +1,201 @@
+.contact-container {
+
+    &__bottom {
+        margin-top: 30px;
+    }
+
+    &__header {
+
+        h4 {
+            color: $contactRed;
+            font-weight: 500;
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .contact-touch {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 100px;
+        margin-top: 50px;
+
+        &__form {
+            flex: 3;
+
+            form {
+                display: flex !important;
+                flex-direction: column;
+                gap: 20px;
+
+                .input-group {
+
+                    .form-group {
+                        flex: 1;
+                    }
+                }
+
+                label {
+                    margin-bottom: 4px;
+                    font-size: 14px;
+                    font-weight: 400;
+
+                    span {
+                        color: $contactRed;
+                    }
+                }
+
+                input, 
+                textarea{
+                    width: 100%;
+                }
+
+                textarea {
+                    height: 150px;
+                }
+
+                button {
+                    background-color: #000 !important;
+                    font-size: 13.33px;
+                    font-weight: 500;
+                    padding: 8px 25px;
+                }
+            }
+        }
+
+        #contactForm.close {
+            display: none !important;
+        }
+
+        &__info {
+            flex: 2;
+
+            .info-wrapper {
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+
+                strong {
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+
+                p,
+                a,
+                address {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+                .info-item-first {
+
+                    &__top {
+
+                        address {
+                            margin-top: 15px;
+                        }
+                    }
+                }
+
+                .info-item-second {
+
+                    p:nth-child(2) {
+                        margin-top: 10px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//!Show menu when form is successful
+.success-message {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    scale: .9;
+    transition: opacity,scale .4s ease;
+
+    .bi-check-circle-fill {
+        font-size: 60px;
+        color: #000;
+    }
+
+    .back-btn {
+        background-color: #000;
+        color: #fff;
+        border: 2px solid transparent;
+        font-size: 1.25rem;
+        border-radius: 1rem;
+        width: 12rem;
+        height: 3.5rem;
+        position: relative;
+        transition: scale .3s ease;
+
+        &:active {
+            scale: .9;
+        }
+        
+        &:hover i{
+            width: 97.5%;
+            font-size: 25px;
+        }
+    
+        span {
+            padding-left: 1.5rem;
+        }
+    
+        i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $blueBg;
+            width: 25%;
+            height: 3rem;
+            position: absolute;
+            left: 2px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: .75rem;
+            transition: all .6s ease;
+        }
+    }
+}
+
+.success-message.active {
+    visibility: visible;
+    opacity: 1;
+    scale: 1;
+}
+
+//!Contact page resposive settings
+@media(max-width: 768px) {
+    .contact-touch {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    iframe {
+        height: 300px;
+    }
+}
+
+@media(max-width: 508px) {
+    .contact-container__header {
+        h2 {
+            font-size: 30px;
+        }
+    }
+}

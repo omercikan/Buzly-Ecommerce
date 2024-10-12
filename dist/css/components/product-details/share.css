@@ -1,0 +1,1 @@
+.product-share-container .share-wrapper{position:absolute;left:0;top:50%;transform:translateY(-50%);position:fixed;background-color:red;padding:2rem 1rem 2rem 10px}.product-share-container .share-wrapper ul{display:flex;flex-direction:column;gap:10px}.product-share-container .share-wrapper img{width:50px;height:50px;cursor:pointer;border-radius:15px}

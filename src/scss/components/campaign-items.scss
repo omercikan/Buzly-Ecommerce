@@ -1,0 +1,81 @@
+.campaign-container {
+
+    .campaign-wrapper {
+        display: flex;
+        gap: 30px;
+        margin: 30px;
+
+        .campaign-item {
+            width: 100%;
+            padding: 70px 35px;
+            background-size: cover;
+            border-radius: 6px;
+            color: #fff;
+
+            h3 {
+                font-size: 26px;
+                font-weight: 600;
+            }
+
+            p {
+                margin: 40px 0 !important;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .campaign-wrapper:nth-child(1) .campaign-item:nth-child(1) {
+        background-image: url('../img/campaign/1.webp');
+    }
+
+    .campaign-wrapper:nth-child(1) .campaign-item:nth-child(2) {
+        background-image: url('../img/campaign/2.webp');
+    }
+
+    .campaign-wrapper:nth-child(2) .campaign-item:nth-child(1) {
+        background-image: url('../img/campaign/3.webp');
+        flex: 5;
+    }
+
+    .campaign-wrapper:nth-child(2) .campaign-item:nth-child(2) {
+        background-image: url('../img/campaign/4.webp');
+        flex: 3;
+    }
+}
+
+//!Campaign container responsive Settings 
+@media(max-width: 992px) {
+    .campaign-container.container {
+        max-width: 100%;
+    }
+
+    .campaign-wrapper {
+        width: 100%;
+        gap: 15px !important;
+        margin: 15px 0 !important;
+    }
+}
+
+@media(max-width: 768px) {
+    .campaign-wrapper {
+        flex-direction: column;
+    }
+
+    .campaign-item {
+        background-position: 100% !important;
+    }
+}
+
+@media(max-width: 426px) {
+    .campaign-item {
+        padding: 25px !important;
+    }
+
+    .campaign-item p br {
+        display: none;
+    }
+
+    .campaign-item h3 {
+        font-size: 20px !important;
+    }
+}

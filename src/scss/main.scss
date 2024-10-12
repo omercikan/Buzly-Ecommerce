@@ -1,0 +1,35 @@
+//! Global Scss !//
+@import 'base.scss';
+
+//! Layout Scss !//
+@import 'layout/header.scss';
+@import 'layout/footer.scss';
+
+//! Components Scss !// 
+@import 'components/modal-search.scss'; 
+@import 'components/slider.scss'; 
+@import 'components/category-items.scss';
+@import 'components/campaign-items.scss';
+@import 'components/blog-items.scss';
+@import 'components/single-campaign.scss';
+@import 'components/modal.dialog.scss';
+//! Componenets Scss__Product details__Scss Documents
+@import 'components/product-details/breadcrumb.scss';  
+@import 'components/product-details/product-gallery.scss';
+@import 'components/product-details/product-info.scss';
+@import 'components/product-details/size-cart.scss';
+@import 'components/product-details/share.scss';
+@import 'components/product-details/product-tab.scss';
+@import 'components/product-details/reviews.scss';
+ 
+//! Vendors Scss !// 
+@import 'vendors/bootstrap.scss';
+
+//! Pages Scss !//
+@import 'pages/home.scss';
+@import 'pages/contact.scss';
+@import 'pages/account.scss';
+@import 'pages/basket.scss';
+@import 'pages/blog-detail.scss';
+@import 'pages/likes.scss';
+@import 'pages/category.scss'

@@ -1,0 +1,29 @@
+.product-detail-container {
+    
+    &__breadcrumb {
+        margin: 30px 0;
+
+        li {
+            font-size: 12px;
+            text-transform: capitalize;
+            position: relative;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &::after {
+                content: '/';
+                color: $stick;
+                margin: 0 5px;
+            }
+
+            &:last-child::after {
+                display: none;
+            }
+
+            a:hover {
+                text-decoration: underline !important;
+            }
+        }
+    }
+} 

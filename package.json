@@ -1,0 +1,26 @@
+{
+  "name": "deneme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass -w src/scss -o dist/css --output-style compressed",
+    "tsc": "tsc --watch",
+    "minify-html": "node minify-html.js",
+    "copy-img": "copyfiles -u 2 \"src/img/**/*\" dist/img",
+    "build": "npm run minify-html && npm run copy-img"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "node-sass": "^9.0.0"
+  },
+  "devDependencies": {
+    "chokidar": "^3.6.0",
+    "copyfiles": "^2.4.1",
+    "html-minifier": "^4.0.0",
+    "typescript": "^5.5.4"
+  }
+}

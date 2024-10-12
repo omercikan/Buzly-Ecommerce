@@ -1,0 +1,137 @@
+//!Slider General Settings
+.slider-elements {
+    position: relative;
+
+    &__item {
+        position: relative;
+        height: calc(100vh - 139px);
+    
+        .slider-image img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;  
+            width: 100%;
+            object-fit: cover;
+            pointer-events: none;
+            z-index: -1;
+        }
+    
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 100%;
+            justify-content: center;
+    
+            p {
+                font-size: 18px;
+                font-weight: 500;
+            }
+    
+            h2 {
+                font-size: 60px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-100%);
+        width: 100%;
+    
+        button {
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+            border-radius: 100%;
+            border: none;
+            opacity: .4;
+            color: #000;
+            background-color: #fff;
+            border: 1px solid $stick;
+            transition: all .3s ease;
+    
+            &:hover {
+                background-color: $blueBg;
+                color: #fff;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__dots {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        user-select: none;
+
+        button {
+            border: none;
+            height: 0px;
+            padding: 0px;
+            
+            span {
+                width: 12px;
+                height: 12px;
+                display: inline-block;
+                background-color: $blueBg;
+                border-radius: 100%;
+                opacity: .4;
+                transition: all .3s ease;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+        button.active span {
+            opacity: 1;
+        }
+    }
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .5;
+    } 
+    
+    to {
+        opacity: 1;
+    }
+}
+
+//!Responsive Settings
+@media(max-width: 546px) {
+    .slider-elements__item {
+        height: calc(50vh - 160px) !important;
+
+        .container {
+
+            h2 {
+                font-size: 36px;
+            }
+
+            a.lg-btn {
+                line-height: 40px !important;
+                padding: 0 15px !important;
+            }
+        }
+    }
+
+    .slider-elements__buttons {
+        display: none;
+    }
+}

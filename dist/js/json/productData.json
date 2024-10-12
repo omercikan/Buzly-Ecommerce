@@ -1,0 +1,307 @@
+[
+    {
+        "id": 1,
+        "name": "Erkek Polo Tshirt Siyah",
+        "gender": "Erkek",
+        "category": "Tshirt",
+        "price": {
+            "oldPrice": 499.99,
+            "newPrice": 399.89
+        },
+        "discount": 25,
+        "vote": 4.5,
+        "evaluation": 384,
+        "productDetail": "Şıklık ve konforu bir araya getiren erkek siyah polo t-shirt, hem günlük kullanıma hem de özel günlere uyum sağlayan zamansız bir parçadır. Yumuşak ve nefes alabilen pamuklu kumaşı sayesinde gün boyu rahatlık sunar. Modern kesimi ve klasik yakası ile her yaşa hitap eder, farklı kombinlerle şıklığı tamamlar.",
+        "productFeatures": {
+            "Renk": "Siyah",
+            "Yaka Tipi": "Polo yaka",
+            "Kumaş Türü": "%100 Pamuk",
+            "Kol Tipi": "Kısa kol",
+           "Kesim: Slim": "fit",
+            "Beden Aralığı": "S, M, L, XL, XXL",
+            "Kullanım Alanı": "Günlük, iş hayatı, özel davetler"
+        },
+        "ProductOther": {
+            "abroad": "Satış Yok",
+            "stockCode": "NBASKJ2",
+            "categories": "Tshirt, Erkek",
+            "tickets": "Polo, Siyah, Yaka"
+        },
+        "img": {
+            "mainImage": "img/products/product1/1.webp",
+            "thumbs": [
+                "img/products/product1/1.webp",
+                "img/products/product1/2.webp",
+                "img/products/product1/3.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 2,
+        "name": "Erkek Polo Tshirt Toprak",
+        "gender": "Erkek",
+        "category": "Tshirt",
+        "price": {
+            "oldPrice": 549.99,
+            "newPrice": 389.89
+        },
+        "discount": 23,
+        "vote": 4.6,
+        "evaluation": 884,
+        "productDetail": "Doğal ve zarif bir görünüm sunan erkek toprak rengi polo tişört, hem günlük hem de yarı resmi ortamlarda rahatça tercih edilebilecek bir giyim parçasıdır. Yumuşak dokulu kumaşı ve nefes alabilen yapısıyla gün boyu konfor sağlar. Polo yaka detayları ve modern kesimiyle şık bir görünüm sunarken, toprak rengi doğal tonları sevenler için mükemmel bir seçenek oluşturur.",
+        "productFeatures": {
+            "Renk": "Toprak",
+            "Yaka Tipi": "Polo yaka",
+            "Kumaş Türü": "%100 Pamuk",
+            "Kol Tipi": "Kısa kol",
+           "Kesim": "Slim fit",
+            "Beden Aralığı": "S, M, L, XL, XXL",
+            "Kullanım Alanı": "Günlük, ofis, hafta sonu gezileri"
+        },
+        "ProductOther": {
+            "abroad": "Satış Yok",
+            "stockCode": "NBAKFJ3",
+            "categories": "Tshirt, Erkek",
+            "tickets": "Polo, Toprak, Yaka"
+        },
+        "img": {
+            "mainImage": "img/products/product2/1.webp",
+            "thumbs": [
+                "img/products/product2/1.webp",
+                "img/products/product2/2.webp",
+                "img/products/product2/3.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 3,
+        "name": "Keten Karışımlı Bol Kesim Pantolon",
+        "gender": "Kadın",
+        "category": "Pantolon",
+        "price": {
+            "oldPrice": 349.79,
+            "newPrice": 289.89
+        },
+        "discount": 20,
+        "vote": 4.8,
+        "evaluation": 2423,
+        "productDetail": "Rahatlığı ve şıklığı bir araya getiren keten karışımlı bol kesim pantolon, hafif ve nefes alabilen yapısıyla sıcak havalarda mükemmel bir tercih sunar. Ketenin doğal dokusu ve bol kesimi, vücudu sıkmadan serbest bir hareket alanı sağlar, böylece gün boyu konforlu bir kullanım deneyimi yaşatır. Hem casual hem de şık kombinler için ideal olan bu pantolon, yazlık gardırobunuzun vazgeçilmezi olacak.",
+        "productFeatures": {
+            "Kumaş Türü": "%55 Keten, %45 Pamuk",
+            "Kesim": "Bol kesim",
+           "Bel Tipi": "Orta bel",
+            "Paça Tipi": "Geniş paça",
+            "Cepler": "2 yan cep, 2 arka cep",
+            "Beden Aralığı": "38-52",
+            "Kullanım Alanı": "Günlük, yaz tatilleri, hafta sonu aktiviteleri"
+        },
+        "ProductOther": {
+            "abroad": "Satış Yok",
+            "stockCode": "NJASOW9",
+            "categories": "Pantolon, Kadın",
+            "tickets": "Keten, Bol, Paça"
+        },
+        "img": {
+            "mainImage": "img/products/product3/1.webp",
+            "thumbs": [
+                "img/products/product3/1.webp",
+                "img/products/product3/2.webp",
+                "img/products/product3/3.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 4,
+        "name": "Suni Kürklü Astarlı Süet Suni Deri Mont",
+        "gender": "Kadın",
+        "category": "Mont",
+        "price": {
+            "oldPrice": 989.89,
+            "newPrice": 679.49
+        },
+        "discount": 30,
+        "vote": 4.4,
+        "evaluation": 854,
+        "productDetail": "Şıklığı ve sıcaklığı bir arada sunan suni kürklü astarlı süet suni deri mont, soğuk kış günleri için ideal bir seçimdir. Süet görünümlü dış yüzeyi ve iç kısmındaki yumuşak suni kürk astarıyla hem stil hem de konforu bir araya getirir. Klasik tasarımı, günlük ve şık kombinlerle kolayca uyum sağlar. Hem casual hem de modern bir görünüm için gardırobunuzda bulunması gereken parçalardan biri.",
+        "productFeatures": {
+            "Dış Yüzey": "Süet görünümlü suni deri",
+            "İç Astar": "Yumuşak suni kürk",
+           "Yaka": "Kürklü yaka",
+            "Kapatma": "Fermuarlı ön kapama",
+            "Cepler": "2 yan cep, 1 iç cep",
+            "Beden Aralığı": "S, M, L, XL, XXL",
+            "Kullanım Alanı": "Günlük, soğuk havalar, şehir gezileri"
+        },
+        "ProductOther": {
+            "abroad": "Satış Yok",
+            "stockCode": "CJWOAL9",
+            "categories": "Mont, Kadın",
+            "tickets": "Kürk, Deri, Astar"
+        },
+        "img": {
+            "mainImage": "img/products/product4/1.webp",
+            "thumbs": [
+                "img/products/product4/1.webp",
+                "img/products/product4/2.webp",
+                "img/products/product4/3.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 5,
+        "name": "Suni Kürklü Suni Süet Crop Biker Ceket",
+        "gender": "Kadın",
+        "category": "Ceket",
+        "price": {
+            "oldPrice": 789.99,
+            "newPrice": 539.49
+        },
+        "discount": 25,
+        "vote": 4.7,
+        "evaluation": 382,
+        "productDetail": "Modern tarzın ikonik parçalarından biri olan suni kürklü suni süet crop biker ceket, şıklık ve rahatlığı bir arada sunar. Yumuşak süet dokusu ve içindeki suni kürk astarı ile serin günlerde sıcak tutarken tarzınıza iddialı bir dokunuş katar. Crop kesimi, klasik biker detayları ve feminen hatlarıyla hem günlük hem de özel kombinlerde kolayca kullanılabilir.",
+        "productFeatures": {
+            "Dış Yüzey": "Süet görünümlü suni deri",
+            "İç Astar": "Suni kürk astar",
+            "Yaka": "Kürklü yaka",
+            "Kesim": "Crop (kısa)",
+            "Kapatma": "Asimetrik fermuar kapama",
+            "Detaylar": "Metal fermuar detayları, omuzlarda biker stili dikişler",
+            "Cepler": "2 yan cep, 1 iç cep",
+            "Beden Aralığı": "XS, S, M, L, XL",
+            "Kullanım Alanı": "Günlük, şehir stili, akşam etkinlikleri"
+        },
+        "ProductOther": {
+            "abroad": "Satış Yok",
+            "stockCode": "LKAIWG0",
+            "categories": "Ceket, Kadın",
+            "tickets": "Kürk, Deri, Biker, Crop"
+        },
+        "img": {
+            "mainImage": "img/products/product5/1.webp",
+            "thumbs": [
+                "img/products/product5/1.webp",
+                "img/products/product5/2.webp",
+                "img/products/product5/3.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 6,
+        "name": "V Yaka Kalın Askılı Seamless Crop",
+        "gender": "Kadın",
+        "category": "Crop",
+        "price": {
+            "oldPrice": "549.99",
+            "newPrice": "389.99"
+        },
+        "discount": 23,
+        "vote": 4.6,
+        "evaluation": 493,
+        "productDetail": "Konfor ve şıklığı bir arada sunan V yaka kalın askılı seamless crop top, günlük giyim ve spor aktiviteleri için ideal bir seçenektir. Seamless (dikişsiz) yapısı sayesinde vücuda tam oturarak rahatsızlık hissi yaratmaz, yumuşak dokusuyla hareket özgürlüğü sağlar. Minimalist ve zarif tasarımıyla hem spor hem de casual kombinlerde rahatlıkla kullanılabilir.",
+        "productFeatures": {
+            "Kumaş Türü": "%90 Polyamid, %10 Elastan",
+            "Yaka Tipi": "V yaka",
+            "Askı Tipi": "Kalın askılı",
+            "Kesim": "Crop kesim",
+            "Özellikler": "Dikişsiz (seamless) teknoloji, esnek ve nefes alabilen kumaş",
+            "Beden Aralığı": "S, M, L",
+            "Kullanım Alanı": "Spor, yoga, günlük giyim"
+        },
+        "ProductOther": {
+            "abroad": "Satış Yok",
+            "stockCode": "JKSETI2",
+            "categories": "Crop, Kadın",
+            "tickets": "Seamless, Yaka"
+        },
+        "img": {
+            "mainImage": "img/products/product6/1.webp",
+            "thumbs": [
+                "img/products/product6/1.webp",
+                "img/products/product6/2.webp",
+                "img/products/product6/3.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 7,
+        "name": "Dikişsiz V Yaka Kalın Askılı Crop",
+        "gender": "Kadın",
+        "category": "Crop",
+        "price": {
+            "oldPrice": "349.79",
+            "newPrice": "289.89"
+        },
+        "discount": 20,
+        "vote": 4.9,
+        "evaluation": 4930,
+        "productDetail": "Hareket özgürlüğü sunan dikişsiz V yaka kalın askılı crop top, günlük stilinize ve spor giyiminize rahatlık katan bir parçadır. Dikişsiz (seamless) yapısı sayesinde teninize nazikçe oturur, iz yapmaz ve konforlu bir kullanım sağlar. Minimalist tasarımıyla hem sade hem de şık bir görünüm sunarken, elastik yapısı sayesinde vücudu sıkmadan sarar. Spor salonunda veya günlük kombinlerde rahatlıkla kullanılabilir.",
+        "productFeatures": {
+            "Kumaş Türü": "%92 Polyamid, %8 Elastan",
+            "Yaka Tipi": "V yaka",
+            "Askı Tipi": "Kalın askılı",
+            "Kesim": "Crop (kısa)",
+            "Özellikler": "Dikişsiz (seamless) teknoloji, esnek ve nefes alabilen kumaş, ter emici",
+            "Beden Aralığı:": "S, M, L",
+            "Kullanım Alanı": "Spor, günlük giyim, yoga, pilates"
+        },
+        "ProductOther": {
+            "abroad": "Satış Yok",
+            "stockCode": "ALWISJ3",
+            "categories": "Crop, Kadın",
+            "tickets": "Askı, Yaka"
+        },
+        "img": {
+            "mainImage": "img/products/product7/1.webp",
+            "thumbs": [
+                "img/products/product7/1.webp",
+                "img/products/product7/2.webp",
+                "img/products/product7/3.webp"
+            ]
+        } 
+    },
+
+    {
+        "id": 8,
+        "name": "Bisiklet Yaka Basic T-shirt",
+        "gender": "Kadın",
+        "category": "Tshirt",
+        "price": {
+            "oldPrice": "299.99",
+            "newPrice": "199.49"
+        },
+        "discount": 20,
+        "vote": 4.7,
+        "evaluation": 5321,
+        "productDetail": "Her gardırobun vazgeçilmezi olan bisiklet yaka basic t-shirt, sade ve şık tasarımıyla hem günlük hem de spor kombinler için ideal bir seçenektir. Yumuşak pamuklu kumaşı sayesinde konforlu bir kullanım sunar. Farklı renk seçenekleriyle her tarza uyum sağlayarak, katmanlı giyinme stilinize kolayca entegre edilebilir. Hem rahatlığı hem de şıklığıyla, bu t-shirt her mevsim için mükemmel bir tercih olacaktır.",
+        "productFeatures": {
+            "Renk Seçenekleri": "Siyah, Beyaz, Gri, Lacivert, Açık Mavi",
+            "Yaka Tipi": "Bisiklet yaka",
+            "Kumaş Türü": "%100 Pamuk",
+            "Kol Tipi": "Kısa kol",
+            "Kesim": "Regular fit (normal kesim)",
+            "Beden Aralığı:": "XS, S, M, L, XL, XXL",
+            "Kullanım Alanı": "Günlük, spor, yaz tatili"
+        },
+        "ProductOther": {
+            "abroad": "Satış Yok",
+            "stockCode": "NSJYOS4",
+            "categories": "Tshirt, Kadın",
+            "tickets": "Yaka, Bisiklet, Basic"
+        },
+        "img": {
+            "mainImage": "img/products/product8/1.webp",
+            "thumbs": [
+                "img/products/product8/1.webp",
+                "img/products/product8/2.webp",
+                "img/products/product8/3.webp"
+            ]
+        }  
+    }
+]
