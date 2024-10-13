@@ -41,7 +41,7 @@
   <li><strong>npm run tsc:</strong> TypeScript dosyalarını izler ve JavaScript'e dönüştürür.</li>
   <li><strong>npm run minify-html:</strong> HTML dosyalarını sıkıştırır ve optimize eder.</li>
   <li><strong>npm run copy-img:</strong> Görselleri <code>src/img</code> dizininden <code>dist/img</code> dizinine kopyalar.</li>
-  <li><strong>npm run build:</strong> HTML sıkıştırma ve görselleri kopyalama işlemlerini sırasıyla çalıştırır. Ayrıca <code>npm run scss</code> ve <code>npm run tsc</code> komutlarını da ekleyerek tam bir build süreci oluşturabilirsin.</li>
+  <li><strong>npm run build:</strong> HTML sıkıştırma ve görselleri kopyalama işlemlerini sırasıyla çalıştırır. Ayrıca <code>npm run scss</code> ve <code>npm run tsc</code> komutlarını da ekleyerek tam bir build süreci oluşturabilirsiniz.</li>
 </ul>
 
 <h2>Geri Bildirim ve Geliştirme</h2>
