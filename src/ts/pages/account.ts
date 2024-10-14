@@ -248,33 +248,36 @@ const successLoginForm = (input: HTMLInputElement) => {
 };
 
 //!Accout page sign up options html elements
-const popupContainer = document.querySelector<HTMLDivElement>('.popup-container');
+const popupContainer = document.querySelector<HTMLDivElement>('.popup-containers');
 const popupOptions = document.querySelectorAll<HTMLDivElement>('.popup-options div');
+const popupOptionsChild = document.querySelectorAll<HTMLDivElement>('.popup-content-child');
+
 const expressConsentContent = document.querySelector<HTMLDivElement>('.popup-content__express-consent');
 const lightingTextContent = document.querySelector<HTMLDivElement>('.popup-content__lighting-text');
 const membershipContent = document.querySelector<HTMLDivElement>('.popup-content__membership-text');
 const body = document.querySelector('body');
 
 //!Show desired content 
-function showContent(content: HTMLDivElement) {
+function showContent(content: HTMLDivElement): undefined {
     expressConsentContent.style.display = 'none';
     lightingTextContent.style.display = 'none';
     membershipContent.style.display = 'none';
 
     content.style.display = 'block';
+    document.querySelector('.popup-details').classList.add('open')
 };
 
 //!Desired index in active
-function setActiveOption(optionIndex: number) {
+function setActiveOption(optionIndex: number): undefined {
     popupOptions.forEach(option => option.classList.remove('active'));
     popupOptions[optionIndex].classList.add('active');
 }
 
 //!All popup options
-popupOptions.forEach((option, index) => {
+popupOptions.forEach((option, index): undefined => {
     option.addEventListener('click', () => {
         setActiveOption(index);
-
+        
         if(option.textContent === 'Açık Rıza Metni') {
             showContent(expressConsentContent);
         } else if(option.textContent === 'Aydınlatma Metni') {
@@ -287,13 +290,13 @@ popupOptions.forEach((option, index) => {
 
 //!Click the close popup container
 document.querySelector('#closePopupAccount').addEventListener('click', () => {
-    popupContainer.style.display = 'none';
-    body.style.overflow = 'auto';
+    popupContainer.classList.remove('open')
+    body.style.overflow = 'visible';
 });
 
 //!Click popup text and show the container
 function openPopup(content: HTMLDivElement, optionIndex: number) {
-    popupContainer.style.display = 'block';
+    popupContainer.classList.add('open')
     body.style.overflow = 'hidden'
     showContent(content);
     setActiveOption(optionIndex);

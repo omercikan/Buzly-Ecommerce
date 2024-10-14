@@ -22,7 +22,7 @@ import { displayFocusCategoryOffer } from "./components/slider-orientation.js";
 
 //!<-- Get All Product save to localStorage start -->
 async function productData() {
-    const requestData = await fetch("./js/productData.json")
+    const requestData = await fetch("./js/json/productData.json")
     const data = await requestData.json();
     data ? localStorage.setItem('products', JSON.stringify(data)) : [];
     // showProducts(data)
@@ -34,7 +34,7 @@ productData();
 
 //!<-- Get Product First data save to localStorage start -->
 async function firstProdutData() {
-    const requestFirstData = await fetch('./js/productDataOne.json')
+    const requestFirstData = await fetch('./js/json/productDataOne.json')
     const data = await requestFirstData.json()
     data ? localStorage.setItem('productsFirst', JSON.stringify(data)) : [];
     productSliderFunc();
@@ -45,7 +45,7 @@ firstProdutData();
 
 //!<-- Get Product First data save to localStorage start -->
 async function secondProductData() {
-    const requestSecondData = await fetch('./js/productDataTwo.json')
+    const requestSecondData = await fetch('./js/json/productDataTwo.json')
     const data = await requestSecondData.json();
     data ? localStorage.setItem('productsSecond', JSON.stringify(data)) : [];
     productSliderFunc();
@@ -70,7 +70,7 @@ allBlogData()
 
 //!<-- Get Blog data save to localStorage start -->
 async function allBlogsData() {
-    const requestBlogData = await fetch('./js/blog.json');
+    const requestBlogData = await fetch('./js/json/blog.json');
     const data = await requestBlogData.json();
     data ? localStorage.setItem('blogs', JSON.stringify(data)) : [];
     displayAllBlogs(data);    
@@ -81,7 +81,7 @@ allBlogsData()
 
 //!<-- Make a request to Categories start -->
 async function categories() {
-    const requestCategories = await fetch('./js/categories.json');
+    const requestCategories = await fetch('./js/json/categories.json');
     const data = await requestCategories.json();
     data ? localStorage.setItem('categories', JSON.stringify(data)) : [];
     displayFocusCategory(data)

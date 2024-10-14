@@ -221,8 +221,9 @@ const successLoginForm = (input) => {
     input.className = 'form-control is-valid rounded-2 py-2';
 };
 //!Accout page sign up options html elements
-const popupContainer = document.querySelector('.popup-container');
+const popupContainer = document.querySelector('.popup-containers');
 const popupOptions = document.querySelectorAll('.popup-options div');
+const popupOptionsChild = document.querySelectorAll('.popup-content-child');
 const expressConsentContent = document.querySelector('.popup-content__express-consent');
 const lightingTextContent = document.querySelector('.popup-content__lighting-text');
 const membershipContent = document.querySelector('.popup-content__membership-text');
@@ -233,6 +234,7 @@ function showContent(content) {
     lightingTextContent.style.display = 'none';
     membershipContent.style.display = 'none';
     content.style.display = 'block';
+    document.querySelector('.popup-details').classList.add('open');
 }
 ;
 //!Desired index in active
@@ -257,12 +259,12 @@ popupOptions.forEach((option, index) => {
 });
 //!Click the close popup container
 document.querySelector('#closePopupAccount').addEventListener('click', () => {
-    popupContainer.style.display = 'none';
-    body.style.overflow = 'auto';
+    popupContainer.classList.remove('open');
+    body.style.overflow = 'visible';
 });
 //!Click popup text and show the container
 function openPopup(content, optionIndex) {
-    popupContainer.style.display = 'block';
+    popupContainer.classList.add('open');
     body.style.overflow = 'hidden';
     showContent(content);
     setActiveOption(optionIndex);
