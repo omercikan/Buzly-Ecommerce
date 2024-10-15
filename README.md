@@ -50,37 +50,39 @@
 
 <h1>Uygulama Görselleri</h1>
 
-	Ana sayfa (Giriş ekranı)
-![home](https://res.cloudinary.com/omercikan/image/upload/v1728759408/1_aqcoay.png)
+	Ana Sayfa (Giriş ekranı)
+![home](https://res.cloudinary.com/dwyvwkzap/image/upload/v1728992315/1_xqcbnk.png)
 
 	Kategoriler
-![Categories](https://res.cloudinary.com/omercikan/image/upload/v1728759402/2_j53uld.png)
+![Categories](https://res.cloudinary.com/dwyvwkzap/image/upload/v1728992312/2_huy3xf.png)
 
 	Favori ürünler'in gösterim alanı
-![products](https://res.cloudinary.com/omercikan/image/upload/v1728759405/3_tgxifb.png)
+![products](https://res.cloudinary.com/dwyvwkzap/image/upload/v1728992316/3_tkhlj2.png)
 
 	Çoklu Kampanya alanları
-![campaign](https://res.cloudinary.com/omercikan/image/upload/v1728759426/4_ue6ubs.png)
+![campaign](https://res.cloudinary.com/dwyvwkzap/image/upload/v1728992335/4_ga7ci8.png)
 
 	Önerilen Blogların gösterimi
-![blogs](https://res.cloudinary.com/omercikan/image/upload/v1728759416/5_nnztwh.png)
+![blogs](https://res.cloudinary.com/dwyvwkzap/image/upload/v1728992332/5_sk2n5o.png)
 
-	Footer
-![footertop](https://res.cloudinary.com/omercikan/image/upload/v1728759419/6_k2id7f.png)
+	1-) Footer
+![footertop](https://res.cloudinary.com/dwyvwkzap/image/upload/v1728992322/6_bfrdox.png)
 
-	Footer
-![footerbottom](https://res.cloudinary.com/omercikan/image/upload/v1728759417/7_wgmsee.png)
+	2-) Footer
+![footerbottom](https://res.cloudinary.com/dwyvwkzap/image/upload/v1728992331/7_iazrsk.png)
 
 	İletişim sayfası
-![contact](https://res.cloudinary.com/omercikan/image/upload/v1728759418/8_qmcvuu.png)
+![contact](https://res.cloudinary.com/dwyvwkzap/image/upload/v1728992332/8_vgrjdh.png)
 
 	Beğenilen ürünlerin gösterimi
-![likes](https://res.cloudinary.com/omercikan/image/upload/v1728759403/12_txjuso.png)
+![likes](https://res.cloudinary.com/dwyvwkzap/image/upload/v1728992337/11_tosvz8.png)
 
 	Kullancı Giriş veya Üye olma alanları
-![account](https://res.cloudinary.com/omercikan/image/upload/v1728759422/9_fuvryo.png)
+![account](https://res.cloudinary.com/dwyvwkzap/image/upload/v1728992334/9_r4ntfi.png)
+<br>
 
 <strong>Canlı demo link:</stron> https://buzly-ecommerce.netlify.app/
+<br/> <hr/>
 
 <h2>Lisansa Dair</h2>
     <p>Bu proje <strong>MIT Lisansı</strong> ile lisanslanmıştır. Detaylar için <a href="LICENSE">Lisans dosyasını</a> kontrol edin.</p>
