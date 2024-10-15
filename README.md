@@ -47,6 +47,7 @@
 <h2>Geri Bildirim ve Geliştirme</h2>
 <p>Proje, kullanıcı geri bildirimleri doğrultusunda sürekli olarak geliştirilmeye devam edecektir. Kullanıcıların deneyimleri ve önerileri, uygulamanın daha iyi hale gelmesi için çok değerlidir. Gelecek güncellemelerde daha fazla özellik eklemeyi ve mevcut özellikleri iyileştirmeyi planlıyorum.</p>
 
+<hr/>
 
 <h1>Uygulama Görselleri</h1>
 
