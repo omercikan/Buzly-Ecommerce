@@ -1,0 +1,341 @@
+.address-template {
+    background: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5));
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease;
+
+    .address-wrapper {
+        background-color: #fff;
+        border-radius: 6px;
+        width: 520px;
+        height: 95%;
+        overflow-y: scroll;
+        scrollbar-width: thin;
+
+        .address-heading {
+            padding: 0px 20px;
+            border-bottom: 1px solid $stick;
+
+            h2 {
+                font-size: 18px;
+                color: #333333;
+                font-weight: 400;
+            }
+
+            button {
+                color: #999;
+                border: none;
+                background-color: transparent;
+                font-size: 28px;
+            }
+        }
+
+        .address-forms {
+            padding: 20px;
+
+            .address-items {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+
+                .input-group {
+                    height: max-content;
+
+                    div {
+                        font-size: 12px;
+                        font-weight: 500;
+                        display: none;
+                    }
+
+                }
+            }
+
+            .location-btn {
+                position: absolute;
+                right: 5px;
+                top: 50%;
+                border: none;
+                background-color: transparent;
+                font-size: 18px;
+            }
+            
+            input:not([type="checkbox"]),
+            select,
+            textarea {
+                background-image: none;
+                height: max-content;
+                width: 100%;
+                border-radius: 6px !important;
+                resize: none;
+                font-size: 14px;
+            }
+
+            input[type="number"] {
+                &::-webkit-inner-spin-button {
+                    display: none;
+                }
+            }
+
+            select {
+                &::-webkit-scrollbar {
+                    width: 5px;
+                    background-color: #fff;
+                }
+                
+                &::-webkit-scrollbar-thumb {
+                    border-radius: 6px;
+                    background-color: $blueBg;
+                }
+            }
+
+            label {
+                width: 100%;
+                font-size: 14px;
+                font-weight: 500;
+                color: #333333;
+                line-height: 30px;
+
+                span {
+                    color: $blueBg;
+                }
+            }
+
+            .address-single {
+                position: relative;
+
+                p {
+                    color: #333;
+                    font-size: 12px;
+                    font-weight: 400;
+                    margin-bottom: 8px !important;
+                }
+
+                div {
+                    display: none;
+                }
+            }
+
+            .select-invoice {
+
+                .invoice-buttons {
+                    position: relative;
+
+                    button {
+                        flex: 1;
+                        padding: 10px;
+                        font-size: 14px;
+                        border-radius: 6px;
+                        border: 2px solid transparent;
+                        border: 1px solid $stick;
+                        background-color: #faf9f9;
+                        cursor: pointer;
+
+                        &.selected {
+                            color: $blueBg;
+                            font-weight: 500;   
+                            background-color: #fff;
+                            border-radius: 6px 0 0 6px;
+                        }
+
+                        &:nth-child(1) {
+                            border-radius: 6px 0 0 6px;
+                            border-right: transparent;
+                        }
+
+                        &:nth-child(2) {
+                            border-radius: 0 6px 6px 0;
+                            border-left: transparent;
+                        }
+                    }
+    
+                    .selected-frame {
+                        border: 2px solid $blueBg;
+                        height: 100%;
+                        width: 50%;
+                        border-radius: 6px;
+                        position: absolute;
+                        left: 50%;
+                        top: 0;
+                        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.122538);
+                        cursor: pointer;
+                        transition: all .3s ease;
+                    }
+
+                    .selected-frame.selected {
+                        left: 0;
+                    }
+                }
+
+            }
+
+            .selected-mode-active-inputs {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                visibility: hidden;
+                opacity: 0;
+                height: 0px;
+                grid-template-rows: 0;
+
+                .checkbox-group {
+                    user-select: none;
+                    width: max-content;
+                    align-self: center;
+                    padding-top: 1rem;
+                    
+                    input,
+                    label {
+                        cursor: pointer;
+                    }
+                }
+
+                .input-group {
+                    height: max-content;
+
+                    label {
+                        height: max-content;
+                    }
+
+                    div {
+                        display: none;
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .selected-mode-active-inputs.active {
+                visibility: visible;
+                opacity: 1;
+                height: max-content;
+                grid-template-rows: 1fr;
+            }
+
+            .save-button button {
+                background-color: $blueBg;
+                padding: 10px;
+                border-radius: 6px;
+                color: #fff;
+                border: none;
+                font-size: 18px;
+                transition: all .3s ease;
+
+                &:hover {
+                    background-color: lighten($blueBg, 5%);
+                }
+            }
+        }
+    }
+}
+
+.address-template.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.address-message-container {
+    background-color: rgba(0,0,0, .5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease;
+
+    .address-message {
+        background-color: #fff;
+        border: .1px solid $stick;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: max-content;
+        padding: 30px 20px 20px;
+        text-align: center;
+        border-radius: 8px;
+        width: 460px;
+    
+        .close-address-message {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            width: max-content;
+        }
+    
+        .bi-check2 {
+            display: inline-block;
+            width: 84px;
+            height: 84px;
+            border-radius: 100%;
+            background-color: #dfffed;
+            color: #0bc15c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            font-size: 50px;
+            -webkit-text-stroke: 1px #0bc15c;
+            margin-bottom: 16px;
+        }
+    
+        p {
+            font-size: 22px;
+            font-weight: 500;
+        }
+    
+        span {
+            font-size: 16px;
+            color: #666;
+            display: inline-block;
+        }
+    
+        button {
+            border: none;
+            background-color: transparent;
+            display: block;
+            width: 100%;
+    
+            &:first-child {
+                font-size: 24px;
+                color: #999;
+            }
+    
+            &:last-child {
+                background-color: $blueBg;
+                color: #fff;
+                height: 48px;
+                border-radius: 6px;
+                font-weight: 600;
+                margin-top: 48px;
+                transition: all .3s ease;
+    
+                &:hover {
+                    background-color: lighten($blueBg, 5%);
+                }
+            }
+        }
+    }
+}
+
+.address-message-container.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+@media(max-width: 576px) {
+    .address-wrapper {
+        width: 97% !important;
+    }
+}

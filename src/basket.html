@@ -53,7 +53,7 @@
   <!-- !General Title of All Pages -->
   <header class="main-header">
     <div class="global-notification">
-      <p>Tüm Mayolarda %50 İndirim ve Ücretsiz Ekspres Uluslararası Teslimat! <strong><a href="shop.html">Şimdi Alışveriş Yapın!</a></strong></p>
+      <p>Tüm Elektronik Ürünlerde %20 İndirim! <strong><a href="shop.html">Şimdi Alışveriş Yapın!</a></strong></p>
     </div>
 
     <div class="main-header__row">
@@ -189,25 +189,7 @@
         </div>
 
         <div class="result-show" id="searchModalResults">
-          <!-- <a href="#" class="result-item">
-            <img src="img/products/product1/1.webp" alt=""> 
-  
-            <div class="result-item__info">
-              <h4>Erkek Polo Tişört Siyah</h4>
-              <span class="search-code">Stok Kodu: PD0020</span>
-              <span class="search-price">549,99 TL</span>
-            </div>
-          </a>
-
-          <a href="#" class="result-item">
-            <img src="img/products/product1/2.webp" alt="">
-  
-            <div class="result-item__info">
-              <h4>Erkek Polo Tişört Siyah</h4>
-              <span class="search-code">Stok Kodu: PD0020</span>
-              <span class="search-price">549,99 TL</span>
-            </div>
-          </a> -->
+        
         </div>
 
         <div class="modal-empty-message text-center py-3 border border-top-0 text-capitalize">
@@ -361,7 +343,7 @@
                                     Hızlı Kargo: 15,00 TL
                                     <input type="checkbox" id="cargoCheckbox">
                                 </label>
-                                <a href="#" class="d-block">Adresi Değiştir</a>
+                                <a href="#" class="d-block" id="changeAddressText">Adresi Değiştir</a>
                             </div>
                         </li>
 
@@ -385,32 +367,36 @@
   <section class="address-template">
     <div class="address-wrapper">
       <header class="address-heading d-flex align-items-center justify-content-between">
-        <h2>Adresi Düzenle</h2>
-        <button type="button"><i class="bi bi-x"></i></button>
+        <h2 class="m-0">Adresi Düzenle</h2>
+        <button type="button" id="closeChangeAddress"><i class="bi bi-x"></i></button>
       </header>
 
       <div class="address-forms">
-        <form id="addressForm">
+        <form id="addressForm" novalidate>
             <div class="address-group">
-              <div class="address-items">
+              <div class="address-items mb-3">
                 <div class="input-group">
                   <label>Ad <span class="star">*</span></label>
-                  <input type="text">
+                  <input type="text" class="global-input address-input" id="nameInput">
+                  <div>Lütfen adınızı giriniz</div>
                 </div>
 
                 <div class="input-group">
                   <label>Soyad <span class="star">*</span></label>
-                  <input type="text">
+                  <input type="text" class="global-input address-input" id="surnameInput">
+                  <div>Lütfen soyadınızı giriniz</div>
                 </div>
 
                 <div class="input-group">
                   <label>Telefon <span class="star">*</span></label>
-                  <input type="text">
+                  <input type="number" class="global-input address-input" id="phoneInput">
+                  <div>Lütfen geçerli bir telefon numarası giriniz</div>
                 </div>
 
                 <div class="input-group">
                   <label>İl <span class="star">*</span></label>
-                  <select id="provinces">
+                  <select id="provinces" class="global-input address-input" style="cursor: pointer; background-image: none; appearance: auto;">
+                    <option value="" disabled selected>Seçiniz</option>
                     <option value="Adana">Adana</option>
                     <option value="Adıyaman">Adıyaman</option>
                     <option value="Afyonkarahisar">Afyonkarahisar</option>
@@ -493,24 +479,88 @@
                     <option value="Yozgat">Yozgat</option>
                     <option value="Zonguldak">Zonguldak</option>
                   </select>
+                  <div>Lütfen bir il seçiniz</div>
+                </div>
+
+                <div class="input-group">
+                  <label>İlçe <span class="star">*</span></label>
+                  <input type="text" class="global-input address-input" id="districtInput">
+                  <div>Lütfen bir ilçe giriniz</div>
+                </div>
+
+                <div class="input-group">
+                  <label>Mahalle <span class="star">*</span></label>
+                  <input type="text" class="global-input address-input" id="neighbourhoodInput">
+                  <div>Lütfen bir mahalle giriniz</div>
                 </div>
               </div>
 
-              <div class="address-single">
+              <div class="address-single mb-3">
                 <label>Adres <span>*</span></label>
                 <p>Lütfen kargonuzun sorunsuz bir şekilde teslim edilebilmesi için mahalle, cadde, sokak, bina ve daire gibi adres bilgilerinizi eksiksiz ve doğru bir şekilde girdiğinizden emin olun.</p> 
-                <textarea id="addressArea"></textarea>
+                <textarea id="addressArea" class="global-input address-input pe-5" rows="3"></textarea>
+                <div>Lütfen adres bilgilerinizi giriniz</div>
+                <button type="button" class="location-btn"><i class="bi bi-geo-alt"></i></button>
               </div>
 
               <div class="address-single">
                 <label>Adres Başlığı <span>*</span></label>
-                <input type="text" id="addressHeadingInput">
+                <input type="text" id="addressHeadingInput" class="global-input address-input">
+                <div>Lütfen adres başlığı giriniz</div>
+              </div>
+
+              <div class="select-invoice my-3">
+                <label>Fatura Türü <span>*</span></label>
+                
+                <div class="invoice-buttons d-flex align-items-center">
+                  <button type="button" class="individual-btn selected">Bireysel</button>
+                  <button type="button" class="institutional-btn">Kurumsal</button>
+                  <span class="selected-frame selected"></span>
+                </div>
+              </div>
+
+              <div class="selected-mode-active-inputs">
+                <div class="input-group">
+                  <label>VKN <span>*</span></label>
+                  <input type="text" placeholder="VKN Giriniz" class="global-input commercial-input">
+                  <div>VKN 10 - 11 karakter içermelidir</div>
+                </div>
+
+                <div class="input-group">
+                    <label>Vergi Dairesi <span>*</span></label>
+                    <input type="text" placeholder="Vergi Dairesi Giriniz" class="global-input commercial-input">
+                    <div>5 - 100 karakter içermelidir</div>
+                </div>
+                
+                <div class="input-group">
+                    <label>Firma Adı <span>*</span></label>
+                    <input type="text" placeholder="Firma Adı Giriniz" class="global-input commercial-input">
+                    <div>5 - 100 karakter içermelidir</div> 
+                </div>
+
+                <div class="input-group d-flex align-items-center gap-2 checkbox-group">
+                  <input type="checkbox" class="global-checkbox rounded rounded-1" id="invoice">
+                  <label class="w-auto" for="invoice">E-fatura mükellefiyim</label>
+                </div>
+              </div>
+
+              <div class="save-button mt-3">
+                <button type="submit" class="w-100">Kaydet</button>
               </div>
             </div>
         </form>
       </div>
-    </div>
   </section>
+
+  <div class="address-message-container">
+    <div class="address-message">
+        <button type="button" class="close-address-message"><i class="bi bi-x"></i></button>
+        <i class="bi bi-check2"></i>
+        <p>ADRESİNİZ EKLENDİ</p>
+        <span>İşleminiz başarıyla gerçekleştirildi</span>
+        <button type="button">Tamam</button>
+    </div>
+  </div>
 
   <!-- !Basket Page load animation -->
   <div class="spinner">
@@ -526,7 +576,7 @@
             <i class="bi bi-truck"></i>
             <div class="policy-text">
               <strong>Ücretsiz Gönderim</strong>
-              <span class="d-block">Sadece 39,99 TL</span>
+              <span class="d-block">Sadece 49,90 TL</span>
             </div>
           </li>
 
@@ -698,6 +748,7 @@
   <!--* End of Tawk.to Script *-->
 
   <!--? Custom Js -->
+  <script src="js/components/address-form.js"></script>
   <script src="js/cartOperations.js" type="module"></script>
   <script src="js/pages/basket.js" type="module"></script>
   <script src="js/search-modal.js" type="module"></script>
