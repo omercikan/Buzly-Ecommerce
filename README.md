@@ -80,6 +80,10 @@
 
 	Kullancı Giriş veya Üye olma alanları
 ![account](https://res.cloudinary.com/dwyvwkzap/image/upload/v1728992334/9_r4ntfi.png)
+
+	Sipariş ödeme sayfası
+![payment](https://res.cloudinary.com/dwyvwkzap/image/upload/v1729873349/Paragraf_metniniz_12_ygm4fq.png)
+
 <br>
 
 <strong>Canlı demo link:</stron> https://buzly-ecommerce.netlify.app/
