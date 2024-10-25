@@ -1641,8 +1641,8 @@
                 "gender": "Kadın",
                 "category": "Crop",
                 "price": {
-                    "oldPrice": "549.99",
-                    "newPrice": "389.99"
+                    "oldPrice": 549.99,
+                    "newPrice": 389.99
                 },
                 "discount": 23,
                 "vote": 4.6,
@@ -1679,8 +1679,8 @@
                 "gender": "Kadın",
                 "category": "Tshirt",
                 "price": {
-                    "oldPrice": "299.99",
-                    "newPrice": "199.49"
+                    "oldPrice": 299.99,
+                    "newPrice": 199.49
                 },
                 "discount": 20,
                 "vote": 4.7,

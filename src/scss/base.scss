@@ -11,7 +11,7 @@
 }
 
 html {  
-    overflow-x: hidden !important;
+    overflow-x: hidden;
 }
 
 a {
@@ -52,9 +52,10 @@ p {
     height: 18px;
     border: 2px solid $stick;
     position: relative;
+    cursor: pointer;
 
     &:checked {
-        border-color: $blueBg ;
+        border-color: $blueBg !important;
     }
 
     &:checked::after {
@@ -78,7 +79,7 @@ p {
         visibility: hidden;
         scale: .9;
         opacity: 0;
-        transition: all .3s ease;
+        transition: opacity .3s ease;
     }
 }
 //!----Base-Css-End----!//

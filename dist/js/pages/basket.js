@@ -135,17 +135,6 @@ applyCouponBtn.addEventListener('click', () => {
         errorCode(couponCodeInput, 'Geçersiz kod!');
     }
 });
-/*const cargoCheckbox = document.getElementById('cargoCheckbox') as HTMLInputElement;
-cargoCheckbox.addEventListener('click', () => {
-    const totalPrice = document.getElementById('totalPrice');
-    const currentPrice = parseInt(totalPrice.textContent);
-    let priceFastCargo = 15;
-    if(cargoCheckbox.checked) {
-        totalPrice.textContent = `${currentPrice + priceFastCargo} TL`
-    } else {
-        totalPrice.textContent = `${currentPrice - priceFastCargo} TL`
-    }
-});*/
 const cartCount = document.querySelector('.cart-count');
 cartCount.innerHTML = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')).length : "0";
 const cargoStatus = () => {
@@ -171,5 +160,17 @@ const cargoStatus = () => {
     }
 };
 cargoStatus();
+const confirmBasketBtn = document.getElementById('confirmBasketBtn');
+const confirmBasketFunc = () => {
+    if (cart.length > 0) {
+        confirmBasketBtn.addEventListener('click', () => {
+            window.location.href = 'payment.html';
+        });
+    }
+};
+confirmBasketFunc();
+document.querySelector('#updateBasketButton').addEventListener('click', () => {
+    window.location.reload();
+});
 export {};
 //# sourceMappingURL=basket.js.map

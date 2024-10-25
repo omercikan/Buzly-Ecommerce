@@ -1,0 +1,98 @@
+.order-summary-card {
+    flex: 1;
+    padding-top: 2rem;
+    height: max-content;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid $stick;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 2rem;
+    position: sticky;
+    top: 30px;
+
+    .summary-title {
+        color: #333;
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+
+    p {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    span {
+        color: #333;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    li .summary-all-price {
+        border-top: 1px solid $stick;
+        margin-top: .5rem !important;
+        padding-top: .2rem !important;
+        padding: 1rem 0 !important;
+    }
+
+    .order-summary-discount,
+    .summary-cargo-area {
+
+        strong {
+            font-weight: 600;
+        }
+
+        span {
+            font-weight: 500;
+            font-size: 11px;
+            color: #008a09;
+        }
+    }
+
+    .summary-cargo-area {
+        border-top: 1px solid $stick;
+        padding-top: .3rem;
+        display: none;
+    }
+
+    .summary-cargo-field {
+        display: none;
+    }
+
+    .summary-discount-field {
+        display: none;
+
+        p {
+            font-size: 12px;
+            color: #008a09;
+        }
+    }
+
+    button {
+        background-color: $blueBg;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        width: 100%;
+        padding: 8px;
+        font-size: 18px;
+        transition: all .3s ease;
+        margin-top: 16px;
+
+        &:hover {
+            background-color: darken($blueBg, 5%);
+        }
+    }
+
+    button.disabled-button {
+        cursor: not-allowed;
+        background-color: #999;
+    }
+}
+
+@media(max-width: 992px) {
+    .order-summary-card {
+        top: 0px;
+    }
+}

@@ -1,0 +1,62 @@
+.payment-tabs {
+
+    section {
+
+        div {
+            flex: 1;
+            border: 2px solid $stick;
+            padding: 18px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all .3s ease;
+            position: relative;
+
+            &.active {
+                border-color: $blueBg;
+            }
+
+            &.active i {
+                display: grid;
+            }
+            
+            &:hover {
+                background-color: #fdfdfd;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            span {
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 13px;
+            }
+
+            i {
+                position: absolute;
+                right: -15px;
+                top: -25px;
+                font-size: 24px;
+                color: #fff;
+                background-color: $blueBg;
+                border-radius: 100%;
+                width: 40px;
+                height: 40px;
+                display: grid;
+                place-items: center;
+                -webkit-text-stroke: 1px #fff;
+                display: none;
+            }
+        }
+    }
+}  
+
+@media(max-width: 768px) {
+    .payment-tabs > section {
+        flex-direction: column;
+    }
+}

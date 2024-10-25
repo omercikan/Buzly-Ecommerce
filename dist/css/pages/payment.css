@@ -1,0 +1,1 @@
+.payment-container>.container{display:flex;gap:2rem}.payment-container>.container .payment-wrapper{overflow:auto;padding:2rem .9rem 0 0;flex:4}@media (max-width: 992px){.payment-container>.container{flex-direction:column-reverse}}

@@ -1,0 +1,31 @@
+.payment-header {
+    padding: 40px;
+
+    .brand {
+        font-size: 46px;
+        font-weight: 500;
+    }
+
+    .security-payment {
+
+        i {
+            font-size: 22px;
+            -webkit-text-stroke: 1px #439e4a;
+        }
+
+        color: #439e4a;
+        font-size: 16px;
+        font-weight: 600;
+        -webkit-text-stroke: .2px #439e4a;
+    }
+}
+
+@media(max-width: 430px) {
+    .payment-header {
+        padding-top: 30px;
+    }
+
+    .payment-header > .container {
+        flex-direction: column;
+    }
+}

@@ -1,3 +1,5 @@
+import updateAddressDOM from "./payments/addressForm.js";
+
 //? Invoice buttons html elements and focus active mode / START ?//
 const invoiceButtons = document.querySelectorAll<HTMLButtonElement>('.invoice-buttons button');
 const framer = document.querySelector<HTMLSpanElement>('.selected-frame');
@@ -22,11 +24,12 @@ for(let button of invoiceButtons) {
 //? Invoice buttons html elements and focus active mode / END ?//
 
 //? Change address text click show the address form template / START ?//
-document.getElementById('changeAddressText').addEventListener('click', (e) => {
+const changeAddressText = document.getElementById('changeAddressText') as HTMLElement;
+changeAddressText ? changeAddressText.addEventListener('click', (e) => {
     e.preventDefault();
     document.querySelector<HTMLDivElement>('.address-template').classList.add('open')
     document.querySelector('html').style.overflow = 'hidden'
-})
+}) : ''
 //? Change address text click show the address form template / END ?//
 
 //? Change address text click close the address form template / START ?//
@@ -44,7 +47,7 @@ addressForm.addEventListener('submit', (e: Event): undefined => {
     e.preventDefault();
     const validateAll = controlAllInput([allAddressInputs])
     const validePhone = controlPhoneInput(document.getElementById('phoneInput') as HTMLInputElement, 10);
-    const valideLength = controlLength([document.getElementById('nameInput'), document.getElementById('surnameInput')], 3)
+    controlLength([document.getElementById('nameInput'), document.getElementById('surnameInput')], 3)
 
     let commercialInputsValid: boolean = true;
 
@@ -63,12 +66,41 @@ addressForm.addEventListener('submit', (e: Event): undefined => {
             });
         });
 
+        const nameValue = document.querySelector<HTMLInputElement>('#nameInput').value;
+        const surnameValue = document.querySelector<HTMLInputElement>('#surnameInput').value;
+        const phoneValue = document.querySelector<HTMLInputElement>('#phoneInput').value;
+        const addressValue = document.querySelector<HTMLInputElement>('#addressArea').value;
+        const addressHeadingValue = document.querySelector<HTMLInputElement>('#addressHeadingInput').value;
+
+        interface User {
+            id: number;
+            name: string;
+            surname: string;
+            phone: string | number;
+            address: string;
+            heading: string;
+        }
+
+        const userData: User = {
+            "id": 0,
+            "name": nameValue,
+            "surname": surnameValue,
+            "phone": phoneValue,
+            "address": addressValue,
+            "heading": addressHeadingValue
+        }        
+
+        localStorage.setItem('userData', JSON.stringify(userData));
+        updateAddressDOM(userData)
+
         allAddressInputs.forEach((input: HTMLInputElement) => {
             input.value = '';
             input.className = 'global-input';
         })
+
+        
     } else {
-        document.querySelector('.address-message-container').classList.remove('active');
+        document.querySelector('.address-message-container')?.classList.remove('active');
         document.querySelector<HTMLDivElement>('.address-template').classList.add('open');
         document.querySelector('html').style.overflow = 'visible';
     }

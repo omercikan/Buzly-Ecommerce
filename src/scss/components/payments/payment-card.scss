@@ -1,0 +1,307 @@
+.payment-card-container {
+    display: none;
+
+    .payment-card-wrapper {
+        max-width: 607px;
+        background-color: #f9f9f9;
+        padding: 16px;
+        border-radius: 4px;
+        border: 1px solid $stick;
+    
+        .card-header h2 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    
+        .card-img-list {
+            overflow-x: auto;
+            scrollbar-width: thin;
+            
+            ul {
+                width: max-content;
+                padding: 1rem 0 !important;
+    
+                li {
+                    cursor: pointer;
+                    position: relative;
+        
+                    &.active img {
+                        border-color: $blueBg;
+                        box-shadow: 0 0 5px 0px $blueBg;
+                    }
+        
+                    &.active i {
+                        display: grid;
+                    }
+        
+                    i {
+                        background-color: $blueBg;
+                        color: #fff;
+                        border-radius: 100%;
+                        width: 20px;
+                        height: 20px;
+                        padding: 8px;
+                        display: inline-block;
+                        display: grid;
+                        place-content: center;
+                        font-size: 13px;
+                        position: absolute;
+                        right: -8px;
+                        top: -8px;
+                        -webkit-text-stroke: .3px #fff;
+                        box-shadow: 0 0 5px 0px $blueBg;
+                        display: none;
+                    }
+        
+                    img {
+                        width: 100%;
+                        height: 45px;
+                        border: 2px solid $stick;
+                        border-radius: 6px;
+                        transition: all .3s ease;
+                        object-fit: cover;
+        
+                        &:hover {
+                            border-color: $blueBg;
+                            box-shadow: 0 0 5px 0px $blueBg;
+                        }
+                    }
+                }
+            }
+    
+        }
+    
+        .card-form {
+    
+            label {
+                color: #333;
+                font-size: 14px;
+                line-height: 31px;
+            }
+    
+            input,
+            select {
+                padding-left: 8px;
+                transition: all .3s ease;
+                border-color: $stick;
+                
+                &:focus:not([type="checkbox"]) {
+                    box-shadow: inset 20px 0px 0px -15px $blueBg;
+                }
+    
+                &::-webkit-inner-spin-button {
+                    display: none;
+                }
+            }
+    
+            select {
+                cursor: pointer;
+            }
+    
+            .card-owner {
+                width: 100%;
+            }
+    
+            .security-form > label {
+                cursor: pointer;
+                user-select: none;
+    
+                strong {
+                    font-weight: 600;
+                }
+            }
+    
+            .cvv-top {
+                position: relative;
+                width: max-content;
+    
+                .bi-info-circle {
+                    color: $blueBg;
+                    -webkit-text-stroke: .5px $blueBg;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+    
+                &:hover .card-info-hover{
+                    opacity: 1;
+                    visibility: visible;
+                    top: -100%;
+                }
+    
+                .card-info-hover {
+                    background-color: #fff;
+                    padding: 11px 10px 11px 16px;
+                    border-radius: 6px;
+                    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18);
+                    border: 1px solid $stick;
+                    position: absolute;
+                    right: 0;
+                    top: -60%;
+                    transform: translateY(-60%);
+                    width: 259px;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all .6s ease-in-out;
+    
+                    i {
+                        color: $blueBg;
+                        font-size: 18px;
+                        -webkit-text-stroke: .2px $blueBg;
+                    }
+    
+                    span {
+                        font-size: 12px;
+                        font-weight: 600;
+                    }
+    
+                    p {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+
+    .payment-agreement-wrapper {
+        background-color: #fff;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
+        padding: 20px;
+        border-radius: 6px;
+        border: 1px solid $stick;
+        margin-top: 20px;
+
+        .agreement-header {
+            font-size: 22px;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .contract-title,
+        .information-title,
+        .sales-title {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .agreement-contracts,
+        .agreement-information,
+        .agreement-sales {
+
+            .contracts-body,
+            .information-body,
+            .sales-body {
+                background-color: #fafafa;
+                color: #999;
+                padding: 20px;
+                padding-left: 80px;
+                border-radius: 6px;
+                
+                .contracts-texts,
+                .information-texts,
+                .sales-texts {
+                    height: 160px;
+                    overflow: auto;
+                    padding-right: 5px;
+
+                    &::-webkit-scrollbar {
+                        background-color: #999;
+                        width: 7px;
+                        border-radius: 8px;
+                    }
+    
+                    &::-webkit-scrollbar-thumb {
+                        background-color: #555;
+                        border-radius: 8px;
+                    }
+                }
+
+                h1,
+                h2,
+                h3 {
+                    font-size: 14px;
+                    margin-top: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+
+                h2:first-child {
+                    margin-bottom: 1rem;
+                }
+
+                strong {
+                    font-weight: 500;
+                }
+
+                ol {
+                    
+                    li {
+                        font-size: 14px;
+                        list-style-type: decimal;
+
+                    }
+                }
+
+                ul {
+                    padding: 0 20px !important;
+
+                    li {
+                        list-style: disc !important;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.payment-card-container.active {
+    display: block;
+}
+
+@media(max-width: 768px) {
+    .contracts-body,
+    .information-body,
+    .sales-body {
+        background-color: #fafafa;
+        color: #999;
+        padding: 20px;
+        padding-left: 20px !important;
+    }
+}
+
+@media(max-width: 400px) {
+    .card-info-hover {
+        top: -270% !important;
+        left: -50% !important;
+        transform: translateX(-50%) !important;
+    }
+}
+
+@media(max-width: 375px) {
+    .card-info-hover {
+        left: 50% !important;
+        transform: translateX(-9.5%) !important;
+    }
+}
+
+@media(max-width: 375px) {
+    .card-time {
+        gap: 8px;
+        flex-direction: column;
+
+        select {
+            width: 100% !important;
+
+            &:last-child {
+                margin-top: 8px;
+            }
+        }
+
+        input {
+            width: 100%;
+        }
+    }
+}

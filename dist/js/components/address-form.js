@@ -7,6 +7,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+import updateAddressDOM from "./payments/addressForm.js";
 //? Invoice buttons html elements and focus active mode / START ?//
 const invoiceButtons = document.querySelectorAll('.invoice-buttons button');
 const framer = document.querySelector('.selected-frame');
@@ -28,11 +29,12 @@ for (let button of invoiceButtons) {
 }
 //? Invoice buttons html elements and focus active mode / END ?//
 //? Change address text click show the address form template / START ?//
-document.getElementById('changeAddressText').addEventListener('click', (e) => {
+const changeAddressText = document.getElementById('changeAddressText');
+changeAddressText ? changeAddressText.addEventListener('click', (e) => {
     e.preventDefault();
     document.querySelector('.address-template').classList.add('open');
     document.querySelector('html').style.overflow = 'hidden';
-});
+}) : '';
 //? Change address text click show the address form template / END ?//
 //? Change address text click close the address form template / START ?//
 document.getElementById('closeChangeAddress').addEventListener('click', () => {
@@ -44,10 +46,11 @@ document.getElementById('closeChangeAddress').addEventListener('click', () => {
 const addressForm = document.getElementById('addressForm');
 const allAddressInputs = document.querySelectorAll('.address-input');
 addressForm.addEventListener('submit', (e) => {
+    var _a;
     e.preventDefault();
     const validateAll = controlAllInput([allAddressInputs]);
     const validePhone = controlPhoneInput(document.getElementById('phoneInput'), 10);
-    const valideLength = controlLength([document.getElementById('nameInput'), document.getElementById('surnameInput')], 3);
+    controlLength([document.getElementById('nameInput'), document.getElementById('surnameInput')], 3);
     let commercialInputsValid = true;
     if (selectedModeInputs && selectedModeInputs.classList.contains('active')) {
         commercialInputsValid = controlCommercialForm([document.querySelectorAll('.commercial-input')]);
@@ -61,13 +64,28 @@ addressForm.addEventListener('submit', (e) => {
                 document.querySelector('.address-message-container').classList.remove('active');
             });
         });
+        const nameValue = document.querySelector('#nameInput').value;
+        const surnameValue = document.querySelector('#surnameInput').value;
+        const phoneValue = document.querySelector('#phoneInput').value;
+        const addressValue = document.querySelector('#addressArea').value;
+        const addressHeadingValue = document.querySelector('#addressHeadingInput').value;
+        const userData = {
+            "id": 0,
+            "name": nameValue,
+            "surname": surnameValue,
+            "phone": phoneValue,
+            "address": addressValue,
+            "heading": addressHeadingValue
+        };
+        localStorage.setItem('userData', JSON.stringify(userData));
+        updateAddressDOM(userData);
         allAddressInputs.forEach((input) => {
             input.value = '';
             input.className = 'global-input';
         });
     }
     else {
-        document.querySelector('.address-message-container').classList.remove('active');
+        (_a = document.querySelector('.address-message-container')) === null || _a === void 0 ? void 0 : _a.classList.remove('active');
         document.querySelector('.address-template').classList.add('open');
         document.querySelector('html').style.overflow = 'visible';
     }

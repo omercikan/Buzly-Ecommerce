@@ -165,18 +165,6 @@ applyCouponBtn.addEventListener('click', () => {
     }
 });
 
-/*const cargoCheckbox = document.getElementById('cargoCheckbox') as HTMLInputElement;
-cargoCheckbox.addEventListener('click', () => {
-    const totalPrice = document.getElementById('totalPrice');
-    const currentPrice = parseInt(totalPrice.textContent);
-    let priceFastCargo = 15;
-    if(cargoCheckbox.checked) {
-        totalPrice.textContent = `${currentPrice + priceFastCargo} TL`
-    } else {
-        totalPrice.textContent = `${currentPrice - priceFastCargo} TL`
-    }
-});*/
-
 const cartCount = document.querySelector<HTMLSpanElement>('.cart-count');
 
 cartCount.innerHTML = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')).length : "0";
@@ -203,3 +191,18 @@ const cargoStatus = () => {
     }
 }  
 cargoStatus();
+
+const confirmBasketBtn = document.getElementById('confirmBasketBtn') as HTMLButtonElement;
+const confirmBasketFunc = () => {
+    if(cart.length > 0) {
+        confirmBasketBtn.addEventListener('click', () => {
+            window.location.href = 'payment.html'
+        })
+    }
+}
+
+confirmBasketFunc();
+
+document.querySelector<HTMLButtonElement>('#updateBasketButton').addEventListener('click', () => {
+    window.location.reload();
+})

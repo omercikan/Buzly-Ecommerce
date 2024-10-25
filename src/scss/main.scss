@@ -4,6 +4,7 @@
 //! Layout Scss !//
 @import 'layout/header.scss';
 @import 'layout/footer.scss';
+@import 'layout/payment-footer.scss';
 
 //! Components Scss !// 
 @import 'components/modal-search.scss'; 
@@ -22,6 +23,14 @@
 @import 'components/product-details/product-tab.scss';
 @import 'components/product-details/reviews.scss';
 @import 'components/address-form.scss';
+//! Componenets Scss__Payment Documents
+@import 'components/payments/payment-tabs.scss';  
+@import 'components/payments/payment-list.scss';  
+@import 'components/payments/payment-address.scss';  
+@import 'components/payments/payment-card.scss'; 
+@import 'components/payments/loader.scss'; 
+@import 'components/payments/summary-card.scss';
+@import 'components/payments/warning.scss';
  
 //! Vendors Scss !// 
 @import 'vendors/bootstrap.scss';
@@ -33,4 +42,5 @@
 @import 'pages/basket.scss';
 @import 'pages/blog-detail.scss';
 @import 'pages/likes.scss';
-@import 'pages/category.scss'
+@import 'pages/category.scss';
+@import 'pages/payment.scss';

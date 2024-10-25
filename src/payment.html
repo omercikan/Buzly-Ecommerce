@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+  <!-- 🌟 MADE BY ÖMER ÇIKAN 🌟 -->
+
+  <!-- !Meta Tag List -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Buzzly, moda ve teknoloji ürünlerinde uygun fiyatlar, hızlı teslimat ve kaliteli hizmet sunan e-ticaret sitesi.">
+  <!-- <meta name="keywords" content="e-ticaret, moda, teknoloji, elektronik, kıyafetler, aksesuvarlar, online alışveriş, hızlı teslimat, kaliteli ürünler"> -->
+  <meta name="author" content="Buzzly">
+  <link rel="canonical" href="https://buzzly.com">
+  <!-- !Css Document -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- !Glide Css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css" integrity="sha512-tYKqO78H3mRRCHa75fms1gBvGlANz0JxjN6fVrMBvWL+vOOy200npwJ69OBl9XEsTu3yVUvZNrdWFIIrIf8FLg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+  <!-- !Home Page Title -->
+  <title>Buzly | Moda ve Teknoloji Ürünleri - En İyi Fiyatlar</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Buzzly - En Yeni Moda ve Teknoloji Ürünleri">
+  <meta property="og:description" content="Buzzly, en yeni moda ve teknoloji ürünlerini en uygun fiyatlarla sunan e-ticaret sitesidir. Kaliteli ürünler, hızlı teslimat ve mükemmel müşteri hizmeti burada.">
+  <meta property="og:image" content="https://www.buzzly.com/images/og-image.jpg">
+  <meta property="og:url" content="https://www.buzzly.com">
+  <meta property="og:type" content="website">
+  <!-- !X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Buzzly - En Yeni Moda ve Teknoloji Ürünleri">
+  <meta name="twitter:description" content="Buzzly, en yeni moda ve teknoloji ürünlerini en uygun fiyatlarla sunan e-ticaret sitesidir. Kaliteli ürünler, hızlı teslimat ve mükemmel müşteri hizmeti burada.">
+  <meta name="twitter:image" content="https://www.buzzly.com/images/twitter-card.jpg">
+  <meta name="twitter:url" content="https://www.buzzly.com">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "Buzzly",
+      "url": "https://www.buzzly.com",
+      "description": "Buzzly, en yeni moda ve teknoloji ürünlerini sunan bir e-ticaret sitesidir.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.buzzly.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "sameAs": [
+        "https://www.facebook.com/buzzly",
+        "https://x.com/buzzly"
+      ]
+    }
+  </script>
+</head>
+<body id="home">  
+
+  <!-- !Payment Header -->
+  <header class="payment-header">
+    <div class="container d-flex align-items-center justify-content-between">
+        <div class="brand">
+            <a href="basket.html">Buzly</a>
+        </div>
+
+        <div class="security-payment d-flex align-items-center gap-2">
+            <i class="bi bi-shield-check"></i>
+            <span>Güvenli Alışveriş</span>
+        </div>
+    </div>
+  </header>
+
+  <main class="payment-container">
+    <div class="container">
+      <div class="payment-wrapper">
+          <div class="payment-tabs">
+              <section class="payment-section d-flex gap-4">
+                  <div class="p-address-tab active">
+                      <i class="bi bi-check2"></i>
+                      <h2>Adres Bilgileri</h2>
+                      <span>Evim</span>
+                      <p>Aşağı Dudullu Mahallesi, Cami Caddesi, 34773 Ümraniye İstanbul</p>
+                  </div>
+
+                  <div class="p-payment-tab">
+                      <i class="bi bi-check2"></i>
+                      <h2>Ödeme Seçenekleri</h2>
+                      <p>Ödemenizi güvenle tamamlayın! Banka veya kredi kartı ile hızlı ve güvenli ödeme yapabilirsiniz.</p>
+                  </div>
+              </section>
+          </div>
+
+          <div class="payment-list my-5">
+            <h4 class="payment-list-title">Sipariş Özeti (0)</h4>
+
+            <div class="payment-list-products">
+              <ul class="d-flex gap-2" id="paymentList">
+                
+              </ul>
+            </div>
+          </div>
+
+          <div class="payment-address-container active">
+            <header class="address-heading">
+              <div class="address-title">
+                <h4>Teslimat Adresi</h4>
+              </div>
+            </header>
+
+            <div class="payment-address-wrapper">
+              <div class="address-box gap-4">
+                <div class="add-address text-center">
+                  <i class="bi bi-plus-lg"></i>
+                  <span class="d-block">Yeni Adres Ekle</span>
+                </div>
+
+                <div class="type-address-list" id="selectAddressDOM">
+                  <div class="type-address">
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="type-address-list-container gap-4 mt-3" id="paymentAddressDOM">
+                <!-- <div class="type-address">
+                  <div class="type-header d-flex justify-content-between me-auto mb-2">
+                    <div class="type-radio">
+                      <i class="bi bi-circle radio-icon"></i>
+                      <span>Evim</span>
+                    </div>
+                    <span>Düzenle</span>
+                  </div>
+
+                  <div class="type-box">
+                    <div class="type-box-head">
+                      <div class="box-head-info">
+                        <div class="head-name">
+                          <i class="bi bi-person-fill"></i>
+                          <span>Ömer Çıkan</span>
+                        </div>
+
+                        <div class="head-phone">
+                          <i class="bi bi-phone"></i>
+                          <span>(551) *** ** 90</span>
+                        </div>
+                      </div>
+
+                      <div class="head-address">
+                        <p>
+                          Aşağı Dudullu Mahallesi, Cami Caddesi, 34773 Ümraniye İstanbul
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="type-address">
+                  <div class="type-header d-flex justify-content-between me-auto mb-2">
+                    <div class="type-radio">
+                      <i class="bi bi-circle radio-icon"></i>
+                      <span>Evim</span>
+                    </div>
+                    <span>Düzenle</span>
+                  </div>
+
+                  <div class="type-box">
+                    <div class="type-box-head">
+                      <div class="box-head-info">
+                        <div class="head-name">
+                          <i class="bi bi-person-fill"></i>
+                          <span>Ömer Çıkan</span>
+                        </div>
+
+                        <div class="head-phone">
+                          <i class="bi bi-phone"></i>
+                          <span>(551) *** ** 90</span>
+                        </div>
+                      </div>
+
+                      <div class="head-address">
+                        <p>
+                          Aşağı Dudullu Mahallesi, Cami Caddesi, 34773 Ümraniye İstanbul
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="type-address">
+                  <div class="type-header d-flex justify-content-between me-auto mb-2">
+                    <div class="type-radio">
+                      <i class="bi bi-circle radio-icon"></i>
+                      <span>Evim</span>
+                    </div>
+                    <span>Düzenle</span>
+                  </div>
+
+                  <div class="type-box">
+                    <div class="type-box-head">
+                      <div class="box-head-info">
+                        <div class="head-name">
+                          <i class="bi bi-person-fill"></i>
+                          <span>Ömer Çıkan</span>
+                        </div>
+
+                        <div class="head-phone">
+                          <i class="bi bi-phone"></i>
+                          <span>(551) *** ** 90</span>
+                        </div>
+                      </div>
+
+                      <div class="head-address">
+                        <p>
+                          Aşağı Dudullu Mahallesi, Cami Caddesi, 34773 Ümraniye İstanbul
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="type-address">
+                  <div class="type-header d-flex justify-content-between me-auto mb-2">
+                    <div class="type-radio">
+                      <i class="bi bi-circle radio-icon"></i>
+                      <span>Evim</span>
+                    </div>
+                    <span>Düzenle</span>
+                  </div>
+
+                  <div class="type-box">
+                    <div class="type-box-head">
+                      <div class="box-head-info">
+                        <div class="head-name">
+                          <i class="bi bi-person-fill"></i>
+                          <span>Ömer Çıkan</span>
+                        </div>
+
+                        <div class="head-phone">
+                          <i class="bi bi-phone"></i>
+                          <span>(551) *** ** 90</span>
+                        </div>
+                      </div>
+
+                      <div class="head-address">
+                        <p>
+                          Aşağı Dudullu Mahallesi, Cami Caddesi, 34773 Ümraniye İstanbul
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="payment-card-container">
+            <div class="payment-card-wrapper">
+              <header class="card-header">
+                <h4>Ödeme Yöntemi</h4>
+              </header>
+
+              <div class="card-img-list">
+                <ul class="d-flex gap-3 mt-5 card-lists">
+                  <li>
+                    <i class="bi bi-check2"></i>
+                    <img src="https://res.cloudinary.com/omercikan/image/upload/v1729202730/master-card_korytw.webp" alt="master card">
+                  </li>
+
+                  <li>
+                    <i class="bi bi-check2"></i>
+                    <img src="https://res.cloudinary.com/omercikan/image/upload/v1729202736/visa_jqo8kh.webp" alt="visa">
+                  </li>
+
+                  <li>
+                    <i class="bi bi-check2"></i>
+                    <img src="https://res.cloudinary.com/omercikan/image/upload/v1729202731/paypal_funroj.webp" alt="paypal">
+                  </li>
+
+                  <li>
+                    <i class="bi bi-check2"></i>
+                    <img src="https://res.cloudinary.com/omercikan/image/upload/v1729202736/wepay_fhaxlw.webp" alt="wepay">
+                  </li>
+
+                  <li>
+                    <i class="bi bi-check2"></i>
+                    <img src="https://res.cloudinary.com/omercikan/image/upload/v1729202730/maestro_uagtzw.webp" alt="maestro">
+                  </li>
+
+                  <li>
+                    <i class="bi bi-check2"></i>
+                    <img src="https://res.cloudinary.com/omercikan/image/upload/v1729202735/troy_j65ip0.webp" alt="troy">
+                  </li>
+
+                  <li>
+                    <i class="bi bi-check2"></i>
+                    <img src="https://res.cloudinary.com/omercikan/image/upload/v1729202734/skrill_ezzi3n.webp" alt="skrill">
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-form mt-4">
+                <form id="paymentForm">
+                  <div class="form-group">
+                    <label class="d-block">Kart Numarası</label>
+                    <input type="text" class="global-input rounded-2 card-owner payment-input" maxlength="16">
+                  </div>
+
+                  <div class="form-group mt-3">
+                    <div class="card-time d-flex justify-content-between">
+                      <div>
+                        <label class="d-block">Son Kullanma Tarihi</label>
+                        <select class="global-input rounded-2 payment-input">
+                          <option value="" disabled selected>Ay</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                        </select>
+
+                        <select class="global-input rounded-2 payment-input">
+                          <option value="" selected disabled>Yıl</option>
+                          <option value="2024">2024</option>
+                          <option value="2025">2025</option>
+                          <option value="2026">2026</option>
+                          <option value="2027">2027</option>
+                          <option value="2028">2028</option>
+                          <option value="2030">2030</option>
+                          <option value="2031">2031</option>
+                          <option value="2032">2032</option>
+                          <option value="2033">2033</option>
+                          <option value="2034">2034</option>
+                          <option value="2035">2035</option>
+                          <option value="2036">2036</option>
+                          <option value="2037">2037</option>
+                          <option value="2038">2038</option>
+                          <option value="2039">2039</option>
+                          <option value="2040">2040</option>
+                          <option value="2041">2041</option>
+                          <option value="2042">2042</option>
+                          <option value="2043">2043</option>
+                          <option value="2044">2044</option>
+                          <option value="2045">2045</option>
+                          <option value="2046">2046</option>
+                          <option value="2047">2047</option>
+                          <option value="2048">2048</option>
+                          <option value="2049">2049</option>
+                          <option value="2050">2050</option>
+                          <option value="2051">2051</option>
+                          <option value="2051">2051</option>
+                          <option value="2052">2052</option>
+                          <option value="2053">2053</option>
+                          <option value="2054">2054</option>
+                          <option value="2055">2055</option>
+                          <option value="2056">2056</option>
+                          <option value="2057">2057</option>
+                          <option value="2058">2058</option>
+                          <option value="2059">2059</option>
+                          <option value="2060">2060</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <div class="cvv-top d-flex align-items-center gap-2">
+                          <label>CVV</label>
+                          <i class="bi bi-info-circle"></i>
+
+                          <div class="card-info-hover">
+                            <div class="card-info-top d-flex align-items-center gap-2">
+                              <i class="bi bi-credit-card"></i>
+                              <span>GÜVENLİK KODU (CVV)</span>
+                            </div>
+
+                            <p>Kartınızın arka yüzündeki son 3 rakamı veya AMEX kartları için ön yüzündeki 4 rakamı giriniz.</p>
+                          </div>
+                        </div>
+                        <input type="number" class="global-input rounded-2 payment-input" id="cvvInput">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="security-form d-flex align-items-center gap-2 mt-3">
+                    <input type="checkbox" id="securityCheckbox" class="global-checkbox">
+                    <label for="securityCheckbox"><i class="bi bi-shield-fill-check"></i> <strong>3D Secure</strong> ile ödemek istiyorum</label>
+                  </div>
+                </form>
+              </div>
+            </div>
+            
+            <div class="payment-agreement-wrapper">
+              <header class="agreement-header">
+                <h4>Sözleşmeler ve Formlar</h4>
+              </header>
+
+              <div class="agreement-contracts">
+                <h5 class="contract-title">Cayma Hakkı</h5>
+
+                <div class="contracts-body">
+                  <div class="contracts-texts">
+                    <h2>Nasıl İade Ederim?</h2>
+                    <ol>
+                      <li><strong>Hesabım</strong> > <strong>Siparişlerim</strong> > <strong>Sipariş Detay</strong> adımlarını takip edin.</li>
+                      <li><strong>İade Kargo Kodu Oluştur</strong> butonuna tıklayın.</li>
+                      <li>İade edilecek ürün ve iade nedenini seçin. Aynı üründen birden fazla satın aldıysanız, iade edilecek ürün adedini de seçmeniz gerekir.</li>
+                      <li>İade etmek istediğiniz ürünlerin uygunluğuna göre size önerilen iade yöntemlerinden birini seçin.</li>
+                      <li>Birden fazla kargo seçeneği varsa, kargo tercihinizi yapın.</li>
+                      <li>Ekranda görünen iade kargo kodunu not alın. Bu koda <strong>Siparişlerim</strong> sayfasından da ulaşabilirsiniz.</li>
+                      <li>İade kodu aynı olan ürünleri faturasıyla beraber aynı pakete koyun ve paketin sağlam olduğundan emin olun.</li>
+                      <li>İade kodu farklı olan ürünler aynı kargoya verilse bile farklı paketler halinde gönderilmelidir.</li>
+                      <li>Seçtiğiniz iade yöntemine göre, 7 gün içinde paketinizi belirleyeceğiniz gel al noktası veya kargo şubesine teslim edin ya da randevu günü adresinize gelecek görevliye teslim edin.</li>
+                      <li>7 günü geçirdiğiniz durumda, yeniden iade kargo kodu almanız gerekecektir.</li>
+                    </ol>
+                    <h2>İade Koşulları:</h2>
+                    <ul>
+                      <li>Ürünün paketi hasar görmemiş ve kullanılmamış olmalıdır.</li>
+                      <li>Ürünün tüm aksesuarları ve orijinal kutusu ile birlikte iade edilmelidir.</li>
+                      <li>Aşağıdaki ürün gruplarının iadesi, ambalajları açılmamış, denenmemiş, bozulmamış ve kullanılmamış olmaları halinde kabul edilir:
+                        <ul>
+                          <li>Kozmetik ve kişisel bakım ürünleri (parfüm, epilatör, tıraş makinesi, kulaklık, iç giyim, mayo, bikini vb.)</li>
+                          <li>Kopyalanabilir yazılım ve programlar (DVD, VCD, CD vb.)</li>
+                          <li>Kitap ve kırtasiye malzemeleri (toner, kartuş, şerit vb.)</li>
+                        </ul>
+                      </li>
+                      <li>Tek kullanımlık ürünler ve hızlı bozulan, son kullanma tarihi geçme ihtimali olan ürünlerin iadesi kabul edilmemektedir.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="agreement-information my-4">
+                <h5 class="information-title">Buzly Ön Bilgilendirme Formu</h5>
+
+                <div class="information-body">
+                  <div class="information-texts">
+                    <h2>1. TARAFLAR VE KONU</h2>
+                    <p>İşbu Ön Bilgilendirme Formu’nun konusu, Alıcı ve Satıcı arasındaki Sözleşme’ye ilişkin Kanun ve Yönetmelik hükümleri uyarınca bilgilendirilmesidir. Ayrıca Yönetmelik uyarınca yer verilmesi zorunlu olan hususlar Ön Bilgilendirme Formu’nda yer almaktadır.</p>
+
+                    <p>ALICI, Ön Bilgilendirme Formu ve Sözleşme’ye ilişkin bilgileri üyeliğinin bağlı olduğu “Hesabım” sayfasından takip edebilecek olup değişen bilgilerini bu sayfa üstünden güncelleyebilecektir. Ön Bilgilendirme Formu ve Sözleşme’nin bir nüshası Alıcı’nın üyelik hesabında mevcuttur ve talep edilmesi halinde ayrıca elektronik posta ile de gönderilebilecektir.</p>
+
+                    <h2>2. TANIMLAR</h2>
+                    <p>Ön Bilgilendirme Formu ve Sözleşme’nin uygulanmasında ve yorumlanmasında aşağıda yazılı terimler karşılarındaki yazılı açıklamaları ifade edeceklerdir:</p>
+
+                    <ul>
+                        <li><strong>ALICI</strong>: Bir mal veya hizmeti ticari veya mesleki olmayan amaçlarla edinen, kullanan veya yararlanan gerçek kişiyi,</li>
+                        <li><strong>Bakanlık</strong>: Türkiye Cumhuriyeti Ticaret Bakanlığı’nı,</li>
+                        <li><strong>Banka</strong>: 5411 sayılı Bankacılık Kanunu uyarınca kurulan lisanslı kuruluşları,</li>
+                        <li><strong>Buzly</strong>: Elektronik ticaret platformunu işleten ve satıcı adına mesafeli sözleşme kurulmasına aracılık eden Buzly Elektronik Ticaret A.Ş.'yi,</li>
+                        <li><strong>Hizmet</strong>: Bir ücret veya menfaat karşılığında yapılan ya da yapılması taahhüt edilen ürün sağlama dışındaki her türlü tüketici işleminin konusunu,</li>
+                        <li><strong>Kanun</strong>: 6502 sayılı Tüketicinin Korunması Hakkında Kanun’u,</li>
+                        <li><strong>Kargo Şirketi</strong>: Ürünün alıcıya ulaştırılmasını, iade süreçlerinde alıcıdan alınarak satıcıya ulaştırılmasını sağlayan anlaşmalı kargo veya lojistik şirketini,</li>
+                        <li><strong>Platform</strong>: Buzly'ye ait www.buzly.com adlı internet sitesini ve mobil uygulamasını,</li>
+                        <li><strong>Satıcı</strong>: Tüketiciye ürün/hizmet sunan veya sunanın adına ya da hesabına hareket eden gerçek veya tüzel kişiyi,</li>
+                        <li><strong>Sözleşme</strong>: Satıcı ve alıcı arasında akdedilen sözleşmeyi,</li>
+                        <li><strong>Ürün</strong>: Alışverişe konu olan taşınır eşya, elektronik ortamda kullanılmak üzere hazırlanan yazılım, ses, görüntü ve benzeri her türlü gayri maddi malı,</li>
+                        <li><strong>Yönetmelik</strong>: Mesafeli Sözleşmeler Yönetmeliği’ni ifade eder.</li>
+                    </ul>
+
+                    <h2>3. ALICI, SATICI VE PLATFORM BİLGİLERİ</h2>
+
+                    <h3>ALICI BİLGİLERİ</h3>
+                    <p>Alıcı Adı: [Alıcı Adı]</p>
+                    <p>Alıcı Adresi: [Teslimat Adresi]</p>
+                    <p>Telefon: [Telefon Numarası]</p>
+                    <p>E-posta: [E-posta Adresi]</p>
+
+                    <h3>SATICI BİLGİLERİ</h3>
+                    <p>Satıcı Adı: Buzly Elektronik Ticaret A.Ş.</p>
+                    <p>Adres: [Satıcı Adresi]</p>
+                    <p>Mersis Numarası: [Mersis No]</p>
+                    <p>Vergi Kimlik Numarası: [Vergi No]</p>
+                    <p>Telefon: [Satıcı Telefon Numarası]</p>
+                    <p>E-posta: [Satıcı E-posta Adresi]</p>
+
+                    <h2>4. ÜRÜN/HİZMET BİLGİLERİ</h2>
+                    <p>Ürünün temel özellikleri (türü, miktarı, marka/modeli, rengi, adedi, fiyatı) sipariş esnasında Platform’da yer almakta olup detaylı şekilde incelenebilecektir.</p>
+
+                    <p>Ürün/hizmet karşılığında ödenecek tüm tutarlar (tüm vergiler dahil satış fiyatı, kargo bedeli vb.) sipariş özeti sayfasında gösterilecektir.</p>
+
+                    <h2>5. İADE KOŞULLARI</h2>
+                    <p>İade ve cayma koşulları, 6502 sayılı Tüketicinin Korunması Hakkında Kanun ve Mesafeli Sözleşmeler Yönetmeliği’ne tabidir. Ürün iadesi, Buzly platformu üzerinden gerçekleştirilmekte olup, detaylı iade prosedürüne Platform'da yer alan "İade Politikası" sayfasından ulaşabilirsiniz.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="agreement-sales">
+                <h5 class="sales-title">Mesafeli Satış Sözleşmesi</h5>
+
+                <div class="sales-body">
+                  <div class="sales-texts">
+                    <h1 class="text-center"> Mesafeli Satış Sözleşmesi</h1>
+
+                    <h2>1. TARAFLAR</h2>
+                    <p>İşbu Mesafeli Satış Sözleşmesi, Buzly Elektronik Ticaret A.Ş. (Satıcı) ile [Alıcı Adı] (Alıcı) arasında akdedilmiştir.</p>
+
+                    <h2>2. KONU</h2>
+                    <p>Sözleşmenin konusu, Alıcı'nın Satıcı'ya ait www.buzly.com üzerinden satın aldığı ürün/hizmetin teslimi ve satış şartlarıdır.</p>
+
+                    <h2>3. ÜRÜN BİLGİLERİ</h2>
+                    <p>Ürün Adı: [Ürün Adı]</p>
+                    <p>Ürün Fiyatı: [Ürün Fiyatı]</p>
+                    <p>Toplam Tutar: [Toplam Tutar]</p>
+
+                    <h2>4. ÖDEME YÖNTEMİ</h2>
+                    <p>Ödeme, Alıcı'nın tercih ettiği yöntemle gerçekleştirilecektir. Kredi kartı, havale ve diğer ödeme yöntemleri kabul edilmektedir.</p>
+
+                    <h2>5. TESLİMAT</h2>
+                    <p>Ürün, Alıcı'nın belirttiği adrese [Teslimat Süresi] içinde ulaştırılacaktır.</p>
+
+                    <h2>6. İADE HAKKI</h2>
+                    <p>Alıcı, 14 gün içinde ürünü iade etme hakkına sahiptir. İade işlemi için Buzly platformu üzerinden gerekli adımlar takip edilmelidir.</p>
+
+                    <h2>7. YETKİLİ MAHKEME</h2>
+                    <p>Taraflar arasında çıkabilecek uyuşmazlıklarda [Şehir] Mahkemeleri yetkilidir.</p>
+
+                    <h2>8. GEÇERLİLİK</h2>
+                    <p>İşbu Sözleşme, taraflarca imzalandığı tarihte yürürlüğe girer.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="order-summary-card">
+        <div class="summary-wrapper">
+          <h3 class="summary-title">Sipariş Özeti</h3>
+
+          <ul>
+            <li>
+              <p class="summary-total-price">
+                <span>Ürünün Toplamı</span>
+                <span id="paymentPrice">0 TL</span>
+              </p>
+            </li>
+
+            <li class="summary-cargo-field">
+              <p class="summary-cargo-price">
+                <span>Kargo Toplam</span>
+                <span id="paymentCargoPrice">0 TL</span>
+              </p>
+            </li>
+
+            <li>
+              <p class="summary-all-price">
+                <span>Toplam</span>
+                <span id="paymentAllPrice">0 TL</span>
+              </p>
+            </li>
+
+            <li class="summary-cargo-area">
+              <span>Kargo</span>
+              <span><strong>-49.90 TL</strong></span>
+            </li>
+
+            <li class="summary-discount-field">
+              <div class="order-summary-discount">
+                <img src="img/total-saving-price-down.svg" alt="total saving price down">
+                <span id="paymentDiscountPrice"><strong id="earningPrice">3.589,97 TL</strong> kazancın var</span>
+              </div>
+
+              <div>
+                <p>İlk alışverişinizde 500 TL ve üzeri harcamaya özel indirim!</p>
+              </div>
+            </li>
+          </ul>
+
+          <button id="confirmPaymentButton" class="disabled-button">Alışverişi Tamamla</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="warning-container">
+    <div class="warning-wrapper"> 
+      <div class="warning-close">
+        <i class="bi bi-x-lg" id="closeWarning"></i>
+      </div>
+
+      <div class="warning-message">
+        <i class="bi bi-exclamation-circle-fill"></i>
+        <p>Lütfen ödeme işlemini tamamlamak 
+        <br>için gerekli alanları veya kart 
+        <br>bilgilerinizi girin.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- !Address template -->
+  <section class="address-template " id="paymentAddressTemplate">
+    <div class="address-wrapper">
+      <header class="address-heading d-flex align-items-center justify-content-between">
+        <h2 class="m-0">Adres Ekle</h2>
+        <button type="button" id="closeChangeAddress"><i class="bi bi-x"></i></button>
+      </header>
+
+      <div class="address-forms">
+        <form id="addressForm" class="paymentForm" novalidate>
+            <div class="address-group">
+              <div class="address-items mb-3">
+                <div class="input-group">
+                  <label>Ad <span class="star">*</span></label>
+                  <input type="text" class="global-input" id="nameInput">
+                  <div>Lütfen adınızı giriniz</div>
+                </div>
+
+                <div class="input-group">
+                  <label>Soyad <span class="star">*</span></label>
+                  <input type="text" class="global-input address-input" id="surnameInput">
+                  <div>Lütfen soyadınızı giriniz</div>
+                </div>
+
+                <div class="input-group">
+                  <label>Telefon <span class="star">*</span></label>
+                  <input type="number" class="global-input address-input" id="phoneInput">
+                  <div>Lütfen geçerli bir telefon numarası giriniz</div>
+                </div>
+
+                <div class="input-group">
+                  <label>İl <span class="star">*</span></label>
+                  <select id="provinces" class="global-input address-input" style="cursor: pointer; background-image: none; appearance: auto;">
+                    <option value="" disabled selected>Seçiniz</option>
+                    <option value="Adana">Adana</option>
+                    <option value="Adıyaman">Adıyaman</option>
+                    <option value="Afyonkarahisar">Afyonkarahisar</option>
+                    <option value="Ağrı">Ağrı</option>
+                    <option value="Aksaray">Aksaray</option>
+                    <option value="Amasya">Amasya</option>
+                    <option value="Ankara">Ankara</option>
+                    <option value="Antalya">Antalya</option>
+                    <option value="Ardahan">Ardahan</option>
+                    <option value="Artvin">Artvin</option>
+                    <option value="Aydın">Aydın</option>
+                    <option value="Balıkesir">Balıkesir</option>
+                    <option value="Bartın">Bartın</option>
+                    <option value="Batman">Batman</option>
+                    <option value="Bayburt">Bayburt</option>
+                    <option value="Bilecik">Bilecik</option>
+                    <option value="Bingöl">Bingöl</option>
+                    <option value="Bitlis">Bitlis</option>
+                    <option value="Bolu">Bolu</option>
+                    <option value="Burdur">Burdur</option>
+                    <option value="Bursa">Bursa</option>
+                    <option value="Çanakkale">Çanakkale</option>
+                    <option value="Çankırı">Çankırı</option>
+                    <option value="Çorum">Çorum</option>
+                    <option value="Denizli">Denizli</option>
+                    <option value="Diyarbakır">Diyarbakır</option>
+                    <option value="Düzce">Düzce</option>
+                    <option value="Edirne">Edirne</option>
+                    <option value="Elazığ">Elazığ</option>
+                    <option value="Erzincan">Erzincan</option>
+                    <option value="Erzurum">Erzurum</option>
+                    <option value="Eskişehir">Eskişehir</option>
+                    <option value="Gaziantep">Gaziantep</option>
+                    <option value="Giresun">Giresun</option>
+                    <option value="Gümüşhane">Gümüşhane</option>
+                    <option value="Hakkari">Hakkari</option>
+                    <option value="Hatay">Hatay</option>
+                    <option value="Iğdır">Iğdır</option>
+                    <option value="Isparta">Isparta</option>
+                    <option value="İstanbul">İstanbul</option>
+                    <option value="İzmir">İzmir</option>
+                    <option value="Kahramanmaraş">Kahramanmaraş</option>
+                    <option value="Karabük">Karabük</option>
+                    <option value="Karaman">Karaman</option>
+                    <option value="Kars">Kars</option>
+                    <option value="Kastamonu">Kastamonu</option>
+                    <option value="Kayseri">Kayseri</option>
+                    <option value="Kırıkkale">Kırıkkale</option>
+                    <option value="Kırklareli">Kırklareli</option>
+                    <option value="Kırşehir">Kırşehir</option>
+                    <option value="Kilis">Kilis</option>
+                    <option value="Kocaeli">Kocaeli</option>
+                    <option value="Konya">Konya</option>
+                    <option value="Kütahya">Kütahya</option>
+                    <option value="Malatya">Malatya</option>
+                    <option value="Manisa">Manisa</option>
+                    <option value="Mardin">Mardin</option>
+                    <option value="Mersin">Mersin</option>
+                    <option value="Muğla">Muğla</option>
+                    <option value="Muş">Muş</option>
+                    <option value="Nevşehir">Nevşehir</option>
+                    <option value="Niğde">Niğde</option>
+                    <option value="Ordu">Ordu</option>
+                    <option value="Osmaniye">Osmaniye</option>
+                    <option value="Rize">Rize</option>
+                    <option value="Sakarya">Sakarya</option>
+                    <option value="Samsun">Samsun</option>
+                    <option value="Siirt">Siirt</option>
+                    <option value="Sinop">Sinop</option>
+                    <option value="Sivas">Sivas</option>
+                    <option value="Şanlıurfa">Şanlıurfa</option>
+                    <option value="Şırnak">Şırnak</option>
+                    <option value="Tekirdağ">Tekirdağ</option>
+                    <option value="Tokat">Tokat</option>
+                    <option value="Trabzon">Trabzon</option>
+                    <option value="Tunceli">Tunceli</option>
+                    <option value="Uşak">Uşak</option>
+                    <option value="Van">Van</option>
+                    <option value="Yalova">Yalova</option>
+                    <option value="Yozgat">Yozgat</option>
+                    <option value="Zonguldak">Zonguldak</option>
+                  </select>
+                  <div>Lütfen bir il seçiniz</div>
+                </div>
+
+                <div class="input-group">
+                  <label>İlçe <span class="star">*</span></label>
+                  <input type="text" class="global-input address-input" id="districtInput">
+                  <div>Lütfen bir ilçe giriniz</div>
+                </div>
+
+                <div class="input-group">
+                  <label>Mahalle <span class="star">*</span></label>
+                  <input type="text" class="global-input address-input" id="neighbourhoodInput">
+                  <div>Lütfen bir mahalle giriniz</div>
+                </div>
+              </div>
+
+              <div class="address-single mb-3">
+                <label>Adres <span>*</span></label>
+                <p>Lütfen kargonuzun sorunsuz bir şekilde teslim edilebilmesi için mahalle, cadde, sokak, bina ve daire gibi adres bilgilerinizi eksiksiz ve doğru bir şekilde girdiğinizden emin olun.</p> 
+                <textarea id="addressArea" class="global-input address-input pe-5" rows="3"></textarea>
+                <div>Lütfen adres bilgilerinizi giriniz</div>
+                <button type="button" class="location-btn"><i class="bi bi-geo-alt"></i></button>
+              </div>
+
+              <div class="address-single">
+                <label>Adres Başlığı <span>*</span></label>
+                <input type="text" id="addressHeadingInput" class="global-input address-input">
+                <div>Lütfen adres başlığı giriniz</div>
+              </div>
+
+              <div class="select-invoice my-3">
+                <label>Fatura Türü <span>*</span></label>
+                
+                <div class="invoice-buttons d-flex align-items-center">
+                  <button type="button" class="individual-btn selected">Bireysel</button>
+                  <button type="button" class="institutional-btn">Kurumsal</button>
+                  <span class="selected-frame selected"></span>
+                </div>
+              </div>
+
+              <div class="selected-mode-active-inputs">
+                <div class="input-group">
+                  <label>VKN <span>*</span></label>
+                  <input type="text" placeholder="VKN Giriniz" class="global-input commercial-input">
+                  <div>VKN 10 - 11 karakter içermelidir</div>
+                </div>
+
+                <div class="input-group">
+                    <label>Vergi Dairesi <span>*</span></label>
+                    <input type="text" placeholder="Vergi Dairesi Giriniz" class="global-input commercial-input">
+                    <div>5 - 100 karakter içermelidir</div>
+                </div>
+                
+                <div class="input-group">
+                    <label>Firma Adı <span>*</span></label>
+                    <input type="text" placeholder="Firma Adı Giriniz" class="global-input commercial-input">
+                    <div>5 - 100 karakter içermelidir</div> 
+                </div>
+
+                <div class="input-group d-flex align-items-center gap-2 checkbox-group">
+                  <input type="checkbox" class="global-checkbox rounded rounded-1" id="invoice">
+                  <label class="w-auto" for="invoice">E-fatura mükellefiyim</label>
+                </div>
+              </div>
+
+              <div class="save-button mt-3">
+                <button type="submit" class="w-100" id="saveFormButton">Kaydet</button>
+              </div>
+            </div>
+        </form>
+      </div>
+  </section>
+
+
+  <div class="loader-wrapper">
+    <div class="loader">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+  </div>
+ 
+  <!-- !Payment Footer -->
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__copyright">
+        <div class="container">
+          <div class="main-footer__copyright-text">
+            <p>© 2024 Tüm hakları saklıdır. <strong>Ömer Çıkan</strong> tarafından desteklenmektedir.
+
+            <div class="main-footer__copyright-cards">
+              <img src="img/footer/cards.png" alt="card">
+            </div>
+          </div>
+
+          <div class="main-footer__policy-items">
+            <ul>
+              <li><a href="#">Gizlilik Politikası</a></li>
+              <li><a href="#">Şartlar ve koşullar</a></li>
+              <li><a href="#">İade Politikası</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer> 
+
+  <!--* Start of Tawk.to Script *-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/66f009844cbc4814f7dd2fe9/1i8cqab9u';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!--* End of Tawk.to Script *-->
+
+  <!--? Custom Js -->
+  <script src="js/components/payments/summaryCard.js"></script>
+  <script src="js/components/address-form.js" type="module"></script>
+  <script src="js/components/payments/addressForm.js" type="module"></script>
+  <script src="js/components/payments/paymentProductList.js"></script>
+  <script src="js/components/payments/paymentTabSelect.js"></script>
+</body>
+</html> 
