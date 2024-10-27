@@ -1,8 +1,8 @@
 const allProductData = localStorage.getItem('products') ? JSON.parse(localStorage.getItem('products')) : [];
 const searchModalResults = document.getElementById('searchModalResults');
 const searchModalInput = document.getElementById('searchModalInput');
-let resultsProductHTML = '';
 export const showProducts = (allProductData) => {
+    let resultsProductHTML = '';
     allProductData.forEach((data) => {
         resultsProductHTML += `
             <a href="#" class="result-item" data-id="${data.id}">

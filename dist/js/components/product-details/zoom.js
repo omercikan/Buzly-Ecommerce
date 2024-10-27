@@ -6,7 +6,7 @@ const productZoom = () => {
         const x = e.clientX - target.offsetLeft;
         const y = e.clientY - target.offsetTop;
         productImg.style.transformOrigin = `${x}px ${y}px`;
-        productImg.style.transform = 'scale(5)';
+        productImg.style.transform = 'scale(2)';
         productImg.style.transition = 'none';
     });
     productImgWrapper.addEventListener('mouseleave', () => {

@@ -303,5 +303,1416 @@
                 "img/products/product8/3.webp"
             ]
         }  
+    },
+
+    {
+        "id": 9,
+        "name": "iPhone 16 Pro Max",
+        "gender": "Elektronik",
+        "brand": "Apple",
+        "category": "Telefon",
+        "price": {
+            "oldPrice": 29999.99,
+            "newPrice": 27999.99
+        },
+        "discount": 7,
+        "vote": 4.8,
+        "evaluation": 1050,
+        "productDetail": "iPhone 16 Pro Max, Apple'ın en yeni amiral gemisi modeli olup, gelişmiş A18 Bionic çip, 120Hz ProMotion ekran ve 108 MP üçlü kamera sistemi ile donatılmıştır. Yüksek performansı, uzun pil ömrü ve üstün dayanıklılığı ile dikkat çeker.",
+        "productFeatures": {
+            "Renk": "Grafit, Gümüş, Altın, Pasifik Mavisi",
+            "Ekran Boyutu": "6.9 inç",
+            "Depolama": "256GB, 512GB, 1TB",
+            "Pil Kapasitesi": "5000 mAh",
+            "Kamera": "108 MP Ana Kamera, 12 MP Ultra Geniş, 12 MP Telefoto",
+            "RAM": "8GB",
+            "İşletim Sistemi": "iOS 18",
+            "İşlemci": "A18 Bionic",
+            "Yenileme Hızı": "120Hz ProMotion"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "IP16PMAX",
+            "categories": "Telefon, Apple",
+            "tickets": "iPhone, iPhone 16, Pro Max, Apple"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728334079/1_yzu12e.webp",
+            "thumbs": [
+            "https://res.cloudinary.com/omercikan/image/upload/v1728334079/1_yzu12e.webp",
+            "https://res.cloudinary.com/omercikan/image/upload/v1728334078/2_qkyo75.webp",
+            "https://res.cloudinary.com/omercikan/image/upload/v1728334079/3_z63zhd.webp"
+            ]
+        }
+    },
+
+    {
+    "id": 10,
+    "name": "iPhone 14 Pro Max",
+    "gender": "Elektronik",
+    "brand": "Apple",
+    "category": "Telefon",
+    "price": {
+        "oldPrice": 35999.99,
+        "newPrice": 32999.89
+    },
+    "discount": 8,
+    "vote": 4.9,
+    "evaluation": 1120,
+    "productDetail": "Apple'ın en yeni amiral gemisi iPhone 14 Pro Max, güçlü A16 Bionic işlemcisi ve ProMotion teknolojili 120 Hz ekranı ile performansı zirveye taşıyor. Üstün kamera özellikleri ve dayanıklı tasarımıyla mükemmel bir kullanıcı deneyimi sunar.",
+    "productFeatures": {
+        "Renk": "Uzay Siyahı",
+        "Ekran Boyutu": "6.7 inç",
+        "Depolama": "128GB, 256GB, 512GB, 1TB",
+        "Pil Kapasitesi": "4323 mAh",
+        "Kamera": "48 MP Ana Kamera, 12 MP Ultra Geniş, 12 MP Telefoto",
+        "RAM": "6GB",
+        "İşletim Sistemi": "iOS"
+    },
+    "ProductOther": {
+        "abroad": "Satış Var",
+        "stockCode": "IP14PMX",
+        "categories": "Telefon, Apple",
+        "tickets": "iPhone, Pro Max, Siyah"
+    },
+    "img": {
+        "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728334082/17_rupbbv.webp",
+        "thumbs": [
+        "https://res.cloudinary.com/omercikan/image/upload/v1728334082/17_rupbbv.webp",
+        "https://res.cloudinary.com/omercikan/image/upload/v1728334081/16_tvdhgo.webp",
+        "https://res.cloudinary.com/omercikan/image/upload/v1728334082/18_nznixh.webp"
+        ]
+    }
+    },
+    
+    {
+    "id": 12,
+    "name": "Samsung Galaxy S24 Ultra",
+    "gender": "Elektronik",
+    "brand": "Samsung",
+    "category": "Telefon",
+    "price": {
+        "oldPrice": 24999.99,
+        "newPrice": 22999.99
+    },
+    "discount": 8,
+    "vote": 4.7,
+    "evaluation": 890,
+    "productDetail": "Samsung Galaxy S24 Ultra, gelişmiş Snapdragon 8 Gen 3 işlemcisi, 200 MP ana kamerası ve 120 Hz Dynamic AMOLED ekranı ile olağanüstü bir deneyim sunuyor. 5000 mAh pil kapasitesi ve hızlı şarj özelliği ile uzun süreli kullanım sağlar.",
+    "productFeatures": {
+        "Renk": "Siyah, Gümüş, Yeşil, Krem",
+        "Ekran Boyutu": "6.8 inç",
+        "Depolama": "256GB, 512GB, 1TB",
+        "Pil Kapasitesi": "5000 mAh",
+        "Kamera": "200 MP Ana Kamera, 12 MP Ultra Geniş, 10 MP Telefoto",
+        "RAM": "12GB",
+        "İşletim Sistemi": "Android 14",
+        "İşlemci": "Snapdragon 8 Gen 3",
+        "Yenileme Hızı": "120Hz"
+    },
+    "ProductOther": {
+        "abroad": "Satış Var",
+        "stockCode": "SGS24ULTRA",
+        "categories": "Telefon, Samsung",
+        "tickets": "Samsung, Galaxy S24, Ultra, Siyah"
+    },
+    "img": {
+        "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728334083/19_vd3z82.webp",
+        "thumbs": [
+        "https://res.cloudinary.com/omercikan/image/upload/v1728334083/19_vd3z82.webp",
+        "https://res.cloudinary.com/omercikan/image/upload/v1728334083/20_nnnghq.webp",
+        "https://res.cloudinary.com/omercikan/image/upload/v1728334084/21_kdxgkc.webp"
+        ]
+    }
+    },
+
+    {
+    "id": 13,
+    "name": "Xiaomi Mi 13",
+    "gender": "Elektronik",
+    "brand": "Xiaomi",
+    "category": "Telefon",
+    "price": {
+        "oldPrice": 19999.99,
+        "newPrice": 17999.99
+    },
+    "discount": 10,
+    "vote": 4.7,
+    "evaluation": 748,
+    "productDetail": "Xiaomi Mi 13, Snapdragon 8 Gen 2 işlemcisi ve 50 MP üçlü kamerası ile performans ve fotoğrafçılıkta öne çıkıyor. 6.36 inç AMOLED ekranı ve hızlı şarj desteğiyle kullanıcı dostu bir deneyim sunuyor.",
+    "productFeatures": {
+        "Renk": "Mavi",
+        "Ekran Boyutu": "6.36 inç",
+        "Depolama": "128GB, 256GB",
+        "Pil Kapasitesi": "4500 mAh",
+        "Kamera": "50 MP Ana Kamera, 12 MP Ultra Geniş, 10 MP Telefoto",
+        "RAM": "8GB",
+        "İşletim Sistemi": "Android"
+    },
+    "ProductOther": {
+        "abroad": "Satış Var",
+        "stockCode": "XM13",
+        "categories": "Telefon, Xiaomi",
+        "tickets": "Xiaomi, Mi 13, Mavi"
+    },
+    "img": {
+        "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728334079/7_axpoyt.webp",
+        "thumbs": [
+        "https://res.cloudinary.com/omercikan/image/upload/v1728334079/7_axpoyt.webp",
+        "https://res.cloudinary.com/omercikan/image/upload/v1728334082/8_kva7pv.webp",
+        "https://res.cloudinary.com/omercikan/image/upload/v1728334079/9_yicre8.webp"
+        ]
+    }
+    },
+
+    {
+    "id": 14,
+    "name": "Google Pixel 7 Pro",
+    "gender": "Elektronik",
+    "brand": "Google",
+    "category": "Telefon",
+    "price": {
+        "oldPrice": 22999.99,
+        "newPrice": 20999.99
+    },
+    "discount": 9,
+    "vote": 4.6,
+    "evaluation": 510,
+    "productDetail": "Google Pixel 7 Pro, Tensor G2 işlemcisi ve 50 MP kamera özellikleri ile fotoğrafçılıkta profesyonellik sunuyor. Android'in en saf deneyimini Pixel serisiyle keşfedin.",
+    "productFeatures": {
+        "Renk": "Grafit",
+        "Ekran Boyutu": "6.7 inç",
+        "Depolama": "128GB, 256GB, 512GB",
+        "Pil Kapasitesi": "5000 mAh",
+        "Kamera": "50 MP Ana Kamera, 12 MP Ultra Geniş, 48 MP Telefoto",
+        "RAM": "12GB",
+        "İşletim Sistemi": "Android"
+    },
+    "ProductOther": {
+        "abroad": "Satış Var",
+        "stockCode": "GP7P",
+        "categories": "Telefon, Google",
+        "tickets": "Google, Pixel, Grafit"
+    },
+    "img": {
+        "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728334080/10_hbapcu.webp",
+        "thumbs": [
+        "https://res.cloudinary.com/omercikan/image/upload/v1728334080/10_hbapcu.webp",
+        "https://res.cloudinary.com/omercikan/image/upload/v1728334082/11_gmbakg.webp",
+        "https://res.cloudinary.com/omercikan/image/upload/v1728334080/12_cekxkz.webp"
+        ]
+    }
+    },
+
+    {
+    "id": 15,
+    "name": "OnePlus 11",
+    "gender": "Elektronik",
+    "brand": "OnePlus",
+    "category": "Telefon",
+    "price": {
+        "oldPrice": 18999.99,
+        "newPrice": 16999.99
+    },
+    "discount": 11,
+    "vote": 4.7,
+    "evaluation": 604,
+    "productDetail": "OnePlus 11, Snapdragon 8 Gen 2 işlemcisi ve 120 Hz AMOLED ekranıyla akıcı ve güçlü bir performans sunar. Hızlı şarj desteği ve uzun pil ömrü ile kullanıcılara kesintisiz bir deneyim sağlar.",
+    "productFeatures": {
+        "Renk": "Zümrüt Yeşili",
+        "Ekran Boyutu": "6.7 inç",
+        "Depolama": "256GB, 512GB",
+        "Pil Kapasitesi": "5000 mAh",
+        "Kamera": "50 MP Ana Kamera, 48 MP Ultra Geniş, 32 MP Telefoto",
+        "RAM": "12GB",
+        "İşletim Sistemi": "Android"
+    },
+    "ProductOther": {
+        "abroad": "Satış Var",
+        "stockCode": "OP11",
+        "categories": "Telefon, OnePlus",
+        "tickets": "OnePlus, 11, Yeşil"
+    },
+    "img": {
+        "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728334081/13_vwrvnf.webp",
+        "thumbs": [
+        "https://res.cloudinary.com/omercikan/image/upload/v1728334081/13_vwrvnf.webp",
+        "https://res.cloudinary.com/omercikan/image/upload/v1728334083/14_o3sdzp.webp",
+        "https://res.cloudinary.com/omercikan/image/upload/v1728334081/15_fzzmse.webp"
+        ]
+    }
+    },
+
+    {
+    "id": 16,
+    "name": "Huawei P50 Pro",
+    "gender": "Elektronik",
+    "brand": "Huawei",
+    "category": "Telefon",
+    "price": {
+        "oldPrice": 17999.99,
+        "newPrice": 15999.99
+    },
+    "discount": 12,
+    "vote": 4.5,
+    "evaluation": 427,
+    "productDetail": "Huawei P50 Pro, güçlü Kirin 9000 işlemcisi, 50 MP Leica kamerası ve uzun pil ömrü ile dikkat çekiyor. HarmonyOS işletim sistemi ile hızlı ve verimli bir kullanıcı deneyimi sunar.",
+    "productFeatures": {
+        "Renk": "Altın",
+        "Ekran Boyutu": "6.6 inç",
+        "Depolama": "256GB, 512GB",
+        "Pil Kapasitesi": "4360 mAh",
+        "Kamera": "50 MP Ana Kamera, 64 MP Telefoto, 13 MP Ultra Geniş",
+        "RAM": "8GB",
+        "İşletim Sistemi": "HarmonyOS"
+    },
+    "ProductOther": {
+        "abroad": "Satış Var",
+        "stockCode": "HWP50P",
+        "categories": "Telefon, Huawei",
+        "tickets": "Huawei, P50 Pro, Altın"
+    },
+    "img": {
+        "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728334083/22_u6kfmd.webp",
+        "thumbs": [
+        "https://res.cloudinary.com/omercikan/image/upload/v1728334083/22_u6kfmd.webp",
+        "https://res.cloudinary.com/omercikan/image/upload/v1728334084/23_uw8slh.webp",
+        "https://res.cloudinary.com/omercikan/image/upload/v1728334085/24_jhhfqv.webp"
+        ]
+    }
+    },
+
+    {
+        "id": 17,
+        "name": "Apple Watch Series 9",
+        "gender": "Elektronik",
+        "brand": "Apple",
+        "category": "Akıllı Saat",
+        "price": {
+            "oldPrice": 5999.99,
+            "newPrice": 5499.99
+        },
+        "discount": 8,
+        "vote": 4.7,
+        "evaluation": 1200,
+        "productDetail": "Apple Watch Series 9, sağlık ve fitness takibi için geliştirilmiş en yeni özelliklere sahip. Gelişmiş sensörleri ve kullanıcı dostu arayüzü ile günlük aktivitelerinizi takip etmenize yardımcı olur.",
+        "productFeatures": {
+            "Renk": "Gümüş, Uzay Grisi, Altın",
+            "Ekran Boyutu": "1.9 inç",
+            "Pil Kapasitesi": "18 saat",
+            "Su Geçirmezlik": "50 metreye kadar",
+            "Bağlantı": "Bluetooth 5.0, Wi-Fi",
+            "İşletim Sistemi": "watchOS 10",
+            "Sensörler": "Kalp atış hızı, Oksijen, GPS"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "AW9",
+            "categories": "Akıllı Saat, Apple",
+            "tickets": "Apple Watch, Saat"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728411387/2_yknsbc.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411387/2_yknsbc.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411386/1_z5roxa.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411386/3_rx0ncu.webp"
+            ]
+        }
+    },
+    
+    {
+        "id": 18,
+        "name": "Samsung Galaxy Watch 6",
+        "gender": "Elektronik",
+        "brand": "Samsung",
+        "category": "Akıllı Saat",
+        "price": {
+            "oldPrice": 4999.99,
+            "newPrice": 4499.99
+        },
+        "discount": 10,
+        "vote": 4.6,
+        "evaluation": 950,
+        "productDetail": "Samsung Galaxy Watch 6, fitness ve sağlık takibi için gelişmiş özelliklerle donatılmış. AMOLED ekranı ve şık tasarımıyla dikkat çeker.",
+        "productFeatures": {
+            "Renk": "Siyah, Gümüş, Altın",
+            "Ekran Boyutu": "1.5 inç",
+            "Pil Kapasitesi": "40 saat",
+            "Su Geçirmezlik": "IP68",
+            "Bağlantı": "Bluetooth 5.2, Wi-Fi",
+            "İşletim Sistemi": "Wear OS",
+            "Sensörler": "Kalp atış hızı, EKG, GPS"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "SGW6",
+            "categories": "Akıllı Saat, Samsung",
+            "tickets": "Samsung Galaxy Watch, Saat"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728411388/4_h5lkzp.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411388/4_h5lkzp.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411388/6_xsevai.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411389/15_iqnaxc.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 19,
+        "name": "Fossil Gen 6",
+        "gender": "Elektronik",
+        "brand": "Fossil",
+        "category": "Akıllı Saat",
+        "price": {
+            "oldPrice": 3999.99,
+            "newPrice": 3499.99
+        },
+        "discount": 12,
+        "vote": 4.4,
+        "evaluation": 800,
+        "productDetail": "Fossil Gen 6, şık tasarımı ve güçlü özellikleri ile dikkat çekiyor. Fitness takibi ve günlük aktiviteleri izleme imkanı sunuyor.",
+        "productFeatures": {
+            "Renk": "Gümüş, Rose Gold, Siyah",
+            "Ekran Boyutu": "1.28 inç",
+            "Pil Kapasitesi": "24 saat",
+            "Su Geçirmezlik": "30 metreye kadar",
+            "Bağlantı": "Bluetooth 5.0, Wi-Fi",
+            "İşletim Sistemi": "Wear OS",
+            "Sensörler": "Kalp atış hızı, Oksijen"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "FG6",
+            "categories": "Akıllı Saat, Fossil",
+            "tickets": "Fossil, Saat"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728411389/7_fbifyz.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411389/7_fbifyz.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411391/8_glsazz.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411390/9_yvyfgj.webp"
+            ]
+        }
+    },
+    
+    {
+        "id": 20,
+        "name": "Garmin Venu 2",
+        "gender": "Elektronik",
+        "brand": "Garmin",
+        "category": "Akıllı Saat",
+        "price": {
+            "oldPrice": 3499.99,
+            "newPrice": 2999.99
+        },
+        "discount": 14,
+        "vote": 4.5,
+        "evaluation": 600,
+        "productDetail": "Garmin Venu 2, sporcular için tasarlanmış bir akıllı saat olup, çeşitli spor aktivitelerini izleyebilme yeteneğine sahiptir.",
+        "productFeatures": {
+            "Renk": "Siyah, Beyaz, Pembe",
+            "Ekran Boyutu": "1.3 inç",
+            "Pil Kapasitesi": "11 gün",
+            "Su Geçirmezlik": "50 metreye kadar",
+            "Bağlantı": "Bluetooth, ANT+",
+            "İşletim Sistemi": "Garmin OS",
+            "Sensörler": "Kalp atış hızı, GPS"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "GV2",
+            "categories": "Akıllı Saat, Garmin",
+            "tickets": "Garmin, Saat"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728411390/10_zb3igf.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411390/10_zb3igf.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411387/11_vtrplm.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411387/12_rwvgdh.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 21,
+        "name": "Xiaomi Mi Watch",
+        "gender": "Elektronik",
+        "brand": "Xiaomi",
+        "category": "Akıllı Saat",
+        "price": {
+            "oldPrice": 1999.99,
+            "newPrice": 1799.99
+        },
+        "discount": 10,
+        "vote": 4.3,
+        "evaluation": 750,
+        "productDetail": "Xiaomi Mi Watch, uygun fiyatıyla güçlü özellikler sunan bir akıllı saat. Sağlık ve aktivite takibi için idealdir.",
+        "productFeatures": {
+            "Renk": "Siyah, Beyaz",
+            "Ekran Boyutu": "1.39 inç",
+            "Pil Kapasitesi": "16 gün",
+            "Su Geçirmezlik": "5 ATM",
+            "Bağlantı": "Bluetooth 5.0",
+            "İşletim Sistemi": "MIUI",
+            "Sensörler": "Kalp atış hızı, SpO2"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "XMW",
+            "categories": "Akıllı Saat, Xiaomi",
+            "tickets": "Xiaomi, Saat"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728411391/13_kadydw.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411391/13_kadydw.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411389/14_jxej0a.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411389/15_iqnaxc.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 22,
+        "name": "Huawei Watch GT 3",
+        "gender": "Elektronik",
+        "brand": "Huawei",
+        "category": "Akıllı Saat",
+        "price": {
+            "oldPrice": 2999.99,
+            "newPrice": 2499.99
+        },
+        "discount": 17,
+        "vote": 4.5,
+        "evaluation": 500,
+        "productDetail": "Huawei Watch GT 3, uzun pil ömrü ve kapsamlı sağlık takibi özellikleri ile dikkat çeken bir akıllı saattir.",
+        "productFeatures": {
+            "Renk": "Siyah, Gümüş",
+            "Ekran Boyutu": "1.43 inç",
+            "Pil Kapasitesi": "14 gün",
+            "Su Geçirmezlik": "5 ATM",
+            "Bağlantı": "Bluetooth 5.1",
+            "İşletim Sistemi": "HarmonyOS",
+            "Sensörler": "Kalp atış hızı, GPS, SpO2"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "HWT3",
+            "categories": "Akıllı Saat, Huawei",
+            "tickets": "Huawei, Saat"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728411393/16_olkztg.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411393/16_olkztg.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411391/17_vu4npc.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411393/18_jae5yt.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 23,
+        "name": "Amazfit GTR 3",
+        "gender": "Elektronik",
+        "brand": "Amazfit",
+        "category": "Akıllı Saat",
+        "price": {
+            "oldPrice": 2499.99,
+            "newPrice": 1999.99
+        },
+        "discount": 20,
+        "vote": 4.6,
+        "evaluation": 400,
+        "productDetail": "Amazfit GTR 3, şık tasarımı ve uzun pil ömrü ile dikkat çeken bir akıllı saat. Spor aktivitelerinizi takip etmenize yardımcı olur.",
+        "productFeatures": {
+            "Renk": "Kahverengi, Siyah, Gümüş",
+            "Ekran Boyutu": "1.39 inç",
+            "Pil Kapasitesi": "21 gün",
+            "Su Geçirmezlik": "5 ATM",
+            "Bağlantı": "Bluetooth 5.0",
+            "İşletim Sistemi": "Zepp OS",
+            "Sensörler": "Kalp atış hızı, GPS"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "AGTR3",
+            "categories": "Akıllı Saat, Amazfit",
+            "tickets": "Amazfit, Saat"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728411394/19_mhjqfb.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411394/19_mhjqfb.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411392/20_dduoqe.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411392/21_thech7.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 24,
+        "name": "Withings Steel HR",
+        "gender": "Elektronik",
+        "brand": "Withings",
+        "category": "Akıllı Saat",
+        "price": {
+            "oldPrice": 2999.99,
+            "newPrice": 2499.99
+        },
+        "discount": 17,
+        "vote": 4.2,
+        "evaluation": 300,
+        "productDetail": "Withings Steel HR, klasik saat tasarımını modern sağlık izleme özellikleriyle birleştiriyor. Uzun pil ömrü ve zarif görünümü ile dikkat çekiyor.",
+        "productFeatures": {
+            "Renk": "Siyah, Gümüş, Pembe",
+            "Ekran Boyutu": "1.0 inç",
+            "Pil Kapasitesi": "25 gün",
+            "Su Geçirmezlik": "50 metreye kadar",
+            "Bağlantı": "Bluetooth",
+            "İşletim Sistemi": "Withings OS",
+            "Sensörler": "Kalp atış hızı, Aktivite"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "WSHR",
+            "categories": "Akıllı Saat, Withings",
+            "tickets": "Withings, Saat"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728411394/22_fc1has.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411394/22_fc1has.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411393/23_vxn3xo.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411395/24_lwiplp.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 25,
+        "name": "Apple Watch Series 9",
+        "gender": "Elektronik",
+        "brand": "Apple",
+        "category": "Akıllı Saat",
+        "price": {
+            "oldPrice": 5999.99,
+            "newPrice": 5499.99
+        },
+        "discount": 8,
+        "vote": 4.7,
+        "evaluation": 1200,
+        "productDetail": "Apple Watch Series 9, sağlık ve fitness takibi için geliştirilmiş en yeni özelliklere sahip. Gelişmiş sensörleri ve kullanıcı dostu arayüzü ile günlük aktivitelerinizi takip etmenize yardımcı olur.",
+        "productFeatures": {
+            "Renk": "Gümüş, Uzay Grisi, Altın",
+            "Ekran Boyutu": "1.9 inç",
+            "Pil Kapasitesi": "18 saat",
+            "Su Geçirmezlik": "50 metreye kadar",
+            "Bağlantı": "Bluetooth 5.0, Wi-Fi",
+            "İşletim Sistemi": "watchOS 10",
+            "Sensörler": "Kalp atış hızı, Oksijen, GPS"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "AW9",
+            "categories": "Akıllı Saat, Apple",
+            "tickets": "Apple Watch, Saat"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728411387/2_yknsbc.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411387/2_yknsbc.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411386/1_z5roxa.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728411386/3_rx0ncu.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 28,
+        "name": "Samsung Galaxy S24",
+        "gender": "Elektronik",
+        "brand": "Samsung",
+        "category": "Telefon",
+        "price": {
+        "oldPrice": 19999.99,
+        "newPrice": 18499.99
+        },
+        "discount": 7,
+        "vote": 4.6,
+        "evaluation": 765,
+        "productDetail": "Samsung Galaxy S24, Snapdragon 8 Gen 3 işlemcisi, 50 MP ana kamerası ve 6.6 inç Dynamic AMOLED ekranı ile güçlü ve şık bir akıllı telefon deneyimi sunar. 4700 mAh pil kapasitesi ile günlük kullanım için ideal.",
+        "productFeatures": {
+        "Renk": "Siyah, Mavi, Gümüş",
+        "Ekran Boyutu": "6.6 inç",
+        "Depolama": "128GB, 256GB",
+        "Pil Kapasitesi": "4700 mAh",
+        "Kamera": "50 MP Ana Kamera, 12 MP Ultra Geniş, 10 MP Telefoto",
+        "RAM": "8GB",
+        "İşletim Sistemi": "Android 14",
+        "İşlemci": "Snapdragon 8 Gen 3",
+        "Yenileme Hızı": "120Hz"
+        },
+        "ProductOther": {
+        "abroad": "Satış Var",
+        "stockCode": "SGS24",
+        "categories": "Telefon, Samsung",
+        "tickets": "Samsung, Galaxy S24, Siyah"
+        },
+        "img": {
+        "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728334079/4_ineirp.webp",
+        "thumbs": [
+            "https://res.cloudinary.com/omercikan/image/upload/v1728334079/4_ineirp.webp",
+            "https://res.cloudinary.com/omercikan/image/upload/v1728334079/5_d8sxlx.webp",
+            "https://res.cloudinary.com/omercikan/image/upload/v1728334078/6_gu7wmf.webp"
+        ]
+        }
+    },
+
+    {
+        "id": 29,
+        "name": "Samsung QLED 4K TV",
+        "gender": "Elektronik",
+        "brand": "Samsung",
+        "category": "Televizyon",
+        "price": {
+            "oldPrice": 10999.99,
+            "newPrice": 9999.99
+        },
+        "discount": 9,
+        "vote": 4.8,
+        "evaluation": 850,
+        "productDetail": "Samsung QLED 4K TV, inanılmaz renk doğruluğu ve üstün görüntü kalitesi sunan Quantum Dot teknolojisi ile donatılmıştır. HDR10+ desteği ve gelişmiş görüntü işleme özellikleriyle sinema kalitesinde deneyim yaşatır.",
+        "productFeatures": {
+            "Ekran Boyutu": "65 inç",
+            "Çözünürlük": "3840 x 2160 (4K)",
+            "Yenileme Hızı": "120Hz",
+            "HDR Desteği": "HDR10+",
+            "Bağlantı": "HDMI, USB, Bluetooth",
+            "İşletim Sistemi": "Tizen OS"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "SAMQLED4K",
+            "categories": "Televizyon, Samsung",
+            "tickets": "Samsung, QLED, 4K, TV"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728415021/4_hyqcf4.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728415021/4_hyqcf4.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728415023/5_alf3bl.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728415024/6_mjmiit.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 30,
+        "name": "LG OLED CX 55",
+        "gender": "Elektronik",
+        "brand": "LG",
+        "category": "Televizyon",
+        "price": {
+            "oldPrice": 15999.99,
+            "newPrice": 14999.99
+        },
+        "discount": 6,
+        "vote": 4.9,
+        "evaluation": 1120,
+        "productDetail": "LG OLED CX, mükemmel siyahlar ve sınırsız kontrast sunan OLED teknolojisiyle donatılmıştır. 55 inç ekranı, Dolby Vision ve Dolby Atmos desteği ile ev sinema deneyimi sunar.",
+        "productFeatures": {
+            "Ekran Boyutu": "55 inç",
+            "Çözünürlük": "3840 x 2160 (4K)",
+            "Yenileme Hızı": "120Hz",
+            "HDR Desteği": "Dolby Vision",
+            "Bağlantı": "HDMI, USB, Bluetooth, Wi-Fi",
+            "İşletim Sistemi": "WebOS"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "LGOLEDCX55",
+            "categories": "Televizyon, LG",
+            "tickets": "LG, OLED, CX, 4K, TV"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728415020/1_opafxy.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728415020/1_opafxy.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728415020/2_xb2hd7.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728415017/3_aziuzq.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 31,
+        "name": "Apple iPad Pro 12.9 (2023)",
+        "gender": "Elektronik",
+        "brand": "Apple",
+        "category": "Tablet",
+        "price": {
+            "oldPrice": 19999.99,
+            "newPrice": 18999.99
+        },
+        "discount": 5,
+        "vote": 4.9,
+        "evaluation": 1500,
+        "productDetail": "Apple iPad Pro 12.9 inç, M2 çip ile üst düzey performans sunar. 120Hz ProMotion ekran, Apple Pencil desteği ve gelişmiş kamera sistemi ile hem profesyonel hem de günlük kullanım için idealdir.",
+        "productFeatures": {
+            "Ekran Boyutu": "12.9 inç",
+            "Depolama": "128GB, 256GB, 512GB, 1TB",
+            "Yenileme Hızı": "120Hz",
+            "İşlemci": "Apple M2",
+            "Bağlantı": "Wi-Fi 6, 5G",
+            "İşletim Sistemi": "iPadOS 17"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "IPADPRO129",
+            "categories": "Tablet, Apple",
+            "tickets": "Apple, iPad Pro, Tablet"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728415023/7_qldyvl.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728415023/7_qldyvl.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728415023/8_qsihjf.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728415024/9_xzus8y.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 32,
+        "name": "Samsung Galaxy Tab S9",
+        "gender": "Elektronik",
+        "brand": "Samsung",
+        "category": "Tablet",
+        "price": {
+            "oldPrice": 12999.99,
+            "newPrice": 11999.99
+        },
+        "discount": 8,
+        "vote": 4.7,
+        "evaluation": 950,
+        "productDetail": "Samsung Galaxy Tab S9, güçlü Snapdragon 8 Gen 2 işlemci ve 120Hz AMOLED ekran ile donatılmıştır. S Pen desteği ve uzun pil ömrü sayesinde iş ve eğlence için mükemmel bir tablettir.",
+        "productFeatures": {
+            "Ekran Boyutu": "11 inç",
+            "Depolama": "128GB, 256GB",
+            "Yenileme Hızı": "120Hz",
+            "İşlemci": "Snapdragon 8 Gen 2",
+            "Bağlantı": "Wi-Fi 6, 5G",
+            "İşletim Sistemi": "Android 14"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "SAMSUNG_TAB_S9",
+            "categories": "Tablet, Samsung",
+            "tickets": "Samsung, Galaxy, Tab S9, Tablet"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728415024/10_hehpg1.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728415024/10_hehpg1.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728415024/12_xs56g6.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728415024/11_ondmgd.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 33,
+        "name": "Modern L Köşe Koltuk",
+        "gender": "Koltuklar",
+        "brand": "İstikbal",
+        "category": "Mobilya",
+        "price": {
+            "oldPrice": 12999.99,
+            "newPrice": 11999.99
+        },
+        "discount": 8,
+        "vote": 4.6,
+        "evaluation": 320,
+        "productDetail": "İstikbal’in modern L köşe koltuğu, şık tasarımı ve geniş oturma alanı ile rahatlığı ve estetiği bir araya getiriyor. Dayanıklı kumaşı ve kolay temizlenebilir yapısıyla uzun yıllar kullanım imkanı sunar.",
+        "productFeatures": {
+            "Renk": "Gri, Bej",
+            "Malzeme": "Kadife Kumaş",
+            "Koltuk Tipi": "L Köşe",
+            "Boyutlar": "270 x 200 x 90 cm",
+            "Kumaş Türü": "Silinebilir Kumaş"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "ISTLKOSE",
+            "categories": "Mobilya, Koltuk",
+            "tickets": "İstikbal, Köşe Koltuk, Mobilya"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728416861/1_bzwlxx.jpg",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728416861/1_bzwlxx.jpg",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728416861/2_w8yxr5.jpg",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728416862/3_oihylg.jpg"
+            ]
+        }
+    },
+
+    {
+        "id": 34,
+        "name": "Ahşap Yemek Masası",
+        "gender": "Masalar",
+        "brand": "Doğtaş",
+        "category": "Mobilya",
+        "price": {
+            "oldPrice": 7999.99,
+            "newPrice": 6999.99
+        },
+        "discount": 12,
+        "vote": 4.7,
+        "evaluation": 250,
+        "productDetail": "Doğtaş'ın modern tasarımlı ahşap yemek masası, doğal meşe kaplaması ve sağlam yapısıyla her yemek odasına uyum sağlar. 6 kişilik kapasiteye sahiptir ve geniş oturma alanı sunar.",
+        "productFeatures": {
+            "Renk": "Doğal Meşe",
+            "Malzeme": "Ahşap",
+            "Kapasite": "6 Kişilik",
+            "Boyutlar": "180 x 90 x 75 cm",
+            "Yüzey Tipi": "Parlak"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "DOGYEMEKMASA",
+            "categories": "Mobilya, Masa",
+            "tickets": "Doğtaş, Yemek Masası, Ahşap, Mobilya"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728416865/6_siwja9.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728416865/6_siwja9.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728416865/5_emtgxh.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728416862/4_qeddqj.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 35,
+        "name": "Çift Kişilik Yatak",
+        "gender": "Yataklar",
+        "brand": "Yataş",
+        "category": "Mobilya",
+        "price": {
+            "oldPrice": 9999.99,
+            "newPrice": 8999.99
+        },
+        "discount": 10,
+        "vote": 4.8,
+        "evaluation": 480,
+        "productDetail": "Yataş’ın ergonomik tasarımlı çift kişilik yatağı, vücuda mükemmel destek sağlayan yay sistemi ve yumuşak üst yüzeyi ile rahat bir uyku deneyimi sunar. Uzun ömürlü malzemesiyle yıllarca kullanılabilir.",
+        "productFeatures": {
+            "Boyut": "160 x 200 cm",
+            "Malzeme": "Ortopedik Yay",
+            "Yüzey Tipi": "Yumuşak",
+            "Kumaş Türü": "Anti-bakteriyel Kumaş",
+            "Garanti Süresi": "10 Yıl"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "YATCIKAT",
+            "categories": "Mobilya, Yatak",
+            "tickets": "Yataş, Yatak, Çift Kişilik"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728416870/7_itk7hu.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728416870/7_itk7hu.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728416875/8_cwp0g2.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728416878/9_pdi5fr.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 36,
+        "name": "Şifonyer ve Ayna Seti",
+        "gender": "Aynalar",
+        "brand": "Bellona",
+        "category": "Mobilya",
+        "price": {
+            "oldPrice": 5999.99,
+            "newPrice": 5499.99
+        },
+        "discount": 8,
+        "vote": 4.5,
+        "evaluation": 220,
+        "productDetail": "Bellona şifonyer ve ayna seti, modern ve minimalist tasarımı ile yatak odalarına şıklık katıyor. Geniş depolama alanları ve kaliteli malzeme yapısıyla hem estetik hem de fonksiyonel bir kullanım sağlar.",
+        "productFeatures": {
+            "Renk": "Beyaz",
+            "Malzeme": "MDF",
+            "Boyutlar": "100 x 50 x 75 cm (Şifonyer), 90 x 70 cm (Ayna)",
+            "Çekmece Sayısı": "4"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "BELLONASIFONYER",
+            "categories": "Mobilya, Şifonyer",
+            "tickets": "Bellona, Şifonyer, Mobilya"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728416876/10_yaayra.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728416876/10_yaayra.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728416868/11_vclhcl.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728416875/12_jhn51x.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 37,
+        "name": "İskandinav Tarzı TV Ünitesi",
+        "gender": "Üniteler",
+        "brand": "Vivense",
+        "category": "Mobilya",
+        "price": {
+            "oldPrice": 4999.99,
+            "newPrice": 4499.99
+        },
+        "discount": 10,
+        "vote": 4.6,
+        "evaluation": 310,
+        "productDetail": "Vivense'nin İskandinav tarzı TV ünitesi, modern ve minimalist tasarımı ile salonlarda ferah bir görünüm sağlar. Geniş depolama alanları ve sağlam yapısıyla uzun ömürlü bir kullanım sunar.",
+        "productFeatures": {
+            "Renk": "Beyaz, Ahşap",
+            "Malzeme": "MDF ve Ahşap",
+            "Boyutlar": "180 x 45 x 55 cm",
+            "Kapaklı Bölme": "Evet",
+            "Raf Sayısı": "4"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "VIVTVUNITE",
+            "categories": "Mobilya, TV Ünitesi",
+            "tickets": "Vivense, TV Ünitesi, İskandinav"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728416874/13_kxle2n.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728416874/13_kxle2n.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728416878/14_zrpcnp.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728416878/14_zrpcnp.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 38,
+        "name": "Ergonomik Ofis Koltuğu",
+        "gender": "Sandalyeler",
+        "brand": "Workstyle",
+        "category": "Mobilya",
+        "price": {
+            "oldPrice": 2999.99,
+            "newPrice": 2499.99
+        },
+        "discount": 17,
+        "vote": 4.7,
+        "evaluation": 480,
+        "productDetail": "Workstyle ergonomik ofis koltuğu, sırt destekli yapısı ve ayarlanabilir yüksekliği ile uzun çalışma saatlerinde maksimum konfor sağlar. Nefes alabilen kumaşı sayesinde terleme yapmaz.",
+        "productFeatures": {
+            "Renk": "Siyah",
+            "Malzeme": "Metal ve Kumaş",
+            "Yükseklik Ayarı": "Evet",
+            "Maksimum Ağırlık": "150 kg",
+            "Kumaş Türü": "Nefes Alabilen Kumaş"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "WORKOFFCHAIR",
+            "categories": "Mobilya, Ofis Koltuğu",
+            "tickets": "Ofis, Koltuk, Ergonomik, Mobilya"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728416878/16_rfpkgd.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728416878/16_rfpkgd.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728416880/17_saczgu.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728416878/18_h3xauk.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 39,
+        "name": "Rustik Ahşap Kitaplık",
+        "gender": "Kitaplık",
+        "brand": "Koçtaş",
+        "category": "Mobilya",
+        "price": {
+            "oldPrice": 3999.99,
+            "newPrice": 3499.99
+        },
+        "discount": 12,
+        "vote": 4.5,
+        "evaluation": 350,
+        "productDetail": "Koçtaş’ın rustik ahşap kitaplığı, geniş rafları ve sağlam yapısıyla kitaplarınızı düzenli bir şekilde saklamanızı sağlar. Rustik tarzı ile evinize doğal bir dokunuş katıyor.",
+        "productFeatures": {
+            "Renk": "Koyu Ahşap",
+            "Malzeme": "Masif Ahşap",
+            "Raf Sayısı": "5",
+            "Boyutlar": "90 x 30 x 180 cm",
+            "Montaj": "Kendin Yap"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "KOCTASKITAP",
+            "categories": "Mobilya, Kitaplık",
+            "tickets": "Koçtaş, Kitaplık, Rustik, Mobilya"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728416884/19_vs5nna.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728416884/19_vs5nna.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728416885/20_rhdonr.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728416888/21_gri3ii.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 40,
+        "name": "Puf Sandalye Seti",
+        "gender": "Sandalyeler",
+        "brand": "Enza Home",
+        "category": "Mobilya",
+        "price": {
+            "oldPrice": 2999.99,
+            "newPrice": 2499.99
+        },
+        "discount": 17,
+        "vote": 4.4,
+        "evaluation": 190,
+        "productDetail": "Enza Home’un puf sandalye seti, modern tasarımı ve konforlu oturma yapısıyla dikkat çekiyor. Hem oturma odaları hem de yatak odalarında şıklık yaratmak için ideal.",
+        "productFeatures": {
+            "Renk": "Mavi, Gri",
+            "Malzeme": "Kadife Kumaş",
+            "Boyutlar": "60 x 60 x 45 cm",
+            "Ayak Malzemesi": "Metal"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "ENZAPUFSET",
+            "categories": "Mobilya, Sandalye",
+            "tickets": "Enza, Puf, Sandalye, Mobilya"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728424513/24_un8fj6.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728424513/24_un8fj6.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728424514/23_z7thod.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728424508/22_tqh8qx.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 41,
+        "name": "Nike Air Max 270",
+        "gender": "Giyim",
+        "brand": "Nike",
+        "category": "Spor Ayakkabı",
+        "price": {
+            "oldPrice": 1399.99,
+            "newPrice": 1199.99
+        },
+        "discount": 14,
+        "vote": 4.8,
+        "evaluation": 1500,
+        "productDetail": "Nike Air Max 270, gün boyu rahatlık ve stil sunan bir spor ayakkabıdır. Özel hava tabanı sayesinde ekstra yastıklama sağlar.",
+        "productFeatures": {
+            "Renk": "Siyah, Beyaz, Kırmızı",
+            "Malzeme": "Sentetik ve File",
+            "Taban Tipi": "Air Max Yastıklama",
+            "Boyutlar": "40-45 numara aralığında",
+            "Cinsiyet": "Unisex"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "NIKEAIRMAX270",
+            "categories": "Ayakkabılar, Spor Ayakkabılar",
+            "tickets": "Nike, Spor Ayakkabı, Air Max"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728418872/2_evo5ju.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418872/2_evo5ju.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418871/1_hxjcld.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418874/3_gxm3mf.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 42,
+        "name": "Adidas Ultraboost 21",
+        "gender": "Giyim",
+        "brand": "Adidas",
+        "category": "Koşu Ayakkabısı",
+        "price": {
+            "oldPrice": 1599.99,
+            "newPrice": 1299.99
+        },
+        "discount": 19,
+        "vote": 4.9,
+        "evaluation": 1800,
+        "productDetail": "Adidas Ultraboost 21, üstün enerji dönüşümü sağlayan BOOST teknolojisi ile uzun süreli konfor sunar. Koşu için mükemmel destek sağlar.",
+        "productFeatures": {
+            "Renk": "Beyaz, Gri, Mavi",
+            "Malzeme": "Primeknit Üst Yüzey",
+            "Taban Tipi": "BOOST Yastıklama",
+            "Boyutlar": "40-46 numara aralığında",
+            "Cinsiyet": "Unisex"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "ADIDASUB21",
+            "categories": "Ayakkabılar, Koşu Ayakkabıları",
+            "tickets": "Adidas, Ultraboost, Koşu Ayakkabısı"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728418872/4_b1fsg1.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418872/4_b1fsg1.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418874/5_kf3n0q.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418875/6_tytkqu.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 44,
+        "name": "Converse Chuck Taylor All Star",
+        "gender": "Giyim",
+        "brand": "Converse",
+        "category": "Günlük Ayakkabı",
+        "price": {
+            "oldPrice": 749.99,
+            "newPrice": 649.99
+        },
+        "discount": 13,
+        "vote": 4.6,
+        "evaluation": 2500,
+        "productDetail": "Converse Chuck Taylor All Star, klasik tasarımı ve rahat yapısıyla her gün için ideal bir tercih sunar.",
+        "productFeatures": {
+            "Renk": "Siyah, Beyaz",
+            "Malzeme": "Kanvas",
+            "Taban Tipi": "Düz Kauçuk",
+            "Boyutlar": "36-45 numara aralığında",
+            "Cinsiyet": "Unisex"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "CONVERSECTAS",
+            "categories": "Ayakkabılar, Günlük Ayakkabılar",
+            "tickets": "Converse, Chuck Taylor, Günlük Ayakkabı"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728418888/11_zh9wmu.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418888/11_zh9wmu.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418878/10_nox1bx.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418888/12_bprord.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 45,
+        "name": "New Balance 574",
+        "gender": "Giyim",
+        "brand": "New Balance",
+        "category": "Günlük Ayakkabı",
+        "price": {
+            "oldPrice": 1099.99,
+            "newPrice": 999.99
+        },
+        "discount": 9,
+        "vote": 4.5,
+        "evaluation": 900,
+        "productDetail": "New Balance 574, zamansız stili ve üstün konforuyla bilinen günlük bir ayakkabıdır.",
+        "productFeatures": {
+            "Renk": "Gri, Mavi, Siyah",
+            "Malzeme": "Süet ve File",
+            "Taban Tipi": "ENCAP Yastıklama",
+            "Boyutlar": "38-44 numara aralığında",
+            "Cinsiyet": "Unisex"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "NEWBAL574",
+            "categories": "Ayakkabılar, Günlük Ayakkabılar",
+            "tickets": "New Balance, 574, Günlük Ayakkabı"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728418893/14_aqigga.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418893/14_aqigga.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418889/13_agacbf.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418896/15_douz8a.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 46,
+        "name": "Vans Old Skool",
+        "gender": "Giyim",
+        "brand": "Vans",
+        "category": "Kaykay Ayakkabısı",
+        "price": {
+            "oldPrice": 799.99,
+            "newPrice": 699.99
+        },
+        "discount": 12,
+        "vote": 4.7,
+        "evaluation": 2200,
+        "productDetail": "Vans Old Skool, ikonik yan şerit tasarımı ve dayanıklı yapısıyla kaykaycılar ve stil arayanlar için ideal.",
+        "productFeatures": {
+            "Renk": "Siyah, Beyaz",
+            "Malzeme": "Deri ve Kanvas",
+            "Taban Tipi": "Waffle Kauçuk",
+            "Boyutlar": "36-45 numara aralığında",
+            "Cinsiyet": "Unisex"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "VANSOLD",
+            "categories": "Ayakkabılar, Kaykay Ayakkabıları",
+            "tickets": "Vans, Old Skool, Kaykay Ayakkabısı"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728418897/17_a6b187.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418897/17_a6b187.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418897/16_fsufdp.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418896/18_stkvkk.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 47,
+        "name": "Under Armour HOVR Phantom 2",
+        "gender": "Giyim",
+        "brand": "Under Armour",
+        "category": "Spor Ayakkabı",
+        "price": {
+            "oldPrice": 1599.99,
+            "newPrice": 1399.99
+        },
+        "discount": 12,
+        "vote": 4.8,
+        "evaluation": 900,
+        "productDetail": "Under Armour HOVR Phantom 2, yastıklama ve enerji geri dönüşümü sunarak koşu esnasında konfor sağlar.",
+        "productFeatures": {
+            "Renk": "Beyaz, Siyah",
+            "Malzeme": "File ve Deri",
+            "Taban Tipi": "HOVR Yastıklama",
+            "Boyutlar": "40-46 numara aralığında",
+            "Cinsiyet": "Unisex"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "UAHOVR2",
+            "categories": "Ayakkabılar, Spor Ayakkabılar",
+            "tickets": "Under Armour, HOVR, Spor Ayakkabı"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728418898/19_oicezq.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418898/19_oicezq.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418897/20_flhy38.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418899/21_eyhfpj.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 48,
+        "name": "Fila Disruptor II",
+        "gender": "Giyim",
+        "brand": "Fila",
+        "category": "Günlük Ayakkabı",
+        "price": {
+            "oldPrice": 849.99,
+            "newPrice": 699.99
+        },
+        "discount": 17,
+        "vote": 4.5,
+        "evaluation": 1100,
+        "productDetail": "Fila Disruptor II, retro tarzı ve rahat yapısıyla günlük kullanım için idealdir.",
+        "productFeatures": {
+            "Renk": "Beyaz, Pembe",
+            "Malzeme": "Deri ve Sentetik",
+            "Taban Tipi": "Kauçuk",
+            "Boyutlar": "36-45 numara aralığında",
+            "Cinsiyet": "Kadın"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "FILADISRUPTORII",
+            "categories": "Ayakkabılar, Günlük Ayakkabılar",
+            "tickets": "Fila, Disruptor, Günlük Ayakkabı"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728418899/22_juuhvu.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418899/22_juuhvu.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418899/23_pp4tbw.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418899/24_lykgg1.webp"
+            ]
+        }
+    },
+
+    {
+        "id": 55,
+        "name": "Puma RS-X",
+        "gender": "Giyim",
+        "brand": "Puma",
+        "category": "Spor Ayakkabı",
+        "price": {
+            "oldPrice": 1099.99,
+            "newPrice": 899.99
+        },
+        "discount": 18,
+        "vote": 4.7,
+        "evaluation": 1200,
+        "productDetail": "Puma RS-X, retro stili modern tasarım ile birleştiren bir spor ayakkabıdır. Maksimum konfor ve performans sunar.",
+        "productFeatures": {
+            "Renk": "Sarı, Siyah, Gri",
+            "Malzeme": "File ve Deri",
+            "Taban Tipi": "EVA Yastıklama",
+            "Boyutlar": "38-45 numara aralığında",
+            "Cinsiyet": "Unisex"
+        },
+        "ProductOther": {
+            "abroad": "Satış Var",
+            "stockCode": "PUMARSX",
+            "categories": "Ayakkabılar, Spor Ayakkabılar",
+            "tickets": "Puma, RS-X, Spor Ayakkabı"
+        },
+        "img": {
+            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728418878/9_x2owwy.webp",
+            "thumbs": [
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418878/9_x2owwy.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418877/8_yr0uvl.webp",
+                "https://res.cloudinary.com/omercikan/image/upload/v1728418876/7_rco1zy.webp"
+            ]
+        }
     }
 ]

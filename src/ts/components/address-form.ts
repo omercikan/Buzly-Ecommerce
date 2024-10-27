@@ -224,6 +224,9 @@ document.querySelector('.location-btn').addEventListener('click', () => {
 async function onSuccess(location): Promise<undefined> {
     const latitude = location.coords.latitude;
     const longitude = location.coords.longitude;
+
+    const apiKey = "25cc226f653e4e099e04f4266282f718";
+    const apiUrl = `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${apiKey}`
     
     const request = await fetch(apiUrl);
     const data = await request.json();
