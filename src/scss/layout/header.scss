@@ -157,19 +157,17 @@ $darkRed: #dc3545;
         
         &:hover .mini-dropdown-menu {
             visibility: visible;
-            opacity: 1;
             top: 100%;
         }
-
+ 
         .mini-dropdown-menu {
             position: absolute;
-            top: 98%;
+            top: -70%;
             left: -30px;
             width: max-content;
             visibility: hidden;
-            opacity: 0;
-            transition:  opacity .3s ease;
-            z-index: 10;
+            transition:  top .3s ease;
+            z-index: -10;
     
             .dropdown-menu-wrapper {
                 background-color: #fff;
@@ -202,7 +200,6 @@ $darkRed: #dc3545;
         
         &:hover .mega-dropdown-menu {
             visibility: visible;
-            opacity: 1;
             top: 100%;
         }
 
@@ -211,12 +208,11 @@ $darkRed: #dc3545;
             justify-content: center;
             width: 100%;
             position: absolute;
-            top: 98%;
+            top: 70%;
             left: 0;
             visibility: hidden;
-            opacity: 0;
-            transition: opacity .4s ease;
-            z-index: 10;
+            transition: top .4s ease;
+            z-index: -10;
     
             .mega-dropdown-wrapper {
                 background-color: #fff;

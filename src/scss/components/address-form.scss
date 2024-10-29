@@ -260,7 +260,6 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        width: max-content;
         padding: 30px 20px 20px;
         text-align: center;
         border-radius: 8px;
@@ -337,5 +336,9 @@
 @media(max-width: 576px) {
     .address-wrapper {
         width: 97% !important;
+    }
+
+    .address-message {
+        width: 95% !important;
     }
 }

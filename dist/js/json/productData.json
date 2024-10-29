@@ -895,45 +895,6 @@
     },
 
     {
-        "id": 25,
-        "name": "Apple Watch Series 9",
-        "gender": "Elektronik",
-        "brand": "Apple",
-        "category": "Akıllı Saat",
-        "price": {
-            "oldPrice": 5999.99,
-            "newPrice": 5499.99
-        },
-        "discount": 8,
-        "vote": 4.7,
-        "evaluation": 1200,
-        "productDetail": "Apple Watch Series 9, sağlık ve fitness takibi için geliştirilmiş en yeni özelliklere sahip. Gelişmiş sensörleri ve kullanıcı dostu arayüzü ile günlük aktivitelerinizi takip etmenize yardımcı olur.",
-        "productFeatures": {
-            "Renk": "Gümüş, Uzay Grisi, Altın",
-            "Ekran Boyutu": "1.9 inç",
-            "Pil Kapasitesi": "18 saat",
-            "Su Geçirmezlik": "50 metreye kadar",
-            "Bağlantı": "Bluetooth 5.0, Wi-Fi",
-            "İşletim Sistemi": "watchOS 10",
-            "Sensörler": "Kalp atış hızı, Oksijen, GPS"
-        },
-        "ProductOther": {
-            "abroad": "Satış Var",
-            "stockCode": "AW9",
-            "categories": "Akıllı Saat, Apple",
-            "tickets": "Apple Watch, Saat"
-        },
-        "img": {
-            "mainImage": "https://res.cloudinary.com/omercikan/image/upload/v1728411387/2_yknsbc.webp",
-            "thumbs": [
-                "https://res.cloudinary.com/omercikan/image/upload/v1728411387/2_yknsbc.webp",
-                "https://res.cloudinary.com/omercikan/image/upload/v1728411386/1_z5roxa.webp",
-                "https://res.cloudinary.com/omercikan/image/upload/v1728411386/3_rx0ncu.webp"
-            ]
-        }
-    },
-
-    {
         "id": 28,
         "name": "Samsung Galaxy S24",
         "gender": "Elektronik",

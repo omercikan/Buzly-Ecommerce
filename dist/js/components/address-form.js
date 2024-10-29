@@ -197,7 +197,6 @@ function onSuccess(location) {
     return __awaiter(this, void 0, void 0, function* () {
         const latitude = location.coords.latitude;
         const longitude = location.coords.longitude;
-       
         const request = yield fetch(apiUrl);
         const data = yield request.json();
         const neighbourhood = data.results[0].components.suburb;
