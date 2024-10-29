@@ -4,14 +4,15 @@ function displayProduct() {
     let cartProductHtml: string = '';
     const productListContainer = document.getElementById('productListContainer') as HTMLTableSectionElement;
 
-    cart.forEach(element => {
+    cart.forEach((element): undefined => {
         cartProductHtml += `
             <tr data-id="${element.id}">
                 <td class="table-thumbnail">
-                <i class="bi bi-x delete-cart" data-id="${element.id}"></i>
-                <img src="${element.img.mainImage}" alt="product polo tshirt">
+                    <i class="bi bi-x delete-cart" data-id="${element.id}"></i>
+                    <img src="${element.img.mainImage}" alt="product polo tshirt" data-id="${element.id}" class="goTo_Product">
                 </td>  
-                <td>${element.name}</td>
+
+                <td data-id="${element.id}" class="goTo_Product">${element.name}</td>
                 <td class='productPrice'>${element.price.newPrice} TL</td>
                 <td class="count-product">
                     <div class="counter-wrapper">
@@ -28,6 +29,21 @@ function displayProduct() {
 
     productListContainer.innerHTML = cartProductHtml;
     deleteCart();
+    goToProduct();
+}
+
+const goToProduct = (): void => {
+    const targetItems = document.querySelectorAll('.goTo_Product');
+    targetItems.forEach((item: HTMLElement): undefined => {
+        item.addEventListener('click', () => {
+            const id = item.getAttribute("data-id");
+            const findProduct = cart.find((product) => product.id === Number(id))
+            if(findProduct) {
+                localStorage.setItem('showProduct', JSON.stringify(findProduct))
+                window.location.href = 'product-detail.html'
+            };
+        })
+    })
 }
 
 const deleteCart = () => {

@@ -60,6 +60,10 @@
                         tr {
                             border-top: 1px solid $stick;
                             border-bottom: 1px solid $stick;
+
+                            td:nth-child(2) {
+                                cursor: pointer;
+                            }
     
                             .table-thumbnail {
                                 position: relative;
@@ -68,6 +72,7 @@
     
                                 img {
                                     width: 100%;
+                                    cursor: pointer;
                                 }
     
                                 i {
