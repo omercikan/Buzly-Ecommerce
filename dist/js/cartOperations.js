@@ -45,7 +45,6 @@ const goToProduct = () => {
 const deleteCart = () => {
     const deleteCartButtons = document.querySelectorAll('.delete-cart');
     const cartCount = document.querySelector('.cart-count');
-    const basketTableContainer = document.querySelector('.basket-table-container');
     deleteCartButtons.forEach((button) => {
         button.addEventListener('click', (e) => {
             const target = e.target;
@@ -53,9 +52,6 @@ const deleteCart = () => {
             cart = cart.filter((item) => item.id !== Number(id));
             localStorage.setItem('cart', JSON.stringify(cart));
             cartCount.innerHTML = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')).length : "0";
-            // if(JSON.parse(localStorage.getItem('cart')).length <= 0) {
-            //     basketTableContainer.innerHTML = '<p class="text-center fw-bolder">Sepetinizde hiç ürün yok.</p>'
-            // }
             displayProduct();
             calculateCart();
         });
@@ -67,7 +63,7 @@ export const calculateCart = () => {
     const cargoCheckbox = document.getElementById('cargoCheckbox');
     const fastCargo = 15;
     let itemsTotal = 0;
-    cart.length > 0 && cart.map((item) => (itemsTotal += item.price.newPrice * item.amount));
+    cart.length > 0 && cart.reduce((acc, currentPrice) => itemsTotal += (acc = currentPrice.price.newPrice * currentPrice.amount), 0);
     productTotal.innerHTML = `${itemsTotal.toFixed(2)} TL`;
     totalPrice.innerHTML = `${itemsTotal.toFixed(2)} TL`;
     cargoCheckbox.addEventListener('change', (e) => {

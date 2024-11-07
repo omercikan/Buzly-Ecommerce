@@ -3,7 +3,7 @@ let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart'
 const productDownBtn = document.querySelectorAll('#productDownBtn');
 const productUpBtn = document.querySelectorAll('#productUpBtn');
 //!Click Down product number
-productDownBtn.forEach(down => {
+productDownBtn.forEach((down) => {
     down.addEventListener('click', function () {
         const productRow = this.closest('tr');
         const productCountInput = productRow.querySelector('.productCountInput');
@@ -26,10 +26,11 @@ productDownBtn.forEach(down => {
         const updateAmount = Number(findProduct.amount);
         productCountInput.closest('tr').querySelector('.price').innerHTML = `${(price * updateAmount).toFixed(2)} TL`;
         calculateBasket();
+        cargoStatus();
     });
 });
 //!Click Up product number
-productUpBtn.forEach(up => {
+productUpBtn.forEach((up) => {
     up.addEventListener('click', function () {
         const productRow = this.closest('tr');
         const productCountInput = productRow.querySelector('.productCountInput');
@@ -52,22 +53,23 @@ productUpBtn.forEach(up => {
         const updateAmount = Number(findProduct.amount);
         productCountInput.closest('tr').querySelector('.price').innerHTML = `${(price * updateAmount).toFixed(2)} TL`;
         calculateBasket();
+        cargoStatus();
     });
 });
 const calculateBasket = () => {
+    let fastCargo = 15;
     let totalPrice = 0;
-    cart.map((item) => (totalPrice += item.price.newPrice * item.amount));
+    cart.reduce((acc, currentPrice) => totalPrice += (acc = currentPrice.price.newPrice * currentPrice.amount), 0);
     const productTotal = document.getElementById('productTotal');
     const totalProductPrice = document.getElementById('totalPrice');
     const cargoCheckbox = document.getElementById('cargoCheckbox');
-    let fast = 15;
     productTotal.innerHTML = `${totalPrice.toFixed(2)} TL`;
     totalProductPrice.innerHTML = `${totalPrice.toFixed(2)} TL`;
     cargoCheckbox.addEventListener('change', (e) => {
         const target = e.target;
         const checked = target.checked;
         if (checked) {
-            totalProductPrice.innerHTML = `${(totalPrice + fast).toFixed(2)} TL`;
+            totalProductPrice.innerHTML = `${(totalPrice + fastCargo).toFixed(2)} TL`;
         }
         else {
             totalProductPrice.innerHTML = `${(totalPrice).toFixed(2)} TL`;
@@ -139,13 +141,11 @@ const cartCount = document.querySelector('.cart-count');
 cartCount.innerHTML = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')).length : "0";
 const cargoStatus = () => {
     const totalProductPrice = document.getElementById('totalPrice');
-    const totalPrice = parseInt(totalProductPrice.innerText);
+    const totalPrice = parseInt(totalProductPrice.innerText) || 0;
     if (totalPrice >= 300) {
         document.querySelector('.free-progress-text').innerHTML = '<i class="bi bi-box-seam text-success"></i> <span class="ms-1">Kargo Bedava!</span>';
         document.querySelector('.free-progress-bar__inner').style.width = '100%';
         document.querySelector('.discount-summary').style.display = 'flex';
-        const discountSummaryPrice = document.getElementById('discountSummaryPrice');
-        const discountPrice = parseInt(discountSummaryPrice.innerText);
         const totalPrice = document.getElementById('totalPrice');
         const numberTotalPrice = parseInt(totalPrice.innerText);
         totalPrice.innerHTML = `${(numberTotalPrice - 49.9).toFixed(2)} TL`;
@@ -155,6 +155,7 @@ const cargoStatus = () => {
         document.querySelector('.free-progress-bar__inner').style.width = '0%';
     }
     else {
+        document.querySelector('.discount-summary').style.display = 'none';
         document.querySelector('.free-progress-text').innerHTML = `<i class="bi bi-box-seam"></i> Kargonuzun bedava olması için <strong>${300 - totalPrice} TL</strong> daha ürün ekleyin`;
         document.querySelector('.free-progress-bar__inner').style.width = 'calc(100% - 10%)';
     }

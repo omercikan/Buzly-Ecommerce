@@ -1,10 +1,10 @@
 let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
 
-function displayProduct() {
+function displayProduct(): void {
     let cartProductHtml: string = '';
     const productListContainer = document.getElementById('productListContainer') as HTMLTableSectionElement;
 
-    cart.forEach((element): undefined => {
+    cart.forEach((element) => {
         cartProductHtml += `
             <tr data-id="${element.id}">
                 <td class="table-thumbnail">
@@ -46,22 +46,17 @@ const goToProduct = (): void => {
     })
 }
 
-const deleteCart = () => {
+const deleteCart = (): void => {
     const deleteCartButtons = document.querySelectorAll<HTMLElement>('.delete-cart');
     const cartCount = document.querySelector<HTMLSpanElement>('.cart-count');
-    const basketTableContainer = document.querySelector<HTMLDivElement>('.basket-table-container');
 
     deleteCartButtons.forEach((button) => {
-        button.addEventListener('click', (e) => {
+        button.addEventListener('click', (e: Event) => {
             const target = e.target as HTMLElement;
             const id = target.dataset.id
             cart = cart.filter((item) => item.id !== Number(id)) 
             localStorage.setItem('cart', JSON.stringify(cart));
             cartCount.innerHTML = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')).length : "0";
-
-            // if(JSON.parse(localStorage.getItem('cart')).length <= 0) {
-            //     basketTableContainer.innerHTML = '<p class="text-center fw-bolder">Sepetinizde hiç ürün yok.</p>'
-            // }
 
             displayProduct();
             calculateCart();
@@ -69,14 +64,14 @@ const deleteCart = () => {
     });
 };
 
-export const calculateCart = () => {
+export const calculateCart = (): void => {
     const totalPrice = document.getElementById('totalPrice') as HTMLSpanElement;
     const productTotal = document.getElementById('productTotal') as HTMLSpanElement;
     const cargoCheckbox = document.getElementById('cargoCheckbox') as HTMLInputElement;
-    const fastCargo = 15;
-    let itemsTotal = 0;
+    const fastCargo: number = 15;
+    let itemsTotal: number = 0;
 
-    cart.length > 0 && cart.map((item) => (itemsTotal +=  item.price.newPrice * item.amount));
+    cart.length > 0 && cart.reduce((acc, currentPrice) => itemsTotal += (acc = currentPrice.price.newPrice * currentPrice.amount), 0);
 
     productTotal.innerHTML = `${itemsTotal.toFixed(2)} TL`;  
     totalPrice.innerHTML = `${itemsTotal.toFixed(2)} TL`;

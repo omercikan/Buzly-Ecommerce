@@ -66,6 +66,10 @@
                     display: flex;
                     flex-direction: column;
 
+                    #modalInput {
+                        font-size: 14px;
+                    }
+
                     label {
                         display: flex;
                         align-items: center;
@@ -137,12 +141,22 @@
 }
 
 @media(max-width: 576px) {
+    .popup-container {
+        width: 95% !important;
+        margin: auto;
+    }
+
     .popup-image {
         display: none;
     }
 
     .popup-close {
-        top: -55px !important;
+        top: -65px !important;
+
+        i {
+            filter: drop-shadow(0px 0px 10px #fff);
+            -webkit-text-stroke: 1px #000;
+        }
     }
 
 }

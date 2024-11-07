@@ -223,8 +223,7 @@ document.querySelector('.location-btn').addEventListener('click', () => {
 
 async function onSuccess(location): Promise<undefined> {
     const latitude = location.coords.latitude;
-    const longitude = location.coords.longitude;
-    
+    const longitude = location.coords.longitude;    
     const request = await fetch(apiUrl);
     const data = await request.json();
     const neighbourhood = data.results[0].components.suburb;
