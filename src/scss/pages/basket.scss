@@ -182,9 +182,11 @@
                             position: relative;
 
                             input {
-                                height: 100%;
+                                width: 203.2px;
+                                height: 100% !important;
                                 padding-right: calc(1.5em + .75rem) !important;
                                 padding: .375rem .75rem;
+                                font-size: 14px;
                             }
         
                             button {

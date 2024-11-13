@@ -1,6 +1,24 @@
 //!Slider General Settings
 .slider-elements {
     position: relative;
+    opacity: 0;
+    visibility: hidden;
+    animation: slider-animate 1s ease forwards;
+
+    @keyframes slider-animate {
+        0% {
+            scale: .99;
+            opacity: 0;
+            visibility: hidden;
+            filter: blur(10px);
+        }
+        100% {
+            scale: 1;
+            opacity: 1;
+            visibility: visible;
+            filter: blur(0px);
+        }
+    }
 
     &__item {
         position: relative;

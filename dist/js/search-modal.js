@@ -1,6 +1,7 @@
 const allProductData = localStorage.getItem('products') ? JSON.parse(localStorage.getItem('products')) : [];
 const searchModalResults = document.getElementById('searchModalResults');
 const searchModalInput = document.getElementById('searchModalInput');
+const searchTitle = document.querySelector('.search-title');
 export const showProducts = (allProductData) => {
     let resultsProductHTML = '';
     allProductData.forEach((data) => {
@@ -22,28 +23,31 @@ showProducts(allProductData);
 const searchProduct = (allProductData) => {
     searchModalInput.addEventListener('input', () => {
         let searchHTML = '';
-        allProductData.forEach((search) => {
-            if (search.name.trim().toLowerCase().includes(searchModalInput.value.trim().toLowerCase())) {
+        allProductData.forEach((product) => {
+            if (product.name.trim().toLowerCase().includes(searchModalInput.value.trim().toLowerCase())) {
                 searchHTML += `
-                    <a href="#" class="result-item" data-id="${search.id}">
-                        <img src="${search.img.mainImage}" alt="${search.name}"> 
-            
+                    <a href="#" class="result-item" data-id="${product.id}">
+                        <img src="${product.img.mainImage}" alt="${product.name}"> 
                         <div class="result-item__info">
-                        <h4>${search.name}</h4>
-                        <span class="search-code">Stok Kodu: ${search.ProductOther.stockCode}</span>
-                        <span class="search-price">${search.price.newPrice} TL</span>
+                            <h4>${product.name}</h4>
+                            <span class="search-code">Stok Kodu: ${product.ProductOther.stockCode}</span>
+                            <span class="search-price">${product.price.newPrice} TL</span>
                         </div>
                     </a>
                 `;
             }
         });
-        searchModalResults.innerHTML = searchHTML;
-        goToFocusProduct(allProductData);
-        if (searchHTML === '') {
-            document.querySelector('.modal-empty-message').style.display = 'block';
+        if (searchModalInput.value.length > 0) {
+            searchTitle.textContent = `Arama Sonuçları (${searchModalResults.children.length})`;
         }
         else {
-            document.querySelector('.modal-empty-message').style.display = 'none';
+            searchTitle.textContent = `Ürünler`;
+        }
+        searchModalResults.innerHTML = searchHTML;
+        goToFocusProduct(allProductData);
+        const emptyMessageElement = document.querySelector('.modal-empty-message');
+        if (emptyMessageElement) {
+            emptyMessageElement.style.display = searchHTML === '' ? 'block' : 'none';
         }
     });
 };

@@ -1,7 +1,7 @@
 const storageTotalPrice = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
 let totalPrice: number = 0;
 let discountCargo: number = 49.90;
-let discountAmount: number = 500;
+let discountAmount: number = 250 - 0.10;
 
 storageTotalPrice.map((item) => (totalPrice) += (item.price.newPrice));
 document.getElementById('paymentPrice').innerText = `${totalPrice.toFixed(2)} TL`;
@@ -16,7 +16,7 @@ if(totalPrice > 300) {
     document.querySelector<HTMLLIElement>('.summary-cargo-area').style.display = 'block'
 }
 
-if(totalPrice > 500) {
+if(totalPrice > 1000) {
     const earningPrice = document.getElementById('earningPrice')
     // const totalDiscount = (discountAmount - discountCargo) (parseFloat(earningPrice.innerText))
     const totalDiscount = (discountAmount - discountCargo);

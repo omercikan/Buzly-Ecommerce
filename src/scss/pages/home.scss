@@ -1,6 +1,22 @@
 //!Product List Settings Start !//
 .shop-products {
     position: relative;
+    animation: product-animate 1s ease forwards;
+
+    @keyframes product-animate {
+        0% {
+            scale: .99;
+            opacity: 0;
+            visibility: hidden;
+            filter: blur(10px);
+        }
+        100% {
+            scale: 1;
+            opacity: 1;
+            visibility: visible;
+            filter: blur(0px);
+        }
+    }
 
     .product-carousel {
         position: relative;
@@ -90,15 +106,17 @@
                 .product-details {
     
                     a {
-                        display: inline-flex;
+                        display: block;
                         margin-top: 15px;
                         font-size: 14px;
                         font-weight: 600;
                         text-overflow: ellipsis;
                         white-space: nowrap;
+                        padding: 0 1rem;
+                        overflow: hidden;
                     }
     
-                    ul {
+                    ul { 
                         display: flex;
                         justify-content: center;
                         column-gap: 8px;

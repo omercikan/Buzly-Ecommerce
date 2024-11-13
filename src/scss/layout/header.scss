@@ -23,6 +23,23 @@ $darkRed: #dc3545;
     position: sticky;
     top: 0px;
     z-index: 50;
+    animation: header-animate 1s ease forwards;
+    opacity: 0;
+    visibility: hidden;
+    scale: 1 !important;
+
+    @keyframes header-animate {
+        0% {
+            opacity: 0;
+            visibility: hidden;
+            filter: blur(10px);
+        }
+        100% {
+            opacity: 1;
+            visibility: visible;
+            filter: blur(0px);
+        }
+    }
 
     .global-notification {
         background-color: $blueBg;

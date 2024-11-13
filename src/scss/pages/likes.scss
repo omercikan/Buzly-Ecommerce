@@ -146,7 +146,7 @@
 
 @media(max-width: 768px) {
     .likes-product-items {
-        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-columns: repeat(3, 1fr) !important;
     }
 }
 
@@ -160,11 +160,9 @@
     .likes-navbar__search input{
         width: 100% !important;
     }
-
-    
 }
 
-@media(max-width: 393px) {
+@media(max-width: 430px) {
     .likes-navbar__like {
         margin: auto;
     }

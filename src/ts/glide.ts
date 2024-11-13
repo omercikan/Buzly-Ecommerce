@@ -6,7 +6,7 @@ export function productFirstSlider() {
     const configOne = {
         perView: 4,
         gap: 10,
-        // autoplay: 4000,
+        autoplay: 2000,
         bound: true,
         breakpoints: {
             992: {
@@ -16,8 +16,8 @@ export function productFirstSlider() {
             768: {
                 perView: 2,
             },
-    
-            576: {
+            
+            375: {
                 perView: 1,
             }
         }
@@ -30,7 +30,7 @@ export function productSecondSlider() {
     const configTwo = {
         perView: 4,
         gap: 10,
-        // autoplay: 4000,
+        autoplay: 2000,
         bound: true,
         breakpoints: {
             992: {
@@ -40,8 +40,8 @@ export function productSecondSlider() {
             768: {
                 perView: 2,
             },
-    
-            576: {
+
+            375: {
                 perView: 1,
             }
         }

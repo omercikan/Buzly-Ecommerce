@@ -3,7 +3,6 @@ const categoryProductsList = document.getElementById('categoryProductsList');
 const params = new URLSearchParams(window.location.search);
 const categoryName = params.get('category');
 document.querySelector('.category-heading h2').innerHTML = categoryName;
-document.querySelector('.category-heading span').innerHTML = categoryName;
 let cart = [];
 cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
 const addToCart = () => {

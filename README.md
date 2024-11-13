@@ -31,7 +31,7 @@
 <h2>📁 Proje Kurulumu</h2>
 <ol>
   <li>Projeyi klonlayın: <code>git clone https://github.com/omercikan/Buzly-Ecommerce.git</code></li>
-  <li>Proje dizinine gidin: <code>cd buzly</code></li>
+  <li>Proje dizinine gidin: <code>cd Buzly-Ecommerce-master</code></li>
   <li>Gerekli bağımlılıkları yükleyin: <code>npm install</code></li>
 </ol>
 
