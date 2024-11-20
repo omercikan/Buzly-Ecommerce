@@ -86,7 +86,7 @@
 
 <br>
 
-<strong>Canlı demo link:</stron> [https://buzly-ecommerce.netlify.app/](https://buzly-ecommerce.netlify.app/)
+<a href="https://buzly-ecommerce.netlify.app/">CANLI DEMO LINK</a>
 <br/> <hr/>
 
 <h2>Lisansa Dair</h2>
