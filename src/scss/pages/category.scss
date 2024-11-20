@@ -16,13 +16,6 @@
         font-size: 13px !important;
     }
 
-    p {
-
-        i {
-            -webkit-text-stroke: .5px #000;
-        }
-    }
-
     a:hover {
         text-decoration: underline !important;
     }
@@ -31,7 +24,7 @@
 .category-products-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 10px;
 
     .category-product-item {
         overflow: hidden;
@@ -91,12 +84,13 @@
             background-color: $productBg;
 
             a {
-                display: inline-flex;
-                margin-top: 15px;
+                display: block;
                 font-size: 14px;
                 font-weight: 600;
                 text-overflow: ellipsis;
                 white-space: nowrap;
+                overflow: hidden;
+                padding: 15px 1rem 0 1rem;
             }
 
             ul {
