@@ -87,13 +87,14 @@
 <br>
 
 <a href="https://buzly-ecommerce.netlify.app/">CANLI DEMO LINK</a>
-<br/> <hr/>
+
+<br/> 
+<hr/>
 
 <h2>Lisansa Dair</h2>
-    <p>Bu proje <strong>MIT Lisansı</strong> ile lisanslanmıştır. Detaylar için <a href="LICENSE">Lisans dosyasını</a> kontrol edin.</p>
+  <p>Bu proje <strong>MIT Lisansı</strong> ile lisanslanmıştır. Detaylar için <a href="LICENSE">Lisans dosyasını</a> kontrol edin.</p>
+<hr>
 
-  <hr>
-
-  <h3>MIT Lisansı</h3>
-  <p>Copyright © 2024 Ömer Çıkan</p>
-  <p>Bu yazılım MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için lütfen <a href="LICENSE">Lisans dosyasına</a> bakın.</p>
+<h3>MIT Lisansı</h3>
+<p>Copyright © 2024 Ömer Çıkan</p>
+<p>Bu yazılım MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için lütfen <a href="LICENSE">Lisans dosyasına</a> bakın.</p>
