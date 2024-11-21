@@ -7,11 +7,7 @@ header
 import { checkSubscribe } from "./components/footer.js";
 checkSubscribe();
 
-import  productSliderFunc  from "./product.js";
-
-// import { showProducts } from "./search-modal.js";
-// import { goToFocusProduct } from "./search-modal.js";
-
+import productSliderFunc  from "./product.js";
 import { searchFunc } from "./search-modal.js";
 
 import { displayBlogs } from "./main-blogs.js";
@@ -22,10 +18,9 @@ import { displayFocusCategoryOffer } from "./components/slider-orientation.js";
 
 //!<-- Get All Product save to localStorage start -->
 async function productData() {
-    const requestData = await fetch("./js/json/productData.json")
+    const requestData = await fetch("./data/json/productData.json")
     const data = await requestData.json();
     data ? localStorage.setItem('products', JSON.stringify(data)) : [];
-    // showProducts(data)
     searchFunc(data)
 }
 
@@ -34,7 +29,7 @@ productData();
 
 //!<-- Get Product First data save to localStorage start -->
 async function firstProdutData() {
-    const requestFirstData = await fetch('./js/json/productDataOne.json')
+    const requestFirstData = await fetch('./data/json/productDataOne.json')
     const data = await requestFirstData.json()
     data ? localStorage.setItem('productsFirst', JSON.stringify(data)) : [];
     productSliderFunc();
@@ -45,7 +40,7 @@ firstProdutData();
 
 //!<-- Get Product First data save to localStorage start -->
 async function secondProductData() {
-    const requestSecondData = await fetch('./js/json/productDataTwo.json')
+    const requestSecondData = await fetch('./data/json/productDataTwo.json')
     const data = await requestSecondData.json();
     data ? localStorage.setItem('productsSecond', JSON.stringify(data)) : [];
     productSliderFunc();
@@ -56,7 +51,7 @@ secondProductData();
 
 //!<-- Get Blog data save to localStorage start -->
 async function allBlogData() {
-    const requestBlogData = await fetch('./js/json/blog.json');
+    const requestBlogData = await fetch('./data/json/blog.json');
     const data = await requestBlogData.json();
     
     if(data) {
@@ -70,7 +65,7 @@ allBlogData()
 
 //!<-- Get Blog data save to localStorage start -->
 async function allBlogsData() {
-    const requestBlogData = await fetch('./js/json/blog.json');
+    const requestBlogData = await fetch('./data/json/blog.json');
     const data = await requestBlogData.json();
     data ? localStorage.setItem('blogs', JSON.stringify(data)) : [];
     displayAllBlogs(data);    
@@ -81,7 +76,7 @@ allBlogsData()
 
 //!<-- Make a request to Categories start -->
 async function categories() {
-    const requestCategories = await fetch('./js/json/categories.json');
+    const requestCategories = await fetch('./data/json/categories.json');
     const data = await requestCategories.json();
     data ? localStorage.setItem('categories', JSON.stringify(data)) : [];
     displayFocusCategory(data)
@@ -90,7 +85,6 @@ async function categories() {
 }
 
 categories();
-
 //!<-- Make a request to Categories end -->
 
 const cartCount = document.querySelector<HTMLSpanElement>('.cart-count');
@@ -137,17 +131,5 @@ document.querySelector<HTMLFormElement>('.popup-form').addEventListener('submit'
             document.querySelector('.set-global-message').classList.remove('active');
         }, 3000);
     }
-
-    // popupCheckbox.addEventListener('change', (e) => {
-    //     const target = e.target as HTMLInputElement;
-    //     const checked = target.checked;
-    
-    //     if(checked) {
-    //         console.log('check');
-    //     } else {
-    //         console.log('not check');
-    //     }
-    // })
 });
-
 //!Modal dialog end
