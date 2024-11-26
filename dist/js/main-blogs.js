@@ -77,4 +77,3 @@ export const displayAllBlogs = (getStorageBlogData) => {
         getToFocusMainBlog();
     }
 };
-//# sourceMappingURL=main-blogs.js.map

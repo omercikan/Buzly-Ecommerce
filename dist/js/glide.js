@@ -52,4 +52,3 @@ export function productThumbSlider() {
     };
     new Glide('.product-thumbs', configThumbs).mount();
 }
-//# sourceMappingURL=glide.js.map

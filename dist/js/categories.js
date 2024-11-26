@@ -12,4 +12,3 @@ categoryLinks.forEach((link) => {
         });
     });
 });
-//# sourceMappingURL=categories.js.map

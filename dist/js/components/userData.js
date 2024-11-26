@@ -13,4 +13,3 @@ export const userData = () => {
         }, 3000);
     });
 };
-//# sourceMappingURL=userData.js.map

@@ -89,4 +89,3 @@ else {
         cartCount.innerHTML = JSON.parse(localStorage.getItem('cart')).length;
     });
 }
-//# sourceMappingURL=showProduct.js.map

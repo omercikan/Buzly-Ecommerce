@@ -59,4 +59,3 @@ const homeSlider = () => {
     document.getElementById('sliderDotThree').addEventListener('click', () => currentSlider(3));
 };
 homeSlider();
-//# sourceMappingURL=slider.js.map

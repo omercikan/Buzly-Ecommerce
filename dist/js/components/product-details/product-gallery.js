@@ -31,4 +31,3 @@ thumbImages.forEach((thumb) => {
         thumb.classList.add('active');
     });
 });
-//# sourceMappingURL=product-gallery.js.map

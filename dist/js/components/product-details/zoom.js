@@ -16,4 +16,3 @@ const productZoom = () => {
     });
 };
 productZoom();
-//# sourceMappingURL=zoom.js.map

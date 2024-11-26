@@ -122,4 +122,3 @@ searchLikesInput.addEventListener('input', () => {
         document.querySelector('.empty-message').style.display = 'none';
     }
 });
-//# sourceMappingURL=likes.js.map

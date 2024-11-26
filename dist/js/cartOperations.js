@@ -79,4 +79,3 @@ export const calculateCart = () => {
 };
 displayProduct();
 calculateCart();
-//# sourceMappingURL=cartOperations.js.map

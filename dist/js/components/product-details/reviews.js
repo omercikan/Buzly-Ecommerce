@@ -211,4 +211,3 @@ const deleteImg = (img) => {
         document.querySelector('.comment-file-field').style.display = 'block';
     }
 };
-//# sourceMappingURL=reviews.js.map

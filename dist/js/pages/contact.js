@@ -57,4 +57,3 @@ backBtn.addEventListener('click', () => {
     contactForm.classList.remove('close');
     successMessage.classList.remove('active');
 });
-//# sourceMappingURL=contact.js.map

@@ -23,4 +23,3 @@ export const checkSubscribe = () => {
     //!<-- Home page subscribe form check event -->
 };
 checkSubscribe();
-//# sourceMappingURL=footer.js.map

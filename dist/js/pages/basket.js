@@ -174,4 +174,3 @@ document.querySelector('#updateBasketButton').addEventListener('click', () => {
     window.location.reload();
 });
 export {};
-//# sourceMappingURL=basket.js.map

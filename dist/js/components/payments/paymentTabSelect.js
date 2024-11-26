@@ -13,4 +13,3 @@ paymentTabs.forEach((tab) => {
         }
     });
 });
-//# sourceMappingURL=paymentTabSelect.js.map

@@ -129,4 +129,3 @@ document.querySelector('.popup-form').addEventListener('submit', (e) => {
     }
 });
 //!Modal dialog end
-//# sourceMappingURL=app.js.map

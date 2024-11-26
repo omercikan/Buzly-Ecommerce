@@ -59,4 +59,3 @@ window.addEventListener('click', () => {
     document.querySelector('body').style.overflow = 'visible';
 });
 sizeCartContainer.querySelector('.size-cart-wrapper').addEventListener('click', (e) => e.stopPropagation());
-//# sourceMappingURL=product-detail.js.map

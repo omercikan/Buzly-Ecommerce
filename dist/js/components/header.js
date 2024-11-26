@@ -56,4 +56,3 @@ const headerFunc = () => {
     navbarCategories();
 };
 export default headerFunc();
-//# sourceMappingURL=header.js.map

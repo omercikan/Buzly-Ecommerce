@@ -136,4 +136,3 @@ const showCategory = () => {
     showProductDetail();
 };
 showCategory();
-//# sourceMappingURL=showCategory.js.map

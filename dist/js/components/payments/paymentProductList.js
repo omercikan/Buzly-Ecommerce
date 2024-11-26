@@ -26,4 +26,3 @@ cardStorage.forEach((item) => {
     goToProductDetail();
 });
 paymentListText.innerHTML = `Sipariş Özeti (${cardStorage.length})`;
-//# sourceMappingURL=paymentProductList.js.map

@@ -340,4 +340,3 @@ function productSliderFunc() {
     getProductDataSecond();
 }
 export default productSliderFunc;
-//# sourceMappingURL=product.js.map

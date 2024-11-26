@@ -13,4 +13,3 @@ parentTabsDOM.addEventListener('click', (e) => {
     }
     ;
 });
-//# sourceMappingURL=product-tab.js.map

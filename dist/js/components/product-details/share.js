@@ -23,4 +23,3 @@ document.querySelector('#shareText').addEventListener('click', (e) => {
 window.addEventListener('click', () => {
     shareWrapper.classList.remove('open');
 });
-//# sourceMappingURL=share.js.map

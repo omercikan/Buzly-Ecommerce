@@ -283,4 +283,3 @@ document.getElementById('openMembership').addEventListener('click', (e) => {
     openPopup(membershipContent, 2);
 });
 //!Account page form validation events
-//# sourceMappingURL=account.js.map

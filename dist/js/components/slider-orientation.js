@@ -43,4 +43,3 @@ export const displayFocusCategoryOffer = (electronicStorage) => {
         });
     }
 };
-//# sourceMappingURL=slider-orientation.js.map

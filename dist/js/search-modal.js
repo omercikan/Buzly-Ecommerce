@@ -69,4 +69,3 @@ export function searchFunc(allProductData) {
     goToFocusProduct(allProductData);
     searchProduct(allProductData);
 }
-//# sourceMappingURL=search-modal.js.map

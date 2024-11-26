@@ -34,4 +34,3 @@ if (totalPrice > high_discount) {
     document.getElementById('paymentAllPrice').innerText = `${((totalPrice - totalDiscount) - (cargoPrice)).toFixed(2)} TL`;
 }
 //!Calculate high discount and show content !//
-//# sourceMappingURL=summaryCard.js.map
