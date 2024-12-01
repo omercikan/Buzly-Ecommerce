@@ -34,7 +34,7 @@ genderBtnGroup.forEach(button => {
 });
 //!Account page gender option add active-gender class !// 
 //!Account page login or sign up mode event !//
-const loginButton = document.getElementById('loginButton');
+export const loginButton = document.getElementById('loginButton');
 const SignUpButton = document.getElementById('SignUpButton');
 const signupForm = document.getElementById('signupForm');
 const loginForm = document.getElementById('loginForm');
@@ -186,8 +186,8 @@ const checkboxControl = (checkboxs) => {
     });
     return isInvalid;
 };
-const loginEmailInput = document.getElementById('loginEmailInput');
-const loginPasswordInput = document.getElementById('loginPasswordInput');
+export const loginEmailInput = document.getElementById('loginEmailInput');
+export const loginPasswordInput = document.getElementById('loginPasswordInput');
 //!Account page login form submit event
 loginForm.addEventListener('submit', (e) => {
     e.preventDefault();

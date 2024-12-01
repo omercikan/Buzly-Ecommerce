@@ -40,7 +40,7 @@ genderBtnGroup.forEach(button => {
 //!Account page gender option add active-gender class !// 
   
 //!Account page login or sign up mode event !//
-const loginButton = document.getElementById('loginButton') as HTMLButtonElement;
+export const loginButton = document.getElementById('loginButton') as HTMLButtonElement;
 const SignUpButton = document.getElementById('SignUpButton') as HTMLButtonElement;
 const signupForm = document.getElementById('signupForm') as HTMLFormElement;
 const loginForm = document.getElementById('loginForm') as HTMLFormElement;
@@ -70,7 +70,7 @@ signupForm.addEventListener('submit', (e) => {
     signupPasswordInput.style.backgroundImage = 'none';
 
     if(isvalidationForms && isvalidationCheckboxs && isvalidationEmail) { 
-        const welcomeMessage = document.querySelector('.set-global-message');
+       const welcomeMessage = document.querySelector('.set-global-message');
         welcomeMessage.querySelector('p').textContent = `Kayıt işleminiz başarıyla tamamlandı! ${signUpNameInput.value.toLocaleUpperCase()}, Yönlendiriliyorsunuz..`
         welcomeMessage.classList.add('active');
 
@@ -208,8 +208,8 @@ const checkboxControl = (checkboxs: HTMLInputElement[]): boolean => {
     return isInvalid;
 };
   
-const loginEmailInput = document.getElementById('loginEmailInput') as HTMLInputElement;
-const loginPasswordInput = document.getElementById('loginPasswordInput') as HTMLInputElement;
+export const loginEmailInput = document.getElementById('loginEmailInput') as HTMLInputElement;
+export const loginPasswordInput = document.getElementById('loginPasswordInput') as HTMLInputElement;
 
 //!Account page login form submit event
 loginForm.addEventListener('submit', (e) => {
