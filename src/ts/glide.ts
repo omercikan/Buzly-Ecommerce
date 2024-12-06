@@ -1,53 +1,56 @@
 declare var Glide: any;
 
 const productFirstList = document.getElementById('productFirstList') as HTMLUListElement;
+const productSecondList = document.getElementById('productSecondList') as HTMLUListElement;
 
 export function productFirstSlider() {
-    const configOne = {
-        perView: 4,
-        gap: 10,
-        autoplay: 2000,
-        bound: true,
-        breakpoints: {
-            992: {
-                perView: 3,
-            },
-    
-            768: {
-                perView: 2,
-            },
-            
-            375: {
-                perView: 1,
+    if(productFirstList) {
+        const configOne = {
+            perView: 4,
+            gap: 10,
+            autoplay: false,
+            bound: true,
+            breakpoints: {
+                992: {perView: 3, },
+                768: { perView: 2, },
+                375: { perView: 1, }
             }
         }
+
+        const carousel = document.querySelector('.product-carousel');
+        if(carousel) {
+            const glide = new Glide('.product-carousel', configOne).mount()
+
+            setTimeout(() => {
+                glide.update({ autoplay: 2000 })
+            }, 500);
+        }            
     }
-     
-   productFirstList && new Glide('.product-carousel', configOne).mount()
 }
 
 export function productSecondSlider() {
-    const configTwo = {
-        perView: 4,
-        gap: 10,
-        autoplay: 2000,
-        bound: true,
-        breakpoints: {
-            992: {
-                perView: 3,
-            },
-    
-            768: {
-                perView: 2,
-            },
-
-            375: {
-                perView: 1,
+    if(productSecondList) {
+        const configTwo = {
+            perView: 4,
+            gap: 10,
+            autoplay: false,
+            bound: true,
+            breakpoints: {
+                992: {perView: 3, },
+                768: { perView: 2, },
+                375: { perView: 1, }
             }
         }
-    }
 
-   productFirstList && new Glide('.product-carouselTwo', configTwo).mount()
+        const carousel = document.querySelector('.product-carouselTwo');
+        if(carousel) {
+            const glide = new Glide('.product-carouselTwo', configTwo).mount()
+
+            setTimeout(() => {
+                glide.update({ autoplay: 2000 })
+            }, 500);
+        }
+    }
 }
 
 export function productThumbSlider() {
