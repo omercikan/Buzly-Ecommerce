@@ -1,17 +1,23 @@
 //!User information comes from the account page
-export const userData = () => {
+export const userData = (): void => {
     window.addEventListener('load', () => {
-      const message = document.querySelector<HTMLDivElement>('.set-global-message');
       const params = new URLSearchParams(window.location.search);
+      const message = document.querySelector<HTMLDivElement>('.set-global-message');
       const username = params.get('account');
     
-      if(username) {
+      if(message && username) {
         message.classList.add('active');
-        message.querySelector<HTMLParagraphElement>('p').textContent = `Tekrardan Merhaba, ${decodeURIComponent(username).toUpperCase()}, 👋 Hoşgeldin..`;
+        const paragraph = message.querySelector<HTMLParagraphElement>('p')
+        if(paragraph) {
+          paragraph.textContent = `Tekrardan Merhaba, ${decodeURIComponent(username).toUpperCase()}, 👋 Hoşgeldin..`;
+
+        }
       } 
     
       setTimeout(() => {
-        message.classList.remove('active');
+        if(message) {
+          message.classList.remove('active');
+        }
       }, 3000)
     });
 }

@@ -269,63 +269,63 @@ const getProductDataSecond = () => {
     let resultProductSecondHtml = '';
     productsSecond.forEach(element => {
         resultProductSecondHtml += `
-    <li class="product-item glide__slide">
-      <div class="product-discount">
-        <span>-${element.discount}%</span> 
-      </div> 
+        <li class="product-item glide__slide">
+          <div class="product-discount">
+            <span>-${element.discount}%</span> 
+          </div> 
 
-      <div class="product-img">
-        <a href="#" class='product-link-second' data-id="${element.id}">
-          <img src="${element.img.mainImage}" alt="${element.name} 1" class="product-img-one">
-          <img src="${element.img.thumbs[1]}" alt="${element.name} 2" class="product-img-two">
-        </a> 
-      </div>  
+          <div class="product-img">
+            <a href="#" class='product-link-second' data-id="${element.id}">
+              <img src="${element.img.mainImage}" alt="${element.name} 1" class="product-img-one">
+              <img src="${element.img.thumbs[1]}" alt="${element.name} 2" class="product-img-two">
+            </a> 
+          </div>  
 
-      <div class="product-details text-center">
-        <a href="#" class='product-link-second' data-id="${element.id}">${element.name}</a>
-        <ul>
-          <li>
-            <strong>${element.vote}</strong>
-          </li>
+          <div class="product-details text-center">
+            <a href="#" class='product-link-second' data-id="${element.id}">${element.name}</a>
+            <ul>
+              <li>
+                <strong>${element.vote}</strong>
+              </li>
 
-          <li>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-half"></i>
-          </li>
+              <li>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </li>
 
-          <li>
-            <strong>(${element.evaluation})</strong>
-          </li>
-        </ul>
+              <li>
+                <strong>(${element.evaluation})</strong>
+              </li>
+            </ul>
 
-        <div class="product-price">
-          <strong>${element.price.newPrice} TL</strong>
-          <span>${element.price.oldPrice} TL</span>
-        </div>
-      </div>
+            <div class="product-price">
+              <strong>${element.price.newPrice} TL</strong>
+              <span>${element.price.oldPrice} TL</span>
+            </div>
+          </div>
 
-      <div class="product-links">
-        <button type="button" class="add-to-cart" data-id="${element.id}">
-          <i class="bi bi-basket"></i>
-        </button>
+          <div class="product-links">
+            <button type="button" class="add-to-cart" data-id="${element.id}">
+              <i class="bi bi-basket"></i>
+            </button>
 
-        <button type="button" id="productHeartBtn" class="add-to-likes-second" data-id="${element.id}">
-          <i class="bi bi-heart"></i>
-        </button>
+            <button type="button" id="productHeartBtn" class="add-to-likes-second" data-id="${element.id}">
+              <i class="bi bi-heart"></i>
+            </button>
 
-        <a href="#" class="show-product-detail-second" data-id="${element.id}">
-          <i class="bi bi-eye-fill"></i>
-        </a>
+            <a href="#" class="show-product-detail-second" data-id="${element.id}">
+              <i class="bi bi-eye-fill"></i>
+            </a>
 
-        <a href="#" id="productShareBtn">
-          <i class="bi bi-share-fill"></i>
-        </a>
-      </div>
-    </li>
-  `;
+            <a href="#" id="productShareBtn">
+              <i class="bi bi-share-fill"></i>
+            </a>
+          </div>
+        </li>
+    `;
     });
     productSecondList ? productSecondList.innerHTML = resultProductSecondHtml : "";
     productSecondSlider();

@@ -7,6 +7,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var _a, _b;
 import { userData } from "./components/userData.js";
 userData();
 import header from "./components/header.js";
@@ -17,9 +18,7 @@ import productSliderFunc from "./product.js";
 import { searchFunc } from "./search-modal.js";
 import { displayBlogs } from "./main-blogs.js";
 import { displayAllBlogs } from "./main-blogs.js";
-import { displayFocusCategory } from "./components/slider-orientation.js";
-import { displayFocusCategorySeason } from "./components/slider-orientation.js";
-import { displayFocusCategoryOffer } from "./components/slider-orientation.js";
+import { displayFocusCategory, displayFocusCategorySeason, displayFocusCategoryOffer } from "./components/slider-orientation.js";
 //!<-- Get All Product save to localStorage start -->
 function productData() {
     return __awaiter(this, void 0, void 0, function* () {
@@ -94,21 +93,20 @@ categories();
 const cartCount = document.querySelector('.cart-count');
 cartCount.innerHTML = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')).length : "0";
 //!Modal dialog start
-const modalCloseBtn = document.querySelector('.popup-close');
-const popupParentHTML = document.querySelector('.popup-dialog');
-const modalInput = document.getElementById('modalInput');
-const popupCheckbox = document.getElementById('popupCheckbox');
+const modalCloseBtn = document === null || document === void 0 ? void 0 : document.querySelector('.popup-close');
+const popupParentHTML = document === null || document === void 0 ? void 0 : document.querySelector('.popup-dialog');
+const modalInput = document === null || document === void 0 ? void 0 : document.getElementById('modalInput');
 setTimeout(() => {
-    popupParentHTML.classList.add('show');
+    popupParentHTML === null || popupParentHTML === void 0 ? void 0 : popupParentHTML.classList.add('show');
 }, 10000);
-modalCloseBtn.addEventListener('click', () => {
-    popupParentHTML.classList.remove('show');
+modalCloseBtn === null || modalCloseBtn === void 0 ? void 0 : modalCloseBtn.addEventListener('click', () => {
+    popupParentHTML === null || popupParentHTML === void 0 ? void 0 : popupParentHTML.classList.remove('show');
 });
-document.addEventListener('click', () => {
-    popupParentHTML.classList.remove('show');
+document === null || document === void 0 ? void 0 : document.addEventListener('click', () => {
+    popupParentHTML === null || popupParentHTML === void 0 ? void 0 : popupParentHTML.classList.remove('show');
 });
-document.querySelector('.popup-container').addEventListener('click', (e) => e.stopPropagation());
-document.querySelector('.popup-form').addEventListener('submit', (e) => {
+(_a = document === null || document === void 0 ? void 0 : document.querySelector('.popup-container')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', (e) => e.stopPropagation());
+(_b = document === null || document === void 0 ? void 0 : document.querySelector('.popup-form')) === null || _b === void 0 ? void 0 : _b.addEventListener('submit', (e) => {
     e.preventDefault();
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     if (!emailRegex.test(modalInput.value)) {

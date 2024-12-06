@@ -1,15 +1,20 @@
 //!User information comes from the account page
 export const userData = () => {
     window.addEventListener('load', () => {
-        const message = document.querySelector('.set-global-message');
         const params = new URLSearchParams(window.location.search);
+        const message = document.querySelector('.set-global-message');
         const username = params.get('account');
-        if (username) {
+        if (message && username) {
             message.classList.add('active');
-            message.querySelector('p').textContent = `Tekrardan Merhaba, ${decodeURIComponent(username).toUpperCase()}, 👋 Hoşgeldin..`;
+            const paragraph = message.querySelector('p');
+            if (paragraph) {
+                paragraph.textContent = `Tekrardan Merhaba, ${decodeURIComponent(username).toUpperCase()}, 👋 Hoşgeldin..`;
+            }
         }
         setTimeout(() => {
-            message.classList.remove('active');
+            if (message) {
+                message.classList.remove('active');
+            }
         }, 3000);
     });
 };

@@ -5,7 +5,6 @@ const categoryName = params.get('category');
 document.querySelector<HTMLHeadingElement>('.category-heading h2') ? categoryName : '';
 document.querySelector<HTMLHeadingElement>('.category-heading span') ? categoryName : '';
 
-
 export const displayFocusCategory = (fashionStorage) => {
     if(sliderSavingLink) {
         sliderSavingLink.forEach((link) => {

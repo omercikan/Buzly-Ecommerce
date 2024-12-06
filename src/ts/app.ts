@@ -12,9 +12,7 @@ import { searchFunc } from "./search-modal.js";
 
 import { displayBlogs } from "./main-blogs.js";
 import { displayAllBlogs } from "./main-blogs.js";
-import { displayFocusCategory } from "./components/slider-orientation.js";
-import { displayFocusCategorySeason } from "./components/slider-orientation.js";
-import { displayFocusCategoryOffer } from "./components/slider-orientation.js";
+import { displayFocusCategory, displayFocusCategorySeason, displayFocusCategoryOffer } from "./components/slider-orientation.js";
 
 //!<-- Get All Product save to localStorage start -->
 async function productData() {
@@ -92,26 +90,25 @@ const cartCount = document.querySelector<HTMLSpanElement>('.cart-count');
 cartCount.innerHTML = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')).length : "0";
 
 //!Modal dialog start
-const modalCloseBtn = document.querySelector<HTMLButtonElement>('.popup-close');
-const popupParentHTML = document.querySelector<HTMLDivElement>('.popup-dialog');
-const modalInput = document.getElementById('modalInput') as HTMLInputElement;
-const popupCheckbox = document.getElementById('popupCheckbox') as HTMLInputElement;
+const modalCloseBtn = document?.querySelector<HTMLButtonElement>('.popup-close');
+const popupParentHTML = document?.querySelector<HTMLDivElement>('.popup-dialog');
+const modalInput = document?.getElementById('modalInput') as HTMLInputElement;
 
 setTimeout(() => {
-    popupParentHTML.classList.add('show');
+    popupParentHTML?.classList.add('show');
 }, 10000);
 
-modalCloseBtn.addEventListener('click', () => {
-    popupParentHTML.classList.remove('show');
+modalCloseBtn?.addEventListener('click', () => {
+    popupParentHTML?.classList.remove('show');
 })
 
-document.addEventListener('click', () => {
-    popupParentHTML.classList.remove('show');
+document?.addEventListener('click', () => {
+    popupParentHTML?.classList.remove('show');
 });
 
-document.querySelector<HTMLDivElement>('.popup-container').addEventListener('click', (e) => e.stopPropagation());
+document?.querySelector<HTMLDivElement>('.popup-container')?.addEventListener('click', (e) => e.stopPropagation());
 
-document.querySelector<HTMLFormElement>('.popup-form').addEventListener('submit', (e) => {
+document?.querySelector<HTMLFormElement>('.popup-form')?.addEventListener('submit', (e) => {
     e.preventDefault();
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
