@@ -25,7 +25,7 @@ interface User {
 //! User fields interface !//
 
 //! User account info class structure !//
-class UserAccountInfo implements User{
+class UserAccountInfo implements User {
     public email: string;
     public name: string;
     public password: string;
@@ -47,7 +47,6 @@ const getUserAccountInfo = (): void => {
         if(user.name.length > 0 && regexLoginEmail.test(user.email) && user.password.length > 0) {
             userAccountList.push(user)
             localStorage.setItem('userAccountInfo', JSON.stringify(userAccountList));
-            checkUserAccountInfo();
         }
     });
 };
@@ -56,24 +55,39 @@ const getUserAccountInfo = (): void => {
 //! Check user account info function !//
 const checkUserAccountInfo = (): void => {
     loginBtn.addEventListener('click', () => {
-        userAccountList.map((user) => {
-            if(user.email === loginEmailInput.value && user.password === loginPasswordInput.value) {
-                message.classList.add('active')
-                message.querySelector('p').textContent = `Doğrulama başarılı 👋 Hoşgeldin ${user.name}!`
-                message.querySelector('span').textContent = '';
-                setTimeout(() => {
-                    window.location.href = 'index.html'
-                }, 3000);
-            } else {
-                message.classList.add('active')
-                message.querySelector('p').textContent = `E-Posta veya Şifre hatalı!`
-                message.querySelector('span').textContent = ``
+        const matchedUser = userAccountList.find(user => user.email === loginEmailInput.value && user.password === loginPasswordInput.value);
 
-                setTimeout(() => {
-                    message.classList.remove('active')
-                }, 3000);
+        if(matchedUser) {
+            message.classList.add('active')
+            const paragraph = message.querySelector('p')
+            if(paragraph) {
+                paragraph.textContent = `Doğrulama başarılı 👋 Hoşgeldin ${matchedUser.name}!`
             }
-        })
+
+            const span = message.querySelector('span')
+            if(span) {
+                span.textContent = '';
+            }
+
+            setTimeout(() => {
+                window.location.href = 'index.html'
+            }, 3000);
+        } else {
+            message.classList.add('active')
+            const paragraph = message.querySelector('p')
+            if(paragraph) {
+                paragraph.textContent = `E-Posta veya Şifre hatalı!`;
+            }
+
+            const span = message.querySelector('span')
+            if(span) {
+                span.textContent = '';
+            }
+
+            setTimeout(() => {
+                message.classList.remove('active')
+            }, 3000);
+        }
     })
 }
 //! Check user account info function !//
