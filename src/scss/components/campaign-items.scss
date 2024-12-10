@@ -65,30 +65,33 @@
 
 //!Campaign container responsive Settings 
 @media(max-width: 992px) {
-    .campaign-container.container {
-        max-width: 100%;
-    }
-
     .campaign-wrapper {
         width: 100%;
     }
 }
 
 @media(max-width: 768px) {
-    .campaign-wrapper {
-        flex-direction: column;
+    .campaign-container {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        white-space: nowrap;
+        gap: 10px;
+        width: 100% !important; 
+
+
+        .campaign-wrapper {
+            width: auto !important;
+        }
+
+        .campaign-item {
+            padding: 30px 70px 30px 30px !important;
+        }
     }
 }
 
 @media(max-width: 430px) {
-    .campaign-item {
-        padding: 25px !important;
-    }
-
-    .campaign-item p br {
-        display: none;
-    }
-
     .campaign-item h3 {
         font-size: 22px !important;
     }
