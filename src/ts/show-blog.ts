@@ -44,9 +44,12 @@ const showBlogFields = () => {
     });
 
     blogFieldsHTML += `
+        <article>
+            <div>
+                <div>
                     <p class="result-text mb-5"><strong>Sonuç</strong>
-                    <br><br>
-                    ${getShowBlogFromStorage.content.conclusion}
+                        <br><br>
+                        ${getShowBlogFromStorage.content.conclusion}
                     </p>
                 </div>
             </div>
