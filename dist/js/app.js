@@ -7,14 +7,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var _a, _b;
 import { userData } from "./components/userData.js";
 userData();
 import header from "./components/header.js";
 header;
 import { checkSubscribe } from "./components/footer.js";
 checkSubscribe();
-import productSliderFunc from "./product.js";
+import productsGroup from "./product.js";
 import { searchFunc } from "./search-modal.js";
 import { displayBlogs } from "./main-blogs.js";
 import { displayAllBlogs } from "./main-blogs.js";
@@ -22,36 +21,29 @@ import { displayFocusCategory, displayFocusCategorySeason, displayFocusCategoryO
 //!<-- Get All Product save to localStorage start -->
 function productData() {
     return __awaiter(this, void 0, void 0, function* () {
-        const requestData = yield fetch("./data/json/productData.json");
-        const data = yield requestData.json();
-        data ? localStorage.setItem('products', JSON.stringify(data)) : [];
-        searchFunc(data);
+        try {
+            const requestData = yield fetch("./data/json/productData.json");
+            if (!requestData.ok) {
+                throw new Error('Veriler yüklenemedi lütfen sayfayı tekrar yükleyin');
+            }
+            const data = yield requestData.json();
+            if (data) {
+                localStorage.setItem('products', JSON.stringify(data));
+                searchFunc(data);
+                productsGroup();
+            }
+        }
+        catch (err) {
+            const messageElement = document.querySelector('.set-global-message');
+            if (messageElement) {
+                messageElement.classList.add('active');
+                messageElement.querySelector('p span').textContent = err.message;
+            }
+        }
     });
 }
 productData();
 //!<-- Get All Product save to localStorage end -->
-//!<-- Get Product First data save to localStorage start -->
-function firstProdutData() {
-    return __awaiter(this, void 0, void 0, function* () {
-        const requestFirstData = yield fetch('./data/json/productDataOne.json');
-        const data = yield requestFirstData.json();
-        data ? localStorage.setItem('productsFirst', JSON.stringify(data)) : [];
-        productSliderFunc();
-    });
-}
-firstProdutData();
-//!<-- Get Product First data save to localStorage start -->
-//!<-- Get Product First data save to localStorage start -->
-function secondProductData() {
-    return __awaiter(this, void 0, void 0, function* () {
-        const requestSecondData = yield fetch('./data/json/productDataTwo.json');
-        const data = yield requestSecondData.json();
-        data ? localStorage.setItem('productsSecond', JSON.stringify(data)) : [];
-        productSliderFunc();
-    });
-}
-secondProductData();
-//!<-- Get Product First data save to localStorage end -->
 //!<-- Get Blog data save to localStorage start -->
 function allBlogData() {
     return __awaiter(this, void 0, void 0, function* () {
@@ -90,40 +82,42 @@ function categories() {
 }
 categories();
 //!<-- Make a request to Categories end -->
-const cartCount = document.querySelector('.cart-count');
-cartCount.innerHTML = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')).length : "0";
 //!Modal dialog start
 const modalCloseBtn = document === null || document === void 0 ? void 0 : document.querySelector('.popup-close');
 const popupParentHTML = document === null || document === void 0 ? void 0 : document.querySelector('.popup-dialog');
 const modalInput = document === null || document === void 0 ? void 0 : document.getElementById('modalInput');
-setTimeout(() => {
-    popupParentHTML === null || popupParentHTML === void 0 ? void 0 : popupParentHTML.classList.add('show');
-}, 10000);
-modalCloseBtn === null || modalCloseBtn === void 0 ? void 0 : modalCloseBtn.addEventListener('click', () => {
-    popupParentHTML === null || popupParentHTML === void 0 ? void 0 : popupParentHTML.classList.remove('show');
-});
-document === null || document === void 0 ? void 0 : document.addEventListener('click', () => {
-    popupParentHTML === null || popupParentHTML === void 0 ? void 0 : popupParentHTML.classList.remove('show');
-});
-(_a = document === null || document === void 0 ? void 0 : document.querySelector('.popup-container')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', (e) => e.stopPropagation());
-(_b = document === null || document === void 0 ? void 0 : document.querySelector('.popup-form')) === null || _b === void 0 ? void 0 : _b.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    if (!emailRegex.test(modalInput.value)) {
-        const div = modalInput.nextElementSibling;
-        modalInput.className = 'form-control is-invalid';
-        div.textContent = 'Lütfen geçerli bir e-posta adresi girin.';
-        div.className = 'invalid-feedback text-start';
-    }
-    else {
-        modalInput.className = 'form-control is-valid';
-        modalInput.nextElementSibling.textContent = '';
-        popupParentHTML.classList.remove('show');
-        document.querySelector('.set-global-message').classList.add('active');
-        document.querySelector('.set-global-message p').textContent = 'Aboneliğiniz Alınmıştır.';
-        setTimeout(() => {
-            document.querySelector('.set-global-message').classList.remove('active');
-        }, 3000);
-    }
-});
+const modalDialog = () => {
+    var _a, _b;
+    setTimeout(() => {
+        popupParentHTML === null || popupParentHTML === void 0 ? void 0 : popupParentHTML.classList.add('show');
+    }, 10000);
+    modalCloseBtn === null || modalCloseBtn === void 0 ? void 0 : modalCloseBtn.addEventListener('click', () => {
+        popupParentHTML === null || popupParentHTML === void 0 ? void 0 : popupParentHTML.classList.remove('show');
+    });
+    document === null || document === void 0 ? void 0 : document.addEventListener('click', () => {
+        popupParentHTML === null || popupParentHTML === void 0 ? void 0 : popupParentHTML.classList.remove('show');
+    });
+    (_a = document === null || document === void 0 ? void 0 : document.querySelector('.popup-container')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', (e) => e.stopPropagation());
+    (_b = document === null || document === void 0 ? void 0 : document.querySelector('.popup-form')) === null || _b === void 0 ? void 0 : _b.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        if (!emailRegex.test(modalInput.value)) {
+            const div = modalInput.nextElementSibling;
+            modalInput.className = 'form-control is-invalid';
+            div.textContent = 'Lütfen geçerli bir e-posta adresi girin.';
+            div.className = 'invalid-feedback text-start';
+        }
+        else {
+            modalInput.className = 'form-control is-valid';
+            modalInput.nextElementSibling.textContent = '';
+            popupParentHTML.classList.remove('show');
+            document.querySelector('.set-global-message').classList.add('active');
+            document.querySelector('.set-global-message p').textContent = 'Aboneliğiniz Alınmıştır.';
+            setTimeout(() => {
+                document.querySelector('.set-global-message').classList.remove('active');
+            }, 3000);
+        }
+    });
+};
+modalDialog();
 //!Modal dialog end

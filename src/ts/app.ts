@@ -7,7 +7,7 @@ header
 import { checkSubscribe } from "./components/footer.js";
 checkSubscribe();
 
-import productSliderFunc  from "./product.js";
+import productsGroup from "./product.js";
 import { searchFunc } from "./search-modal.js";
 
 import { displayBlogs } from "./main-blogs.js";
@@ -16,36 +16,29 @@ import { displayFocusCategory, displayFocusCategorySeason, displayFocusCategoryO
 
 //!<-- Get All Product save to localStorage start -->
 async function productData() {
-    const requestData = await fetch("./data/json/productData.json")
-    const data = await requestData.json();
-    data ? localStorage.setItem('products', JSON.stringify(data)) : [];
-    searchFunc(data)
+    try {
+        const requestData = await fetch("./data/json/productData.json")
+        if(!requestData.ok) {
+            throw new Error('Veriler yüklenemedi lütfen sayfayı tekrar yükleyin')
+        }
+        const data = await requestData.json();
+        
+        if(data) {
+            localStorage.setItem('products', JSON.stringify(data))
+            searchFunc(data)
+            productsGroup();
+        }
+    } catch(err) {
+        const messageElement = document.querySelector('.set-global-message')
+        if(messageElement) {
+            messageElement.classList.add('active');
+            messageElement.querySelector('p span').textContent = err.message;
+        }
+    }
 }
 
 productData(); 
 //!<-- Get All Product save to localStorage end -->
-
-//!<-- Get Product First data save to localStorage start -->
-async function firstProdutData() {
-    const requestFirstData = await fetch('./data/json/productDataOne.json')
-    const data = await requestFirstData.json()
-    data ? localStorage.setItem('productsFirst', JSON.stringify(data)) : [];
-    productSliderFunc();
-}
-
-firstProdutData();
-//!<-- Get Product First data save to localStorage start -->
-
-//!<-- Get Product First data save to localStorage start -->
-async function secondProductData() {
-    const requestSecondData = await fetch('./data/json/productDataTwo.json')
-    const data = await requestSecondData.json();
-    data ? localStorage.setItem('productsSecond', JSON.stringify(data)) : [];
-    productSliderFunc();
-}
-
-secondProductData();
-//!<-- Get Product First data save to localStorage end -->
 
 //!<-- Get Blog data save to localStorage start -->
 async function allBlogData() {
@@ -85,48 +78,48 @@ async function categories() {
 categories();
 //!<-- Make a request to Categories end -->
 
-const cartCount = document.querySelector<HTMLSpanElement>('.cart-count');
-
-cartCount.innerHTML = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')).length : "0";
-
 //!Modal dialog start
 const modalCloseBtn = document?.querySelector<HTMLButtonElement>('.popup-close');
 const popupParentHTML = document?.querySelector<HTMLDivElement>('.popup-dialog');
 const modalInput = document?.getElementById('modalInput') as HTMLInputElement;
 
-setTimeout(() => {
-    popupParentHTML?.classList.add('show');
-}, 10000);
+const modalDialog = (): void => {
+    setTimeout(() => {
+        popupParentHTML?.classList.add('show');
+    }, 10000);
+    
+    modalCloseBtn?.addEventListener('click', () => {
+        popupParentHTML?.classList.remove('show');
+    })
+    
+    document?.addEventListener('click', () => {
+        popupParentHTML?.classList.remove('show');
+    });
+    
+    document?.querySelector<HTMLDivElement>('.popup-container')?.addEventListener('click', (e) => e.stopPropagation());
+    
+    document?.querySelector<HTMLFormElement>('.popup-form')?.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    
+        if(!emailRegex.test(modalInput.value)) {
+            const div = modalInput.nextElementSibling;
+            modalInput.className = 'form-control is-invalid'
+            div.textContent = 'Lütfen geçerli bir e-posta adresi girin.'
+            div.className = 'invalid-feedback text-start'
+        } else {
+            modalInput.className = 'form-control is-valid'
+            modalInput.nextElementSibling.textContent = ''
+            popupParentHTML.classList.remove('show');
+            document.querySelector('.set-global-message').classList.add('active');
+            document.querySelector('.set-global-message p').textContent = 'Aboneliğiniz Alınmıştır.'
+    
+            setTimeout(() => {
+                document.querySelector('.set-global-message').classList.remove('active');
+            }, 3000);
+        }
+    });
+}
 
-modalCloseBtn?.addEventListener('click', () => {
-    popupParentHTML?.classList.remove('show');
-})
-
-document?.addEventListener('click', () => {
-    popupParentHTML?.classList.remove('show');
-});
-
-document?.querySelector<HTMLDivElement>('.popup-container')?.addEventListener('click', (e) => e.stopPropagation());
-
-document?.querySelector<HTMLFormElement>('.popup-form')?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-
-    if(!emailRegex.test(modalInput.value)) {
-        const div = modalInput.nextElementSibling;
-        modalInput.className = 'form-control is-invalid'
-        div.textContent = 'Lütfen geçerli bir e-posta adresi girin.'
-        div.className = 'invalid-feedback text-start'
-    } else {
-        modalInput.className = 'form-control is-valid'
-        modalInput.nextElementSibling.textContent = ''
-        popupParentHTML.classList.remove('show');
-        document.querySelector('.set-global-message').classList.add('active');
-        document.querySelector('.set-global-message p').textContent = 'Aboneliğiniz Alınmıştır.'
-
-        setTimeout(() => {
-            document.querySelector('.set-global-message').classList.remove('active');
-        }, 3000);
-    }
-});
+modalDialog();
 //!Modal dialog end
