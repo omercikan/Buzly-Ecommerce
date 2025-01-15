@@ -82,6 +82,8 @@ function categories() {
 }
 categories();
 //!<-- Make a request to Categories end -->
+const cartCountNum = document.querySelector('.cart-count');
+cartCountNum.textContent = JSON.parse(localStorage.getItem('cart')).length;
 //!Modal dialog start
 const modalCloseBtn = document === null || document === void 0 ? void 0 : document.querySelector('.popup-close');
 const popupParentHTML = document === null || document === void 0 ? void 0 : document.querySelector('.popup-dialog');

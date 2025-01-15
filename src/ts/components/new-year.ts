@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const animationElement = document.querySelector<HTMLDivElement>('.new-year-animate');
         const htmlElement = document.querySelector<HTMLBodyElement>('html');
         animationElement.style.display = 'block';
-        htmlElement.style.overflow = 'hidden';
+        htmlElement.style.overflow = 'hidden'; 
 
         setTimeout(() => {
             sessionStorage.setItem('new-year-animate', 'true');
